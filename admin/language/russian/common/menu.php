@@ -1,5 +1,6 @@
 <?php
 // Text
+$_['text_news'] = 'Новости';
 $_['text_analytics']                   = 'Аналитика';
 $_['text_affiliate']                   = 'Партнерская программа';
 $_['text_affiliate_activity']          = 'Активность партнера';

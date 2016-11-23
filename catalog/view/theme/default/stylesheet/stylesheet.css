@@ -809,22 +809,220 @@ h2.price {
 	position: absolute;
 	bottom: 24px;
 	left: 24px;
+    font-size: 18px;
+    font-family: "Roboto-Medium";
+    color: rgb(255, 255, 255);
+    line-height: 1.15;
+    text-align: left;
 
 }
 .catshow{
 	//padding: 24px;
 	background-size: cover;
 	font-size: 18px;
-	font-family: "Roboto";
+	font-family: "Roboto-Medium";
 	color: rgb(255, 255, 255);
 	line-height: 1.3;
 	text-align: left;
 	//width: 272px;
 	height: 155px;
 }
-
-
+.catshow:hover span{
+  font-size: 18px;
+  font-family: "Roboto-Medium";
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
 .catshow:hover .catshowhover{
 	background-color: rgba(0, 156, 255, 0.41);
 	height: 155px;
 }
+.instruction {
+    margin-top: 75px;
+}
+.kolo {
+    padding-top: 20px;
+    background-color: #009cff;
+    width: 74px;
+    height: 74px;
+    vertical-align: middle;
+    border-radius: 100px;
+}
+.kolo img {
+    display: block;
+    margin: 0 auto; 
+}
+.instruction figcaption h4{
+   
+  font-size: 18px;
+  font-family: "MuseoCyrl-700";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  padding-right: 50px;
+}
+.instruction figcaption span{
+   
+ 
+  font-size: 18px;
+  font-family: "Roboto-Regular";
+  color: #6d6d6d;
+  line-height: 1.2;
+  text-align: left;
+
+}
+
+    
+.instruction figcaption {
+    padding-right: 40px;
+    display: block;
+    vertical-align: middle;
+    margin: 25px 0 0;
+}
+.afigure{
+    margin-top: 10px;
+    display: block;
+  color: rgb(0, 156, 255)!important;
+  text-decoration: underline;
+  line-height: 2.026!important;
+  text-align: left;
+
+}
+.korob1{
+    float: left;
+    width: 45%;
+}
+.korob2{
+    float: left;
+    width: 55%;
+}
+.korob2 a{
+   background-color: #f4f4f4;
+   padding: 10px 20px;
+   margin-right: 18px;
+   border-radius: 20px;
+}
+.korob2 a:hover{
+  background-color: #ffda00;  
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(0, 0, 0);
+  line-height: 2.667;
+  text-align: left;
+
+}
+.korob2 div{
+   
+    margin-bottom: 25px;
+    float:left;
+}
+.korob2 h4{
+   
+    
+  font-size: 25px;
+  font-family: "MuseoCyrl-700";
+  color: rgb(0, 0, 0);
+  line-height: 1.44;
+  text-align: left;
+
+}
+.korob2 a{
+   
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(69, 69, 69);
+  line-height: 2.667;
+  text-align: left;
+
+
+}
+  .block {
+    background: #e6e6e6;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Roboto-Regular";
+    color: rgb(156, 156, 156);
+    line-height: 3.077;
+    text-align: left;
+
+   }
+   .block::after {
+    content: ''; 
+    position: absolute; 
+    left: 20px; bottom: -20px; 
+    border: 10px solid transparent; 
+    border-top: 10px solid #e6e6e6; 
+   }
+.blocpadinng{
+       // padding-right: 80px;
+}
+.blocmargintov{
+    margin-top: 85px;
+}
+.blocmarginnew{
+        margin-top: 30px;
+}
+.blocmarginnew h3{
+       margin-bottom: 40px;
+       font-size: 25px;
+       font-family: "MuseoCyrl-700";
+       color: rgb(230, 230, 230);
+       line-height: 1.44;
+       text-align: left;
+
+}
+.blocpadinng h4{
+        margin-top: 23px;
+    
+  font-size: 18px;
+  font-family: "MuseoCyrl-700";
+  color: rgb(0, 156, 255);
+  text-decoration: underline;
+  line-height: 1.333;
+  text-align: left;
+
+
+}
+.blocpadinng p{
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(110, 110, 110);
+  line-height: 1.467;
+  text-align: left;
+}
+.seo{
+  margin-bottom: 30px;
+  margin-top: 65px;  
+}
+.seo h4{
+  font-size: 25px;
+  font-family: "MuseoCyrl-700";
+  color: rgb(0, 0, 0);
+  line-height: 1.44;
+  text-align: left;
+}
+.seo a{
+  display: block;
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(0, 156, 255);
+  line-height: 2.026;
+  text-align: left;
+}
+.seo span{
+  
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(110, 110, 110);
+  line-height: 1.467;
+  text-align: left;
+
+
+}
+ 
+}
+
