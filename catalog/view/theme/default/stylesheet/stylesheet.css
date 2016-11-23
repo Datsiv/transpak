@@ -745,3 +745,86 @@ h2.price {
     background-image: none;
     background-color: #df5c39;
 }
+/* Dima style */
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+	position: relative;
+	min-height: 1px;
+	/*padding-right: 10px;
+	padding-left: 10px;*/
+}
+@media (max-width: 800px){
+	.catshow{
+		height: 230px;
+	}
+	.col-xs-5ths {
+		width: 50%;
+		float: left;
+	}
+	.catshow span {
+		position: absolute;
+    top: 24px;
+		left: 24px;
+}
+}
+@media (min-width: 801px) {
+	.catshow{
+		height: 155px;
+	}
+	.col-sm-5ths {
+		width: 20%;
+		float: left;
+	}
+	.catshow span {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+}
+
+@media (min-width: 992px) {
+	.col-md-5ths {
+		width: 20%;
+		float: left;
+	}
+}
+@media (max-width: 992px) {
+	.catshow span {
+	    font-size: 90%;}
+}
+
+@media (min-width: 1200px) {
+	.col-lg-5ths {
+		width: 20%;
+		float: left;
+	}
+}
+.no-padding{
+	padding:0px!important;
+}
+.catshow span{
+	position: absolute;
+	bottom: 24px;
+	left: 24px;
+
+}
+.catshow{
+	//padding: 24px;
+	background-size: cover;
+	font-size: 18px;
+	font-family: "Roboto";
+	color: rgb(255, 255, 255);
+	line-height: 1.3;
+	text-align: left;
+	//width: 272px;
+	height: 155px;
+}
+
+
+.catshow:hover .catshowhover{
+	background-color: rgba(0, 156, 255, 0.41);
+	height: 155px;
+}
