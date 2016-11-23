@@ -63,9 +63,11 @@
 				</div>
 			</div>
 </div>
- <div class="row">
+ <div class="row blocmargintov">
      <div class="korob1"><img src="image/iachuk.png" alt=""></div>
      <div class="korob2">
+     <h4>Каждый груз в этих коробках имеет право на 
+бережную транспортировку</h4>
       <?php foreach ($categories as $category) { ?>
       <div>
   <a href="<?php echo $category['href']; ?>">
@@ -77,7 +79,7 @@
      </div>
      
  </div>
-  <div class="row"><?php echo $column_left; ?>
+  <div class="row blocmarginnew"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -85,7 +87,22 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?></div>
+    <div  class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?>
+     <div class="row">
+     <div class="col-sm-12 seo">
+     
+								<h4>Заголовок для СЕО-текста</h4>
+									<span>Компания «ИнтерТрансПак» провела испытания композитной крепежной кордовой ленты Strap 2000 и крепежной тканой ленты Lash 2000 
+из полиэфирного волокна, в очередной раз подтвердив качество реализуемой продукции. На основании протокола испытаний был получен 
+сертификат соответствия для упаковочной крепежной ленты. Также компанией «ИнтерТрансПак» были разработаны Технические Условия 
+для изготовления упаковочной крепежной ленты Strap 2000 и Lash 2000</span>
+									<a href="">Читать далее</a>
+								
+         
+         
+         </div></div>
+    </div>
     <?php echo $column_right; ?></div>
 </div>
+
 <?php echo $footer; ?>
