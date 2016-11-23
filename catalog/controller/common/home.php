@@ -15,7 +15,22 @@ class ControllerCommonHome extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
+// start category
+		$this->load->model('catalog/product');
 
+		$data['categories'] = array();
+
+		$categories = $this->model_catalog_category->getCategories(0);
+		foreach ($categories as $category) {
+
+				$data['categories'][] = array(
+					'name'     => $category['name'],
+					'image'    => '/image/'.$category['image'],
+					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+				);
+			}
+
+// end category
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/home.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/common/home.tpl', $data));
 		} else {
