@@ -936,7 +936,7 @@ h2.price {
 
 
 }
-  .block {
+.block {
     background: #e6e6e6;
     border-radius: 5px;
     padding: 10px;
@@ -949,7 +949,7 @@ h2.price {
     text-align: left;
 
    }
-   .block::after {
+.block::after {
     content: ''; 
     position: absolute; 
     left: 20px; bottom: -20px; 
@@ -1023,6 +1023,26 @@ h2.price {
 
 
 }
- 
+
+.breadcrumbmy a{
+     color: #6d6d6d;
+     line-height: 1.692;
+     text-align: left;
+     font-size: 13px;
+     font-family: "Roboto-Regular";
 }
+.breadcrumbmy{
+   // padding: 8px 15px;
+    list-style: none;
+}
+.breadcrumbmya{
+    color: #009cff!important;
+   text-decoration: underline;
+}
+.breadcrumbmy span{
+   margin-left: 6px; 
+   margin-right: 6px; 
+}
+
+
 
