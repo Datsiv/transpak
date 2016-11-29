@@ -31,6 +31,11 @@ class ControllerCommonHome extends Controller {
 			}
 
 // end category
+        $this->load->model('catalog/information');
+        $information_info = $this->model_catalog_information->getInformation(9);
+        $data['descriptionseo'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+        $data['heading_titleseo'] = $information_info['title'];
+        
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/home.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/common/home.tpl', $data));
 		} else {

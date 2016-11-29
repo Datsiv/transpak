@@ -45,7 +45,7 @@ class ModelCatalogFaq extends Model {
 		$this->db->query("DELETE FROM " . DB_PREFIX . "faq_description WHERE news_id = '" . (int)$news_id . "'");
 	
 		foreach ($data['news_description'] as $language_id => $value) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "faq_description SET news_id = '" . (int)$news_id . "', language_id = '" . (int)$language_id . "', title = '" . $this->db->escape($value['title']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "',  meta_h1 = '" . $this->db->escape($value['meta_h1']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "faq_description SET news_id = '" . (int)$news_id . "', language_id = '" . (int)$language_id . "', title = '" . $this->db->escape($value['title']) . "', description = '" . $this->db->escape($value['description']) . "' ");
 		}
 	
 		$this->db->query("DELETE FROM " . DB_PREFIX . "faq_to_store WHERE news_id = '" . (int)$news_id . "'");

@@ -1,25 +1,13 @@
 <?php
 
-class ControllerInformationNews extends Controller {
+class ControllerInformationFaq extends Controller {
 
 	public function index(){
-		$this->load->language('information/news');
+		$this->load->language('information/faq');
 
-		$this->load->model('catalog/news');
+		$this->load->model('catalog/faq');
 
 		$this->load->model('tool/image');
-
-		if (isset($this->request->get['sort'])) {
-			$sort = $this->request->get['sort'];
-		} else {
-			$sort = 'n.date_added';
-		}
-
-		if (isset($this->request->get['order'])) {
-			$order = $this->request->get['order'];
-		} else {
-			$order = 'DESC';
-		}
 
 		if (isset($this->request->get['page'])) {
 			$page = $this->request->get['page'];
@@ -51,13 +39,6 @@ class ControllerInformationNews extends Controller {
 
 		$url = '';
 
-		if (isset($this->request->get['sort'])) {
-			$url .= '&sort=' . $this->request->get['sort'];
-		}
-
-		if (isset($this->request->get['order'])) {
-			$url .= '&order=' . $this->request->get['order'];
-		}
 
 		if (isset($this->request->get['page'])) {
 			$url .= '&page=' . $this->request->get['page'];
@@ -73,14 +54,13 @@ class ControllerInformationNews extends Controller {
 		);
 
 		$filter_data = array(
-			'sort' => $sort,
-			'order' => $order,
 			'start' => ($page - 1) * $limit,
 			'limit' => $limit
 		);
 
-		$news_total = $this->model_catalog_news->getTotalNews();
-		$news_list = $this->model_catalog_news->getNews($filter_data);
+		$news_total = $this->model_catalog_faq->getTotalNews();
+       
+		$news_list = $this->model_catalog_faq->getNews($filter_data);
 
 		$data['news_list'] = array();
 		
@@ -90,34 +70,12 @@ class ControllerInformationNews extends Controller {
 
 			$data['heading_title'] = $this->language->get('heading_title');
 			$data['text_empty'] = $this->language->get('text_empty');
-
-			$data['button_grid'] = $this->language->get('button_grid');
-			$data['button_list'] = $this->language->get('button_list');
-
-            /*mmr*/
-            $data['moneymaker2_catalog_default_view'] = $this->config->get('moneymaker2_catalog_layout_default');
-            $data['moneymaker2_catalog_layout_switcher_hide'] = $this->config->get('moneymaker2_catalog_layout_switcher_hide');
-            /*mmr*/
-
-			$data['text_sort'] = $this->language->get('text_sort');
-			$data['text_limit'] = $this->language->get('text_limit');
-
-			$data['text_more'] = $this->language->get('text_more');
-
 			$news_setting = array();
-
-			if ($this->config->get('news_setting')) {
-				$news_setting = $this->config->get('news_setting');
-			}else{
-				$news_setting['description_limit'] = '300';
-				$news_setting['news_thumb_width'] = '220';
-				$news_setting['news_thumb_height'] = '220';
-			}
 
 			foreach ($news_list as $result) {
 
 				if($result['image']){
-					$image = $this->model_tool_image->resize($result['image'], $news_setting['news_thumb_width'], $news_setting['news_thumb_height']);
+					$image = $this->model_tool_image->resize($result['image'], 270, 270);
 				}else{
 					$image = false;
 				}
@@ -127,7 +85,7 @@ class ControllerInformationNews extends Controller {
 					'thumb' => $image,
 					'viewed' => sprintf($this->language->get('text_viewed'), $result['viewed']),
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES,
-						'UTF-8')), 0, 150).'...',
+						'UTF-8')), 0),
 					'href' => $this->url->link('information/news/info', 'news_id=' . $result['news_id']),
 					'posted' => date($this->language->get('date_format_short'), strtotime($result['date_added']))
 				);
@@ -187,7 +145,7 @@ class ControllerInformationNews extends Controller {
 			$data['limits'][] = array(
 				'text' => $value,
 				'value' => $value,
-				'href' => $this->url->link('information/news', $url . '&limit=' . $value)
+				'href' => $this->url->link('information/faq', $url . '&limit=' . $value)
 			);
 		}
 
@@ -209,7 +167,7 @@ class ControllerInformationNews extends Controller {
 		$pagination->total = $news_total;
 		$pagination->page = $page;
 		$pagination->limit = $limit;
-		$pagination->url = $this->url->link('information/news', $url . '&page={page}');
+		$pagination->url = $this->url->link('information/faq', $url . '&page={page}');
 
 		$data['pagination'] = $pagination->render();
 
@@ -220,19 +178,18 @@ class ControllerInformationNews extends Controller {
 
 		// http://googlewebmastercentral.blogspot.com/2011/09/pagination-with-relnext-and-relprev.html
 		if ($page == 1) {
-			$this->document->addLink($this->url->link('information/news', 'SSL'), 'canonical');
+			$this->document->addLink($this->url->link('information/faq', 'SSL'), 'canonical');
 		} elseif ($page == 2) {
-			$this->document->addLink($this->url->link('information/news', 'SSL'), 'prev');
+			$this->document->addLink($this->url->link('information/faq', 'SSL'), 'prev');
 		} else {
-			$this->document->addLink($this->url->link('information/news', '&page=' . ($page - 1), 'SSL'), 'prev');
+			$this->document->addLink($this->url->link('information/faq', '&page=' . ($page - 1), 'SSL'), 'prev');
 		}
 
 		if ($limit && ceil($news_total / $limit) > $page) {
-			$this->document->addLink($this->url->link('information/news', '&page=' . ($page + 1), 'SSL'), 'next');
+			$this->document->addLink($this->url->link('information/faq', '&page=' . ($page + 1), 'SSL'), 'next');
 		}
 
-		$data['sort'] = $sort;
-		$data['order'] = $order;
+	
 		$data['limit'] = $limit;
 
 		$data['continue'] = $this->url->link('common/home');
@@ -243,19 +200,27 @@ class ControllerInformationNews extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
-
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/information/news_list.tpl')) {
-			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/information/news_list.tpl',
+        
+        $this->load->model('catalog/information');
+        $information_info = $this->model_catalog_information->getInformation(8);
+        $data['description'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+        
+        $information_info = $this->model_catalog_information->getInformation(9);
+        $data['descriptionseo'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+        $data['heading_titleseo'] = $information_info['title'];
+        
+		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/information/akcii_list.tpl')) {
+			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/information/faq_list.tpl',
 				$data));
 		} else {
-			$this->response->setOutput($this->load->view('default/template/information/news_list.tpl', $data));
+			$this->response->setOutput($this->load->view('default/template/information/faq_list.tpl', $data));
 		}
 	}
 
 	public function info(){
-		$this->language->load('information/news');
+		$this->language->load('information/faq');
 
-		$this->load->model('catalog/news');
+		$this->load->model('catalog/faq');
 
 		$data['breadcrumbs'] = array();
 
@@ -265,7 +230,7 @@ class ControllerInformationNews extends Controller {
 		);
 
 		$data['breadcrumbs'][] = array(
-			'href' => $this->url->link('information/news'),
+			'href' => $this->url->link('information/faq'),
 			'text' => $this->language->get('heading_title')
 		);
 
@@ -275,7 +240,7 @@ class ControllerInformationNews extends Controller {
 			$news_id = 0;
 		}
 
-		$news_info = $this->model_catalog_news->getNewsStory($this->request->get['news_id']);
+		$news_info = $this->model_catalog_akcii->getNewsStory($this->request->get['news_id']);
 
 		if ($news_info) {
 
@@ -299,7 +264,7 @@ class ControllerInformationNews extends Controller {
 
 			$data['breadcrumbs'][] = array(
 				'text' => $news_info['title'],
-				'href' => $this->url->link('information/news/info', 'news_id=' . $news_id)
+				'href' => $this->url->link('information/faq/info', 'news_id=' . $news_id)
 			);
 
 			$this->document->setTitle($news_info['title']);
@@ -343,10 +308,10 @@ class ControllerInformationNews extends Controller {
 				$data['image'] = false;
 			}
 			if($news_info['image']){
-				$data['thumb'] = $this->model_tool_image->resize($news_info['image'], 340,
-				340);
-				$data['popup'] = $this->model_tool_image->resize($news_info['image'], 340,
-				340);
+				$data['thumb'] = $this->model_tool_image->resize($news_info['image'], $news_setting['news_thumb_width'],
+				$news_setting['news_thumb_height']);
+				$data['popup'] = $this->model_tool_image->resize($news_info['image'], $news_setting['news_popup_width'],
+				$news_setting['news_popup_height']);
 			}else{
 				$data['thumb'] = false;
 				$data['popup'] = false;
@@ -365,7 +330,7 @@ class ControllerInformationNews extends Controller {
 			$data['refreshed'] = 'http://' . $_SERVER['HTTP_HOST'] . '' . $_SERVER['REQUEST_URI'];
 
 			if (isset($data['referred'])) {
-				$this->model_catalog_news->updateViewed($this->request->get['news_id']);
+				$this->model_catalog_akcii->updateViewed($this->request->get['news_id']);
 			}
 
 			$data['description'] = html_entity_decode($news_info['description'], ENT_QUOTES, 'UTF-8');
