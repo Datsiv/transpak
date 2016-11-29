@@ -58,7 +58,7 @@ class ControllerSettingSetting extends Controller {
 		$data['entry_geocode'] = $this->language->get('entry_geocode');
 		$data['entry_email'] = $this->language->get('entry_email');
 		$data['entry_telephone'] = $this->language->get('entry_telephone');
-		$data['entry_fax'] = $this->language->get('entry_fax');
+		$data['entry_dob'] = $this->language->get('entry_dob');
 		$data['entry_image'] = $this->language->get('entry_image');
 		$data['entry_open'] = $this->language->get('entry_open');
 		$data['entry_comment'] = $this->language->get('entry_comment');
@@ -508,10 +508,10 @@ class ControllerSettingSetting extends Controller {
 			$data['config_telephone'] = $this->config->get('config_telephone');
 		}
 
-		if (isset($this->request->post['config_fax'])) {
-			$data['config_fax'] = $this->request->post['config_fax'];
+		if (isset($this->request->post['config_dob'])) {
+			$data['config_dob'] = $this->request->post['config_dob'];
 		} else {
-			$data['config_fax'] = $this->config->get('config_fax');
+			$data['config_dob'] = $this->config->get('config_dob');
 		}
 
 		if (isset($this->request->post['config_image'])) {

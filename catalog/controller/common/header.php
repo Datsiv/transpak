@@ -34,8 +34,15 @@ class ControllerCommonHeader extends Controller {
 		$data['scripts'] = $this->document->getScripts();
 		$data['lang'] = $this->language->get('code');
 		$data['direction'] = $this->language->get('direction');
+        $data['entry_dob'] ='доб.';
 
-		$data['name'] = $this->config->get('config_name');
+        if (isset($this->request->post['config_dob'])) {
+            $data['config_dob'] = $this->request->post['config_dob'];
+        } else {
+            $data['config_dob'] = $this->config->get('config_dob');
+        }
+
+        $data['name'] = $this->config->get('config_name');
 
 		if (is_file(DIR_IMAGE . $this->config->get('config_logo'))) {
 			$data['logo'] = $server . 'image/' . $this->config->get('config_logo');
