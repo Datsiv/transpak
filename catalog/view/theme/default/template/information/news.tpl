@@ -1,35 +1,38 @@
 <?php echo $header; ?>
 <div class="container">
-	<ul class="breadcrumb">
-		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
-		<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-		<?php } ?>
-	</ul>
-	<div class="row"><?php echo $column_left; ?>
-		<?php if ($column_left && $column_right) { ?>
-		<?php $class = 'col-sm-6'; ?>
-		<?php } elseif ($column_left || $column_right) { ?>
-		<?php $class = 'col-sm-9'; ?>
-		<?php } else { ?>
-		<?php $class = 'col-sm-12'; ?>
-		<?php } ?>
-		<div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+	<div class="breadcrumbmy">
+		<?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
+		<?php if($i<2){?>
+		<a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
+		<?php }else{?>
+		<a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+		<?php }?>
+		<?php $i++; } ?>
+	</div>
+	<div class="row news">
+		<div id="content">
 			<div class="row">
-				<?php if ($thumb) { ?>
-				<div class="col-sm-4">
-					<div class="thumbnail">
+                <div class="col-sm-12"><h1><?php echo $heading_title; ?></h1></div>
+            </div>
+            <div class="row">
+             <div class="col-sm-4"></div>
+             <div class="col-sm-8"><span class="block"><?php echo $posted; ?></span></div> 
+            </div>
+             <div class="row">
+             <div class="col-sm-4"><div class="thumbnail">
 						<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/></a>
-					</div>
-				</div>
-				<?php } ?>
-				<div class="<?php echo $thumb ? 'col-sm-8' : 'col-sm-12'; ?>">
-					<h1><?php echo $heading_title; ?></h1>
-					<div class="tab-content">
-						<div class="description">
+					</div></div>
+             <div class="col-sm-8"><div class="description">
 							<?php echo $description; ?>
-						</div>
-						<div class="col-sm-4"><i class="fa fa-clock-o"></i>&nbsp;<?php echo $posted; ?></div>
-						<div class="col-sm-4"><i class="fa fa-eye"></i>&nbsp;<?php echo $viewed; ?></div>
+							<a class="btn btn-primary" href="<?php echo $news_list; ?>">Вернуться к новостям</a>
+						</div></div> 
+            </div>
+			
+			
+					
+					
+						
+						
 						<?php if($news_share) { ?>
 						<div class="col-sm-4">
 							<div class="addthis">
@@ -48,22 +51,12 @@
 							</div>
 						</div>
 						<?php } ?>
-					</div>
-				</div>
-				<div class="col-sm-12">
 					
-					<div class="buttons">
-						<div class="pull-left">
-							<a class="btn btn-primary" href="<?php echo $news_list; ?>"><?php echo $button_news; ?></a>
-						</div>
-						<div class="pull-right">
-							<a class="btn btn-primary" href="<?php echo $continue; ?>"><?php echo $button_continue; ?></a>
-						</div>
-					</div>
-				</div>
+				
+			
 			</div>
-		<?php echo $content_bottom; ?></div>
-	<?php echo $column_right; ?></div>
+	</div>
+	
 	<script type="text/javascript"><!--
 		$(document).ready(function () {
 			$('.thumbnail').magnificPopup({

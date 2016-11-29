@@ -1,5 +1,6 @@
 <?php echo $header; ?>
 <?php if ($categories) { ?>
+<div class="">
 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin">
 
   <?php foreach ($categories as $category) { ?>
@@ -15,13 +16,14 @@
   </a>
   <?php } ?>
 </div>
+</div>
 <?php } ?>
 <div class="container">
  <div class="row">
   <div class="col-sm-12">
 				<div class="instruction">
 					<div class="row text-left">
-						<div class="col-sm-3">
+						<div class="col-xs-6 col-sm-6 col-md-3">
 							<figure><div class="kolo"><img src="image/8years.png" alt=""></div>
 								<figcaption>
 								<h4>Более 7-ми лет опыта работы</h4>
@@ -29,7 +31,7 @@
 								</figcaption>
 							</figure>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-xs-6 col-sm-6 col-md-3">
 							<figure>
 							<div class="kolo"><img src="image/sert.png" alt=""></div>
 								<figcaption>
@@ -39,7 +41,7 @@
 								</figcaption>
 							</figure>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-xs-6 col-sm-6 col-md-3">
 							<figure>
 							<div class="kolo"><img src="image/cenu.png" alt=""></div>
 								<figcaption>
@@ -49,7 +51,7 @@
 								</figcaption>
 							</figure>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-xs-6 col-sm-6 col-md-3">
 							<figure>
 							<div class="kolo"><img src="image/servis.png" alt=""></div>
 								<figcaption>
@@ -64,9 +66,11 @@
 			</div>
 </div>
  <div class="row blocmargintov">
-     <div class="korob1"><img src="image/iachuk.png" alt=""></div>
-     <div class="korob2">
-     <h4>Каждый груз в этих коробках имеет право на 
+    <div class="korob2 col-sm-12 hidden-md hidden-lg hidden-xl"><h4>Каждый груз в этих коробках имеет право на 
+бережную транспортировку</h4></div>
+     <div class="korob1 col-sm-12 col-md-5 col-lg-5 col-xl-5"><img src="image/iachuk.png" alt=""></div>
+     <div class="korob2 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+     <h4 class="hidden-sm">Каждый груз в этих коробках имеет право на 
 бережную транспортировку</h4>
       <?php foreach ($categories as $category) { ?>
       <div>
@@ -95,8 +99,10 @@
 									<span>Компания «ИнтерТрансПак» провела испытания композитной крепежной кордовой ленты Strap 2000 и крепежной тканой ленты Lash 2000 
 из полиэфирного волокна, в очередной раз подтвердив качество реализуемой продукции. На основании протокола испытаний был получен 
 сертификат соответствия для упаковочной крепежной ленты. Также компанией «ИнтерТрансПак» были разработаны Технические Условия 
-для изготовления упаковочной крепежной ленты Strap 2000 и Lash 2000</span>
-									<a href="">Читать далее</a>
+для изготовления упаковочной крепежной ленты Strap 2000 и Lash 2000 <p id="seohide" class="collapse">Из полиэфирного волокна, в очередной раз подтвердив качество реализуемой продукции. На основании протокола испытаний был получен 
+сертификат соответствия для упаковочной крепежной ленты. Также компанией «ИнтерТрансПак» были разработаны Технические Условия 
+для изготовления упаковочной крепежной ленты Strap 2000 и Lash 2000</p></span>
+									<a href="#seohide" class="collapsed" data-toggle="collapse">Читать далее</a>
 								
          
          
@@ -104,5 +110,4 @@
     </div>
     <?php echo $column_right; ?></div>
 </div>
-
 <?php echo $footer; ?>

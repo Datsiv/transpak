@@ -1,19 +1,16 @@
 <?php echo $header; ?>
 <div class="container">
-	<ul class="breadcrumb">
-		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
-		<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-		<?php } ?>
-	</ul>
-	<div class="row"><?php echo $column_left; ?>
-		<?php if ($column_left && $column_right) { ?>
-		<?php $class = 'col-sm-6'; ?>
-		<?php } elseif ($column_left || $column_right) { ?>
-		<?php $class = 'col-sm-9'; ?>
-		<?php } else { ?>
-		<?php $class = 'col-sm-12'; ?>
-		<?php } ?>
-		<div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+	<div class="breadcrumbmy">
+		<?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
+		<?php if($i<1){?>
+		<a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
+		<?php }else{?>
+		<a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+		<?php }?>
+		<?php $i++; } ?>
+	</div>
+	<div class="row">
+		<div id="content">
 			<h1><?php echo $heading_title; ?></h1>
 			<?php if ($news_list) { ?>
 			<div class="row">
@@ -56,7 +53,7 @@
 			<div class="row">
 				<?php foreach ($news_list as $news_item) { ?>
 				<div class="product-layout product-list col-xs-12">
-					<div class="product-thumb">
+					<span class="block"><?php echo $news_item['posted']; ?></span>
 						<?php if($news_item['thumb']) { ?>
 						<div class="image"><a href="<?php echo $news_item['href']; ?>"><img src="<?php echo $news_item['thumb']; ?>" alt="<?php echo $news_item['title']; ?>" title="<?php echo $news_item['title']; ?>" class="img-responsive" /></a></div>
 						<?php }?>
@@ -65,13 +62,8 @@
 								<h4><a href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a></h4>
 								<p><?php echo $news_item['description']; ?></p>
 							</div>
-							<div class="button-group">
-								<button type="button" onclick="location.href = ('<?php echo $news_item['href']; ?>');" data-toggle="tooltip" title="<?php echo $text_more; ?>"><i class="fa fa-share"></i>&nbsp;<span class="hidden-xs hidden-sm hidden-md"><?php echo $text_more; ?></span></button>
-								<button type="button" data-toggle="tooltip" title="<?php echo $news_item['posted']; ?>"><i class="fa fa-clock-o"></i></button>
-								<button type="button" data-toggle="tooltip" title="<?php echo $news_item['viewed']; ?>"><i class="fa fa-eye"></i></button>
-							</div>
 						</div>
-					</div>
+					
 				</div>
 				<?php } ?>
 			</div>
@@ -85,7 +77,7 @@
 				<div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
 			</div>
 			<?php } ?>
-		<?php echo $content_bottom; ?></div>
-	<?php echo $column_right; ?></div>
+		</div>
+	</div>
 </div>
 <?php echo $footer; ?>
