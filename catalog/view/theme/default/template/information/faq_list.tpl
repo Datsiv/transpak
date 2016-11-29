@@ -17,42 +17,11 @@
             </div>
 			<?php if ($news_list) { ?>
 			<div class="row">
-										<?php 
-function russian_date($dateposted){
-$date=explode(".", $dateposted);
-switch ($date[1]){
-case 1: $m='января'; break;
-case 2: $m='февраля'; break;
-case 3: $m='марта'; break;
-case 4: $m='апреля'; break;
-case 5: $m='мая'; break;
-case 6: $m='июня'; break;
-case 7: $m='июля'; break;
-case 8: $m='августа'; break;
-case 9: $m='сентября'; break;
-case 10: $m='октября'; break;
-case 11: $m='ноября'; break;
-case 12: $m='декабря'; break;
-}
-echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
-}
-?>
 				<?php foreach ($news_list as $news_item) { ?>
 					<div class="col-xs-12 akciiblock">
-					<div class="col-xs-4 col-sm-4 col-md-4">
-					    <div class="image "><a href="<?php echo $news_item['href']; ?>"><img class="akciiimg" src="<?php echo $news_item['thumb']; ?>" alt="<?php echo $news_item['title']; ?>" title="<?php echo $news_item['title']; ?>" class="img-responsive" /></a></div>
-					    
-					</div>
-					<div class="col-xs-8 col-sm-8 col-md-8"></div>
-						
 							<div class="caption">
-								<a class="akciiperhead" href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a>
+								<a class="akciiperhead" ><?php echo $news_item['title']; ?></a>
 								<p><?php echo $news_item['description']; ?></p>
-							</div>
-							<div >
-							<span class="akciibutton">
-								Акция действительна до <?php russian_date($news_item['posted']); ?>
-								</span>
 							</div>
 						
 					</div>
@@ -69,6 +38,17 @@ echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
 				<div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
 			</div>
 			<?php } ?>
+			 <div class="row">
+     <div class="col-sm-12 seo">
+     
+								<h4><?php echo $heading_titleseo ?></h4>
+								<?php echo $descriptionseo; ?>
+									
+									<a href="#seohide" class="collapsed" data-toggle="collapse">Читать далее</a>
+								
+         
+         
+         </div></div>
 		</div>
 	</div>
 </div>

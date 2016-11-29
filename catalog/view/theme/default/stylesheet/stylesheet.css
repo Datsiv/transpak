@@ -782,6 +782,10 @@ h2.price {
 
 }
 .catshow{
+    
+    border-right:  1px solid #ffffff; 
+    border-top:  1px solid #ffffff;
+       
 	//padding: 24px;
 	background-size: cover;
 	font-size: 18px;
@@ -818,7 +822,6 @@ h2.price {
     margin: 0 auto; 
 }
 .instruction figcaption h4{
-   
   font-size: 18px;
   font-family: "MuseoCyrl-700";
   color: rgb(0, 0, 0);
@@ -829,17 +832,25 @@ h2.price {
 .instruction figcaption span{
    
  
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Roboto-Regular";
   color: #6d6d6d;
   line-height: 1.2;
   text-align: left;
 
 }
+.divcat{
+   
+ 
+     padding-right: 25px;
+    /* padding-bottom: 25px; */
+    padding-left: 25px;
+
+}
 
     
 .instruction figcaption {
-    padding-right: 40px;
+   
     display: block;
     vertical-align: middle;
     margin: 25px 0 0;
@@ -913,6 +924,19 @@ h2.price {
     border: 10px solid transparent; 
     border-top: 10px solid #e6e6e6; 
    }
+.akciibutton{
+   
+  border-radius: 5px;
+  background-color: rgb(255, 228, 45);
+    padding: 10px 12px;
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(0, 0, 0);
+  line-height: 1.467;
+  text-align: left;
+
+
+}
 .blocpadinng{
        // padding-right: 80px;
 }
@@ -951,7 +975,22 @@ h2.price {
   line-height: 1.467;
   text-align: left;
 }
+.newsinfo{
+  background-color: #ffd600;
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(0, 0, 0);
+  line-height: 2.667;
+  text-align: left;
+}
 .seo{
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: rgb(110, 110, 110);
+  line-height: 1.467;
+  text-align: left;
+
   margin-bottom: 30px;
   margin-top: 65px;  
 }

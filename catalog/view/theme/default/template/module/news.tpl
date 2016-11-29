@@ -19,7 +19,7 @@ case 10: $m='октября'; break;
 case 11: $m='ноября'; break;
 case 12: $m='декабря'; break;
 }
-echo $date[0].'&nbsp;'.$m.'&nbsp;'.$date[2];
+echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
 }
 ?>
 	<?php foreach ($news as $news_item) { ?>
