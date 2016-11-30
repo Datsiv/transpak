@@ -105,10 +105,7 @@
     <a href="<?php echo $home; ?>"><img  src="<?php echo $logo; ?>"   title="<?php echo $name; ?>"
                                         alt="<?php echo $name; }?>" class="img-responsive"/></a>
 </div>
-http://grumax.ru/
-http://grumax.ru/
-http://grumax.ru/
-http://grumax.ru/
+
 <div class="col-xs-12  menujs" id ="ttt" class="mb">
     <ul class="nav nav-tabs menumobi">
         <li ><a class="text" href="#">Главная</a></li>
