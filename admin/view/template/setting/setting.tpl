@@ -145,9 +145,9 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
+                  <label class="col-sm-2 control-label" for="input-dob"><?php echo $entry_dob; ?></label>
                   <div class="col-sm-10">
-                    <input type="text" name="config_fax" value="<?php echo $config_fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-fax" class="form-control" />
+                    <input type="text" name="config_dob" value="<?php echo $config_dob; ?>" placeholder="<?php echo $entry_dob; ?>" id="input-dob" class="form-control" />
                   </div>
                 </div>
                 <div class="form-group">
