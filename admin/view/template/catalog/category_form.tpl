@@ -50,9 +50,15 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-2 control-label" for="input-description<?php echo $language['language_id']; ?>"><?php echo $entry_description; ?></label>
+                    <label class="col-sm-2 control-label" for="input-description1"><?php echo $entry_description; ?></label>
                     <div class="col-sm-10">
-                      <textarea name="category_description[<?php echo $language['language_id']; ?>][description]" placeholder="<?php echo $entry_description; ?>" id="input-description<?php echo $language['language_id']; ?>" class="form-control"><?php echo isset($category_description[$language['language_id']]) ? $category_description[$language['language_id']]['description'] : ''; ?></textarea>
+                      <textarea name="category_description[<?php echo $language['language_id']; ?>][description]" placeholder="<?php echo $entry_description; ?>" id="input-description1" class="form-control"><?php echo isset($category_description[$language['language_id']]) ? $category_description[$language['language_id']]['description'] : ''; ?></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-description2"><?php echo $entry_description2; ?></label>
+                    <div class="col-sm-10">
+                      <textarea name="category_description[<?php echo $language['language_id']; ?>][description2]" placeholder="<?php echo $entry_description2; ?>" id="input-description2" class="form-control"><?php echo isset($category_description[$language['language_id']]) ? $category_description[$language['language_id']]['description2'] : ''; ?></textarea>
                     </div>
                   </div>
                   <div class="form-group required">
@@ -236,12 +242,10 @@
     </div>
   </div>
   <script type="text/javascript"><!--
-<?php foreach ($languages as $language) { ?>
-$('#input-description<?php echo $language['language_id']; ?>').summernote({
-	height: 300
+$('#input-description1, #input-description2').summernote({
+          height: 300
 });
-<?php } ?>
-//--></script> 
+//--></script>
   <script type="text/javascript"><!--
 $('input[name=\'path\']').autocomplete({
 	'source': function(request, response) {
