@@ -291,6 +291,7 @@ class ControllerCatalogCategory extends Controller {
 
 		$data['entry_name'] = $this->language->get('entry_name');
 		$data['entry_description'] = $this->language->get('entry_description');
+        $data['entry_description2'] = $this->language->get('entry_description2');
 		$data['entry_meta_title'] = $this->language->get('entry_meta_title');
 		$data['entry_meta_description'] = $this->language->get('entry_meta_description');
 		$data['entry_meta_keyword'] = $this->language->get('entry_meta_keyword');
@@ -393,7 +394,7 @@ class ControllerCatalogCategory extends Controller {
 			$data['category_description'] = array();
 		}
 
-		if (isset($this->request->post['path'])) {
+        if (isset($this->request->post['path'])) {
 			$data['path'] = $this->request->post['path'];
 		} elseif (!empty($category_info)) {
 			$data['path'] = $category_info['path'];

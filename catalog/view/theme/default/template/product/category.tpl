@@ -23,6 +23,9 @@
         <?php if ($description) { ?>
         <div class="col-sm-10"><?php echo $description; ?></div>
         <?php } ?>
+        <?php if ($description2) { ?>
+        <div class="col-sm-10"><?php echo $description2; ?></div>
+        <?php } ?>
       </div>
       <hr>
       <?php } ?>
