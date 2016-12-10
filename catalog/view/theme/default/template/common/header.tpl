@@ -31,6 +31,7 @@
           media="<?php echo $style['media']; ?>"/>
     <?php } ?>
     <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+    <script src="catalog/view/javascript/custom.js" type="text/javascript"></script>
     <script src="catalog/view/javascript/head_js.js" type="text/javascript"></script>
 
     <?php foreach ($links as $link) { ?>

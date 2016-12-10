@@ -118,36 +118,43 @@
                             <?php } ?>
                           <?php } ?>
                       <?php } ?>
-                      <?php if ($product['rating']) { ?>
-                      <div class="rating">
-                        <?php for ($i = 1; $i <= 5; $i++) { ?>
-                        <?php if ($product['rating'] < $i) { ?>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <?php } else { ?>
-                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <?php } ?>
-                        <?php } ?>
-                      </div>
-                      <?php } ?>
-                      <?php if ($product['price']) { ?>
-                      <p class="product-price">цена
-                        <?php if (!$product['special']) { ?>
-                        <?php echo $product['price']; ?>
-                        <?php } else { ?>
-                        <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-                        <?php } ?>
-                        <?php if ($product['tax']) { ?>
-                        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                        <?php } ?>
-                      </p>
-                      <?php } ?>
-                    </div>
-                    <div class=" col-lg-5 col-md-5 col-sm-3 bottom_zak">
-                      <button type="button"  class=" btn btn-primary zakbtn" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">
-                        <span class="">Заказать</span>
-                      </button>
-                    </div>
-                  </div>
+
+
+
+
+
+
+                <?php if ($product['rating']) { ?>
+                <div class="rating">
+                  <?php for ($i = 1; $i <= 5; $i++) { ?>
+                  <?php if ($product['rating'] < $i) { ?>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <?php } else { ?>
+                  <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <?php } ?>
+                  <?php } ?>
+                </div>
+                <?php } ?>
+                <?php if ($product['price']) { ?>
+                <p class="product-price">цена
+                  <?php if (!$product['special']) { ?>
+                  <?php echo $product['price']; ?>
+                  <?php } else { ?>
+                  <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                  <?php } ?>
+                  <?php if ($product['tax']) { ?>
+                  <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+                  <?php } ?>
+                </p>
+                <?php } ?>
+              </div>
+                <button type="button"  class="btn btn-primary zakbtn" data-toggle="modal" href="#myModal" onclick="zakazData('<?php echo $product['name']; ?>','<?php echo $product['price']; ?>');">
+                  Заказать
+                </button>
+
+
+
+
             </div>
           </div>
         </div>
