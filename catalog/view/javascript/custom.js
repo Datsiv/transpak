@@ -21,29 +21,27 @@ $('document').ready(function() {
                 $('#contact-form').find('.form-group').removeClass('has-error').find('.help-block').html('');
 
 
-                //Здесь просим ввести Имя
                 if (data.errors.name) {
                     $('#name').closest('.form-group').addClass('has-error').find('.help-block').html(data.errors.name);
                 }
 
-                //Здесь отправка email
+                if (data.errors.address) {
+                    $('#address').closest('.form-group').addClass('has-error').find('.help-block').html(data.errors.address);
+                }
+
+
                 if (data.errors.email) {
                     $('#email').closest('.form-group').addClass('has-error').find('.help-block').html(data.errors.email);
                 }
 
-                //телефон, если вводят ерунду, выдаёт предупреждение
+
                 if (data.errors.phone) {
                     $('#phone').closest('.form-group').addClass('has-error').find('.help-block').html(data.errors.phone);
                 }
 
 
-                if (data.errors.message) {
-                    $('#message').closest('.form-group').addClass('has-error').find('.help-block').html(data.errors.message);
-                }
-
-                //текст сообщения
-                if (data.errors.message) {
-                    $('#message').closest('.form-group').addClass('has-error').find('.help-block').html(data.errors.message);
+                if (data.errors.zakaz) {
+                    $('#zakaz').closest('.form-group').addClass('has-error').find('.help-block').html(data.errors.zakaz);
                 }
 
 

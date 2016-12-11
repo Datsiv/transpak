@@ -217,4 +217,85 @@
       </div>
     <?php // echo $column_right; ?>
 </div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Х</button>
+        <h3 id="myModalLabel text-center">Оформить заказ</h3>
+      </div>
+      <div class="modal-body">
+        <form action="contact.php" method="post" role="form" id="contact-form">
+          <input type=hidden name=adminEmail value ='<?php echo $config_email; ?>' >
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" class="form-control" name="name" id="name" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="phone">Ваш телефон:</label>
+                <input type="text" class="form-control" name="phone" id="phone" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="text" class="form-control" name="email" id="email" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="address">Адрес доставки:</label>
+                <input type="text" class="form-control" name="address" id="address" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="zakaz">Ваш заказ</label>
+                <textarea class="form-control" rows="5" name="zakaz" id="zakaz" ></textarea>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">Общая сума заказа: <div style="display: inline;" id="zakaz-price"></div></div>
+          <div class="row">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-success center-block" id="btn-send">ЗАКАЗАТЬ</button>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </form>
+        <h6 class="text-center">Спасибо мы свяжемся с вами в ближайшое время</h6>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alert alert-info text-center" role="alert" id="success-message" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php echo $footer; ?>
