@@ -1,0 +1,61 @@
+.my_footer{
+    background-color: white;
+    border-top: 2px solid #a5acbc;
+}
+
+.center-cont{
+    margin-left: 0px;
+}
+
+.second-cont{
+    margin-left: 10px;
+    float: right;
+}
+.text-center{
+    text-align: center;
+    color: #0044cc;
+}
+
+.footer-touch{
+    font-size: 12px;
+    font-weight: 900;
+    color: black;
+    font-family: Roboto-Bold;
+}
+
+.foter-email{
+    font-size: 13px;
+    color: black;
+    margin-left: 20px;
+    font-family: Roboto-Regular;
+}
+
+.footer-telef{
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+    font-family: MuseoCyrl-700;
+    padding-left: 60px;
+    float: right;
+}
+.foter-dodat{    
+    color: #666666;
+    font-size: 10.5px;
+    margin-left: 122px;
+    font-family: Roboto-MediumItalic;
+    font-style: oblique;
+    float: right;
+}
+
+.all-secure{
+    text-align: center;
+    color: #9c9c9c;
+}
+
+.first-cont{
+    margin-left: -10px;
+}
+
+.col-first{
+    padding-left: 45px;
+}
