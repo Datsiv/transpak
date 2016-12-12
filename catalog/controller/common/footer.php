@@ -20,8 +20,13 @@ class ControllerCommonFooter extends Controller {
 		$data['text_wishlist'] = $this->language->get('text_wishlist');
 		$data['text_newsletter'] = $this->language->get('text_newsletter');
 
+                //var_dump();exit;
+		$data['findTouch'] = $this->config->get('config_address');
+                $data['findEmail'] = $this->config->get('config_email');
+                $data['findTelef'] =  $this->config->get('config_telephone');
+                $data['findDodat'] = $this->config->get('config_dob');
 		$this->load->model('catalog/information');
-
+                
 		$data['informations'] = array();
 
 		foreach ($this->model_catalog_information->getInformations() as $result) {
