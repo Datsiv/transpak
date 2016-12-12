@@ -46,12 +46,12 @@
 <body class="<?php echo $class; ?>">
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 back">
-    <div class="logo  col-sm-5 col-md-7 col-lg-8">
+    <div class="logo  col-sm-5 col-md-7 col-lg-7">
             <?php if ($logo) { ?>
             <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>"
                                             alt="<?php echo $name; ?>" class="img-responsive"/></a>
     </div>
-    <div class=" col-sm-7 col-md-5 col-lg-4 ">
+    <div class=" col-sm-7 col-md-5 col-lg-5 ">
         <div class="col-xs-3 buttonm">
             <div  > <img src='../../../../../../admin/view/image/menu.png'  onclick="fff();" class=" active "id ="men" /> </div>
             <div  > <img src='../../../../../../admin/view/image/menu1.png'  onclick="www();" id ="men1"  /> </div>
@@ -67,7 +67,7 @@
                                     <?php echo $config_dob; ?><?php } ?>
                                  </div>
              </div>
-            <div  class="block2">
+            <div  class="block2" >
 
                 <button class="button"><img src="../../../../../../admin/view/image/icon.png">
                     Передзвоните мне
@@ -81,17 +81,18 @@
     </div>
 <div style="clear:both;"></div>
      <div class=" menue col-sm-12 " >
-         <ul class="nav nav-tabs">
-             <li ><a class="text" href="#">Главная</a></li>
+         <ul class="nav nav-tabs menue_golovne">
+             <li ><a class="text " href="#">Главная</a></li>
              <li class=" dropdown ">
-                 <a class="dropdown-toggle text " data-toggle="dropdown" href="#">Продукция
-                     <span class="caret"></span></a>
+                 <a class="dropdown-toggle text dropMenuClick" data-toggle="dropdown"   href="#">Продукция
+                         <div class="menu_arrow" ><img src="/admin/view/image/onblack.png" ></div>
                  <ul class="dropdown-menu">
+                     <div class="wrap">
                      <?php foreach ($categories as $category ){ ?>
-                     <li><a class="text" href="#" ><?php echo $category['name']; ?></a></li>
-                     <?php  } ?>
-
-                 </ul>
+                     <li><a  href="<?php echo $category['href']; ?>" >
+                        <?php echo $category['name'];?></a></li>
+      <?php  }?>
+             </ul>
                  <?php  ?>
              </li>
              <li><a class="text" href="#">Скачать прайс</a></li>
@@ -100,31 +101,31 @@
              <li><a class="text" href="#">Контакты</a></li>
          </ul>
      </div>
-<div class="logo2 col-xs-12 ">
+</div>
+<div class="logo2 col-xs-12  " id="logo12">
     <?php if ($logo) { ?>
     <a href="<?php echo $home; ?>"><img  src="<?php echo $logo; ?>"   title="<?php echo $name; ?>"
                                         alt="<?php echo $name; }?>" class="img-responsive"/></a>
 </div>
-
-<div class="col-xs-12  menujs" id ="ttt" class="mb">
-    <ul class="nav nav-tabs menumobi">
-        <li ><a class="text" href="#">Главная</a></li>
-        <li class=" dropdown ">
-            <a class="dropdown-toggle text " data-toggle="dropdown" href="#">Продукция
-                <span class="caret"></span></a>
-            <ul class="dropdown-menu mbtex">
-                <?php foreach ($categories as $category ){ ?>
-                <li><a  href="#" ><?php echo $category['name']; ?></a></li>
-                <?php  } ?>
-
+<div id="divv"> </div>
+<div class="col-xs-12   menujs panel-group" id ="ttt" class="mb">
+            <ul class="nav navbar-nav">
+                <li><a class="text " href="#">Главная</a></li>
+                <li class="dropdown">
+                    <a class=" text dropdown-toggle dropMenuClickmob" data-toggle="dropdown" href="#">Продукция
+                        <div class="menu_arrowmob" ><img src="/admin/view/image/on.png" ></div>
+                    <ul class="dropdown-menu menuemobvup">
+                        <?php foreach ($categories as $category ){ ?>
+                        <li><a href="<?php echo $category['href']; ?>">
+                                <?php echo $category['name']; ?></a></li>
+                        <?php }  ?>
+                    </ul>
+                </li>
+                <li><a class="text" href="#">Скачать прайс</a></li>
+                <li><a class="text" href="#">Качество</a></li>
+                <li><a class="text" href="#">Вопросы</a></li>
+                <li><a class="text" href="#">Контакты</a></li>
             </ul>
-            <?php  ?>
-        </li>
-        <li><a class="text" href="#">Скачать прайс</a></li>
-        <li><a class="text" href="#">Качество</a></li>
-        <li><a class="text" href="#">Вопросы</a></li>
-        <li><a class="text" href="#">Контакты</a></li>
-    </ul>
 </div>
     <div style="clear:both;"></div>
 </div>
