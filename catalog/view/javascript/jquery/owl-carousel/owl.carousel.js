@@ -408,12 +408,12 @@ if (typeof Object.create !== "function") {
             base.owlControls.append(buttonsWrapper);
 
             base.buttonPrev = $("<div/>", {
-                "class" : "owl-prev",
+                "class" : "owl-prev owl_prev_2",
                 "html" : base.options.navigationText[0] || ""
             });
 
             base.buttonNext = $("<div/>", {
-                "class" : "owl-next",
+                "class" : "owl-next owl_next_2",
                 "html" : base.options.navigationText[1] || ""
             });
 
@@ -427,7 +427,7 @@ if (typeof Object.create !== "function") {
 
             buttonsWrapper.on("touchend.owlControls mouseup.owlControls", "div[class^=\"owl\"]", function (event) {
                 event.preventDefault();
-                if ($(this).hasClass("owl-next")) {
+                if ($(this).hasClass("owl-next owl_next_2")) {
                     base.next();
                 } else {
                     base.prev();
