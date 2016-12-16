@@ -420,7 +420,6 @@ footer h5 {
 	background-color: #229ac8;
 	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
 	background-repeat: repeat-x;
-	border-color: #1f90bb #1f90bb #145e7a;
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
 	background-color: #1f90bb;
@@ -521,8 +520,8 @@ footer h5 {
 }
 /* product list */
 .product-thumb {
-	border: 1px solid #ddd;
-	margin-bottom: 20px;
+	border: 1px solid #f0ddaa;
+	margin-bottom: 22px;
 	overflow: auto;
 }
 .product-thumb .image {
@@ -555,7 +554,7 @@ footer h5 {
 	min-height: 180px;
 }
 .product-list .product-thumb .caption {
-	margin-left: 230px;
+	padding-top: 17px;
 }
 @media (max-width: 1200px) {
 .product-grid .product-thumb .caption {
@@ -1150,12 +1149,16 @@ margin-right: 35px;
 .zakbtn{
 	float: right;
 	border-radius: 15px;
-	font-size: 15px;font-family:"Roboto-Regular";
+	font-size: 15px;
+	font-family: "Roboto-Regular";
 	text-align: left;
-	padding: 5px 30px;
+	padding: 8px 64px;
+	position: relative;
+	top: 169px;
+	background: #008bff;
 }
 .zakbtn a:hover {
-	background-color: #ffda00;
+	background-color: #006cc6;
 	font-size: 15px;
 	font-family: "Roboto-Regular";
 	text-align: left;
@@ -1163,7 +1166,7 @@ margin-right: 35px;
 
 .product1{
 	background-color:#fffacc;
-	border: 1px solid #f0ddaa;
+	border-radius: 5px;
 }
 
 .category-text{
@@ -1171,6 +1174,7 @@ margin-right: 35px;
 	color: rgb(0, 0, 0);
 	line-height: 1.44;
 	text-align: left;
+	padding-bottom: 14px;
 }
 
 .category-text li {
@@ -1185,10 +1189,139 @@ margin-right: 35px;
 	font-family: "MuseoCyrl-700";
 	color: #ff7800;
 	font-size: 25px;
+	padding-top: 20px;
 }
 
 .product-title{
-	font-size: 25px;
+	font-size: 27px;
 	text-decoration: underline;
 	font-family: "MuseoCyrl-700";
+}
+.breadcrumb_contact{
+	padding: 0;
+}
+.breadcrumb_text{
+	font-family: Roboto;
+	font-size: 16px;
+	list-style-type: none;
+	color: #8a8781;
+	padding: 0;
+	display: inline-block;
+}
+a.text_np_20{
+	font-family: Roboto;
+	color: #009cff;
+	font-size: 16px;
+	padding: 0;
+}
+.category_text_product{
+	font-family: "MuseoCyrl-700";
+	color: rgb(0, 0, 0);
+	line-height: 1.44;
+	text-align: left;
+	padding-left: 7%;
+}
+.owl_wrapper_outer_2{
+	border: 0;
+}
+.text_slader_bydte{
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+}
+.text_zah_slader{
+	font-family: "MuseoCyrl-700";
+	font-size: 36px;
+	color: #008bff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.3;
+}
+.banner-div-main{
+	height: 367px;
+	position: relative;
+}
+.desktop-img-div-style{
+	position: absolute;
+	top: 48%;
+	left: 10%;
+}
+.desktop-text-div-style{
+	position: absolute;
+	left: 5%;
+	bottom: 38%;
+	top: 25%;
+	right: 48%;
+}
+.desk_text_div_style_backg{
+	background: #fffacc;
+	position: absolute;
+	left: 63%;
+	top: 54%;
+	padding: 14px 0px 0px 20px;
+	right: 9%;
+}
+.glav_text_span_banner{
+	font-family: "MuseoCyrl-700";
+	font-size: 22px;
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	padding-left: 8px;
+}
+.glav_text_p_banner{
+	font-family: "MuseoCyrl-700";
+	font-size: 16px;
+	color: #595646;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.3;
+	padding: 10px 8px 19px 9px;
+}
+.owl-next:hover{
+	cursor: pointer!important;
+}
+.image_back_stile{
+	position: relative;
+	background-size: cover!important;
+	min-height: 241px;
+}
+.span_name{
+	font-size: 16px;
+	font-family: "Roboto";
+	line-height: 1.026;
+	font-weight: 600;
+	color: #525252;
+}
+.span_name_2{
+	font-size: 16px;
+	font-family: "Roboto";
+	line-height: 1.026;
+	font-weight: 600;
+	color: #525252;
+}
+.div_name_2{
+	padding: 11px 0 5px 0;
+}
+.btn-primary:hover {
+	color: #fff;
+	background-color: #006cc6;
+	border-color: #006cc6;
+}
+.h2_text_title{
+	font-family: "MuseoCyrl-700";
+	font-size: 25px;
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	padding-left: 90px;
+}
+.h_text_title_htm{
+	font-family: "Roboto";
+	font-size: 16px;
+	color: #000;
+	padding-top: 12px;
+	padding-bottom: 70px;
 }

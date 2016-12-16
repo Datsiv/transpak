@@ -1,12 +1,17 @@
-
 <?php echo $header; ?>
-<div class="container">
-  <ul class="breadcrumb">
+<div class="container-fluid no-padding">
+  <ul class="breadcrumb_contact hidden-xs  col-sm-12 col-md-12 col-lg-12" style="padding-left: 8%;">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <?php if ($breadcrumb ['href']==('')){ ?>
+    <li class="breadcrumb_text" ><?php echo $breadcrumb['text']; ?></li>
+    <?php }else{ ?>
+    <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;background-size: 8px;"
+    ><a class="text_np_20" href="<?php echo $breadcrumb['href']; ?>"
+       ><?php echo $breadcrumb['text']; ?></a>
+    </li>
+    <?php } ?>
     <?php } ?>
   </ul>
-  <div class="row">
     <?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -15,9 +20,9 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>">
-      <h1 class="category-text"><?php echo $heading_title; ?></h1>
-      <?php echo $content_top; ?>
+    <div id="content" class="<?php echo $class; ?> no-padding">
+      <h1 class="category-text category_text_product"><?php echo $heading_title; ?></h1>
+        <?php echo $content_top; ?>
       <?php if ($thumb || $description) { ?>
       <!--<div class="row">
         <?php if ($thumb) { ?>
@@ -94,53 +99,60 @@
         </div>
       </div>-->
       <br />
-      <div class="row">
+      <div class="col-sm-12" style="padding-top: 3%;">
         <?php foreach ($products as $product) { ?>
         <div class="product-layout product-list col-xs-12">
           <div class="product-thumb product1" >
-            <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
-            <div>
-              <div class="caption" >
-                <h4 class="product-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-                <?php if ($product['attr_groups']) { ?>
-                    <?php foreach ($product['attr_groups'] as $attr_group) { ?>
-                      <?php foreach ($attr_group['attribute'] as $attribute) { ?>
-                        <p><?php echo $attribute['name']; ?><?php echo $attribute['text']; ?></p>
+              <div class="col-lg-12 no-padding">
+                <div class="col-lg-4 image image_back_stile" style="background: url('<?php echo $product['thumb']; ?>')center no-repeat"><a href="<?php echo $product['href']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+                  <div class="col-lg-8">
+                    <div class="col-lg-6 caption" >
+                      <h4 class="product-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+                      <?php if ($product['attr_groups']) { ?>
+                          <?php foreach ($product['attr_groups'] as $attr_group) { ?>
+                            <?php foreach ($attr_group['attribute'] as $attribute) { ?>
+                        <div class="div_name_2">
+                              <span class="span_name"><?php echo $attribute['name']; ?></span>
+                              <span class="span_name_2"><?php echo $attribute['text']; ?><br></span>
+                        </div>
+                            <?php } ?>
+                          <?php } ?>
                       <?php } ?>
-                    <?php } ?>
-                <?php } ?>
-                <?php if ($product['rating']) { ?>
-                <div class="rating">
-                  <?php for ($i = 1; $i <= 5; $i++) { ?>
-                  <?php if ($product['rating'] < $i) { ?>
-                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                  <?php } else { ?>
-                  <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                  <?php } ?>
-                  <?php } ?>
-                </div>
-                <?php } ?>
-                <?php if ($product['price']) { ?>
-                <p class="product-price">цена
-                  <?php if (!$product['special']) { ?>
-                  <?php echo $product['price']; ?>
-                  <?php } else { ?>
-                  <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-                  <?php } ?>
-                  <?php if ($product['tax']) { ?>
-                  <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                  <?php } ?>
-                </p>
-                <?php } ?>
-              </div>
-                <button type="button"  class="btn btn-primary zakbtn" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">
-                  <span class="hidden-xs hidden-sm hidden-md">Заказать</span>
-                </button>
+                      <?php if ($product['rating']) { ?>
+                      <div class="rating">
+                        <?php for ($i = 1; $i <= 5; $i++) { ?>
+                        <?php if ($product['rating'] < $i) { ?>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                        <?php } else { ?>
+                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                        <?php } ?>
+                        <?php } ?>
+                      </div>
+                      <?php } ?>
+                      <?php if ($product['price']) { ?>
+                      <p class="product-price">цена
+                        <?php if (!$product['special']) { ?>
+                        <?php echo $product['price']; ?>
+                        <?php } else { ?>
+                        <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                        <?php } ?>
+                        <?php if ($product['tax']) { ?>
+                        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+                        <?php } ?>
+                      </p>
+                      <?php } ?>
+                    </div>
+                    <div class=" col-lg-6">
+                      <button type="button"  class=" btn btn-primary zakbtn" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">
+                        <span class="hidden-xs hidden-sm hidden-md">Заказать</span>
+                      </button>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
         <?php } ?>
-      </div>
+      </div><div style="clear:both;"></div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
       <p><?php echo $text_empty; ?></p>
@@ -148,7 +160,7 @@
         <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
       </div>
       <?php } ?>
-      <div class="row">
+      <div class="col-sm-12">
       <?php if ($description) { ?>
         <div class="col-sm-10 category-text"><?php echo $description; ?></div>
       <?php } ?>
@@ -169,12 +181,8 @@
         </div>
       </div>
       <?php } ?>
-      <div class="row">
-        <div class="col-sm-12 seo">
-          <?php echo $description2; ?></div>
-        </div>
-      </div>
+      <div class="col-sm-12 no-padding">
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    <?php // echo $column_right; ?>
 </div>
 <?php echo $footer; ?>
