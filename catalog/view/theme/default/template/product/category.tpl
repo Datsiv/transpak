@@ -21,7 +21,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?> no-padding">
-      <h1 class="category-text category_text_product"><?php echo $heading_title; ?></h1>
+      <h1 class="hidden-xs category-text category_text_product"><?php echo $heading_title; ?></h1>
         <?php echo $content_top; ?>
       <?php if ($thumb || $description) { ?>
       <!--<div class="row">
@@ -99,14 +99,14 @@
         </div>
       </div>-->
       <br />
-      <div class="col-sm-12" style="padding-top: 3%;">
+      <div class="col-sm-12 pad_tovar" style="padding: 3% 6% 3% 6%;">
         <?php foreach ($products as $product) { ?>
         <div class="product-layout product-list col-xs-12">
           <div class="product-thumb product1" >
               <div class="col-lg-12 no-padding">
-                <div class="col-lg-4 image image_back_stile" style="background: url('<?php echo $product['thumb']; ?>')center no-repeat"><a href="<?php echo $product['href']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
-                  <div class="col-lg-8">
-                    <div class="col-lg-6 caption" >
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image image_back_stile" style="background: url('<?php echo $product['thumb']; ?>')center no-repeat"><a href="<?php echo $product['href']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <div class="col-lg-7 col-md-7 col-sm-9 caption" >
                       <h4 class="product-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
                       <?php if ($product['attr_groups']) { ?>
                           <?php foreach ($product['attr_groups'] as $attr_group) { ?>
@@ -142,9 +142,9 @@
                       </p>
                       <?php } ?>
                     </div>
-                    <div class=" col-lg-6">
+                    <div class=" col-lg-5 col-md-5 col-sm-3 bottom_zak">
                       <button type="button"  class=" btn btn-primary zakbtn" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">
-                        <span class="hidden-xs hidden-sm hidden-md">Заказать</span>
+                        <span class="">Заказать</span>
                       </button>
                     </div>
                   </div>
@@ -160,10 +160,31 @@
         <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
       </div>
       <?php } ?>
-      <div class="col-sm-12">
-      <?php if ($description) { ?>
-        <div class="col-sm-10 category-text"><?php echo $description; ?></div>
-      <?php } ?>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 6%;">
+        <div class="col-sm-12 category-text_2">Преимущества защитных уголков</div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad_np_20">
+              <ul>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <li class="span_text_pr"><span>Сокращение затрат  на упаковку и логистику</span></li>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <li class="span_text_pr"><span>Высокая стойкость  к агрессивным средствам</span></li>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <li class="span_text_pr"><span>Простая и удобная система  крепления</span></li>
+                  </div>
+              </ul>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px 0 61px 0;">
+              <ul>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <li class="span_text_pr"><span>Высокая износостойкость  и линейная прочность</span></li>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <li class="span_text_pr"><span>Долговечность</span></li>
+                  </div>
+              </ul>
+          </div>
       </div>
       <?php if ($all_categories) { ?>
       <h1 class="category-text">Возможно вас заинтересует</h1>
@@ -181,8 +202,12 @@
         </div>
       </div>
       <?php } ?>
-      <div class="col-sm-12 no-padding">
-      <?php echo $content_bottom; ?></div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 no-padding">
+                <?php echo $content_bottom; ?>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
+      </div>
     <?php // echo $column_right; ?>
 </div>
 <?php echo $footer; ?>

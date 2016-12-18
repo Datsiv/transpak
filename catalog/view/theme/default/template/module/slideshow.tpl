@@ -5,13 +5,13 @@
         <img class="" src="../image/catalog/ygolku.png" style="width: 100%" >
       </div>
       <div class="desktop-text-div-style">
-          <div class="" style="padding-right: 38px;">
+          <div class="">
             <span class="text_zah_slader">Будьте уверены! - груз доедет в целости и сохранности!</span>
           </div>
           <div class="">
           </div>
       </div>
-      <div class="  desk_text_div_style_backg">
+      <div class="hidden-xs desk_text_div_style_backg">
         <span class="glav_text_span_banner">
           Главное преимущество
         </span>
@@ -25,7 +25,7 @@
     <?php if ($banner['link']) { ?>
     <a href="<?php echo $banner['link']; ?>"><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive" /></a>
     <?php } else { ?>
-    <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive" style="width: 100%;" />
+    <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive img_np_20" />
     <?php } ?>
   </div>
   <?php } ?>
@@ -36,7 +36,7 @@ $('#slideshow<?php echo $module; ?>').owlCarousel({
 	autoPlay: 3000,
 	singleItem: true,
 	navigation: true,
-  navigationText: ['<img src="/catalog/view/theme/default/image/owlCarusel_strilka_vlivo.png" />', '<img src="/catalog/view/theme/default/image/owlCarusel_strilka_vpravo.png" />'],
+  navigationText: ['<img class="hidden-xs" src="/catalog/view/theme/default/image/owlCarusel_strilka_vlivo.png" />', '<img class="hidden-xs" src="/catalog/view/theme/default/image/owlCarusel_strilka_vpravo.png" />'],
 	pagination: true
 });
 --></script>
