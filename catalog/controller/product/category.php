@@ -134,7 +134,7 @@ class ControllerProductCategory extends Controller {
 
 			// Set the last category breadcrumb
 			$data['breadcrumbs'][] = array(
-				'text' => 'Продукиця',
+				'text' => 'Продукция',
 				'href' => 'ваіа'
 
 			);$data['breadcrumbs'][] = array(
