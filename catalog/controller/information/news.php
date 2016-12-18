@@ -266,7 +266,7 @@ class ControllerInformationNews extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'href' => $this->url->link('information/news'),
-			'text' => $this->language->get('heading_title')
+			'text' => $this->language->get('Новости')
 		);
 
 		if (isset($this->request->get['news_id'])) {
