@@ -978,13 +978,22 @@ h2.price {
   text-align: left;
 }
 .newsinfo{
-  background-color: #ffd600;
-  margin-top: 40px;
-  font-size: 15px;
-  font-family: "Roboto-Regular";
-  color: rgb(0, 0, 0);
-  line-height: 2.667;
-  text-align: left;
+	background-color: #ffd400;
+	background-image:none;
+	margin-top: 40px;
+	font-size: 15px;
+	font-family: "Roboto-Regular";
+	color: rgb(0, 0, 0);
+	position: relative;
+	left: 42%;
+	padding: 8px 44px;
+	border: none;
+	border-radius: 40px;
+}
+.newsinfo:hover {
+	color: #000!important;
+	background-color: #ffd400!important;
+	border-color: #ffd400!important;
 }
 .seo{
   font-size: 15px;
@@ -1339,6 +1348,14 @@ a.text_np_20{
 	line-height: 1.1;
 	padding-left: 6%;
 }
+.h_text_news{
+	font-family: "MuseoCyrl-700";
+	font-size: 32px;
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.1;
+}
 .h_text_title_htm{
 	font-family: "Roboto";
 	font-size: 16px;
@@ -1372,10 +1389,32 @@ li span {
 .pad_np_20{
 	padding: 22px 0 38px 0;
 }
+.img_whi_news{
+	width: 92%;
+	background-size:cover;
+}
+.description_text{
+	font-family: "Roboto";
+	font-size: 16px;
+	color: #6e6e6e;
+	font-weight: normal;
+	line-height: 1.4;
+	margin: 0 0 0 -17px;
+}
 
 @media (min-width: 320px) and (max-width: 767px){
 	.span_text_pr {
 		padding: 15px 0;
+	}
+	.newsinfo {
+		margin-top: 31px;
+		left: 27%;
+		padding: 8px 32px;
+		margin-bottom: 45px;
+	}
+	.h_text_news {
+		padding: 0 2%;
+		font-size: 28px;
 	}
 	.pad_np_20{
 		padding: 22px 0 0 0;
@@ -1433,8 +1472,25 @@ li span {
 	.pad_tovar{
 		padding-top: 0!important;%;
 	}
+	.img_whi_news {
+		width: 90%;
+		background-size: cover;
+		position: relative;
+		left: 5%;
+	}
 }
 @media (min-width: 768px) and (max-width: 992px){
+	.description_text {
+		font-size: 13px;
+		line-height: 1.2;
+	}
+	.newsinfo {
+		left: 37%;
+		padding: 8px 36px;
+	}
+	.h_text_news {
+		font-size: 22px;
+	}
 	.zakbtn {
 		font-size: 14px;
 		padding: 7px 15px;
@@ -1498,6 +1554,9 @@ li span {
 @media (min-width: 993px) and (max-width: 1200px){
 	.desktop-text-div-style {
 		right: 29%;
+	}
+	.h_text_news {
+		font-size: 28px;
 	}
 	.desk_text_div_style_backg {
 		left: 66%;

@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <div class="container">
-	<div class="breadcrumbmy">
+	<div class="hidden-xs breadcrumbmy ">
 		<?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
 		<?php if($i<2){?>
 		<a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
@@ -31,24 +31,50 @@ echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
 ?>
 	<div class="row news">
 		<div id="content">
-			<div class="row">
-                <div class="col-sm-12"><h1><?php echo $heading_title; ?></h1></div>
+			<div class="col-sm-12">
+                <div class="col-sm-12"><h1 class="h_text_news"><?php echo $heading_title; ?></h1></div>
             </div>
-            <div class="row" style="margin-bottom: 30px;">
-             <div class="col-sm-5"></div>
-             <div class="col-sm-7" style="    margin-left: -25px;"><span class="block">
-             <?php echo russian_date($posted); ?>
-             </span></div> 
+            <div class="col-sm-12" style="margin-bottom: 30px;">
+				 <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs"></div>
+				 <div class="col-lg-8 col-md-8 col-sm-7 hidden-xs no-padding"><span class="block">
+					 <?php echo russian_date($posted); ?>
+					 </span>
+				 </div>
             </div>
-             <div class="row">
-             <div class="col-sm-5">
-						<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/></a>
+             <div class="col-sm-12 no-padding">
+             		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img class="img_whi_news width: 90%;background-size: cover;" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/></a>
 					</div>
-             <div class="col-sm-7" style="    margin-left: -25px;"><div class="description">
+				 <div class="hidden-lg hidden-md hidden-sm col-xs-12" style="padding: 5% 7%;"><span class="block">
+					 <?php echo russian_date($posted); ?>
+					 </span>
+				 </div>
+					<div class="col-lg-8 col-md-8 col-sm-7 hidden-xs">
+						<div class="description description_text">
 							<?php echo $description; ?>
-							<a class="btn btn-primary newsinfo" href="<?php echo $news_list; ?>">Вернуться к новостям</a>
-						</div></div> 
-            </div>
+						</div>
+					</div>
+				 <div class="hidden-lg hidden-md hidden-sm col-xs-12" style="padding: 2% 9%;">
+					 <div class="description description_text">
+						 <span>Компания «ИнтерТрансПак» провела исп
+						 ытания крепежной кордовой ленты
+						 Strap 2000 и крепежной тканой ленты
+						 Lash 2000 из полиэфирного волокна, в
+						 очередной раз подтвердив качество
+						 реализуемой продукции. На основании
+						 протокола испытаний был получен
+						 сертификат соответствия для упаково
+						 чной крепежной ленты. Также компанией
+						 «ИнтерТрансПак» были разработаны
+						 Технические Условия для изготовления
+						 упаковочной крепежной ленты
+						 Strap 2000 и Lash 2000</span>
+					 </div>
+				 </div>
+				 <div class="col-lg-12">
+					 <a class="btn btn-primary newsinfo" href="<?php echo $news_list; ?>">Вернуться к новостям</a>
+				 </div>
+			 </div>
 			
 			
 					
