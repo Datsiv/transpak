@@ -3,7 +3,7 @@
         font-family: "Museo Cyrl";
         font-size: 19px;
         color: black;
-        font-weight: bold;
+        font-weight: 800;
     }
     .log {
         margin-top: 25px;
@@ -23,11 +23,12 @@
         margin-top: 10px;
         float: right;
         margin-bottom: 20px;
-        width: 173px;
+        width: 190px;
         height: 40px;
         color: black;
         font-family: Roboto;
-        margin-top: 30px;
+        margin-top: 23px;
+
     }
 
     .logo{
@@ -50,8 +51,8 @@
             position: absolute;
             margin-left: 103px;
             margin-top: -14px;
-            width: 14px;
-            height: 10px;
+            width: 12px;
+            height: 8px;
         }
 
         .clicked {
@@ -149,7 +150,7 @@
             margin-top: 20px;
             font-size: 17px;
             color: white;
-            font-weight: bold;
+            font-weight: 500;
 
         }
         .dob{
@@ -190,6 +191,9 @@
 
         }
         .block2{
+            display: none;
+        }
+        .block2mob{
             padding-right: 10px;
             width: 100%;
             float: right ;
@@ -205,6 +209,10 @@
         }
     }
         @media screen and (min-width: 768px){
+            .block2mob{
+                display: none;
+            }
+
             .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
                 border-color: #009cff;
                 border-bottom-color: white;
@@ -222,8 +230,8 @@
                 position: absolute;
                 margin-left: 88px;
                 margin-top: -15px;
-                width: 14px;
-                height: 11px;
+                width: 12px;
+                height: 8px;
             }
             .menue{
                 font-size: 16px;
@@ -296,7 +304,7 @@
 
         }
         .block1{
-            float: left;
-            padding-right:10px;
+            float: right;
+            padding-right:21px;
         }
 
