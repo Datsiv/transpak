@@ -7,17 +7,13 @@
     margin-left: 0px;
 }
 
-.second-cont{
-    margin-left: 10px;
-    float: right;
-}
 .text-center{
     text-align: center;
     color: #0044cc;
 }
 
 .footer-touch{
-    font-size: 12px;
+    font-size: 13.5px;
     font-weight: 900;
     color: black;
     font-family: Roboto-Bold;
@@ -31,20 +27,18 @@
 }
 
 .footer-telef{
-    font-size: 16px;
+    text-align: right;
+    font-size: 15px;
     font-weight: 900;
     color: black;
     font-family: MuseoCyrl-700;
-    padding-left: 60px;
-    float: right;
 }
-.foter-dodat{    
+.foter-dodat{   
+    text-align: right;
     color: #666666;
     font-size: 10.5px;
-    margin-left: 122px;
     font-family: Roboto-MediumItalic;
     font-style: oblique;
-    float: right;
 }
 
 .all-secure{
@@ -58,4 +52,63 @@
 
 .col-first{
     padding-left: 45px;
+}
+@media screen and (min-width:768px) {
+    .foter-email_mob{
+        display: none;
+    }
+    .footer-touch_mob{
+        display: none;
+    }
+}
+@media screen and (min-width:320px) and (max-width:767px){
+    .foter-email{
+        display: none;
+    }
+    .footer-touch{
+        display: none;
+    }
+    .footer-touch_mob{
+        font-size: 13.5px;
+        font-weight: 900;
+        color: black;
+        font-family: Roboto-Bold;
+        text-align: center;
+    }
+    
+    .foter-email_mob{
+        font-size: 15px;
+        color: black;
+        margin-left: 20px;
+        font-family: Roboto-Regular;
+        text-align: center;
+        padding-top: 61px;
+    }
+
+    .footer-telef{
+        font-size: 20px;
+        font-weight: 900;
+        width: 100%;
+        color: black;
+        font-family: MuseoCyrl-700;
+        padding-left: 0px !important;
+        text-align: center;
+        
+    }
+    .foter-dodat{    
+        color: #666666;
+        font-size: 14px;
+        width: 100%;
+        font-family: Roboto-MediumItalic;
+        font-style: oblique;
+        text-align: center;
+    }
+    .second-cont{
+        padding-top: 20px;
+    }
+    
+    .all-secure{
+        padding-top: 30px;
+        font-size: 9px;
+    }
 }
