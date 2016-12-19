@@ -1,5 +1,6 @@
+<link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet">
 <?php if($show_title) { ?>
-<h3>Новости дня</h3>
+<h3 class="news_home">Новости дня</h3>
 <?php } ?>
 <div class="row">
 										<?php 

@@ -59,6 +59,13 @@
         </div>
 
     <div class="col-xs-9 col-sm-12 mobright">
+        <div  class="block2" >
+
+            <button class="button"><img src="../../../../../../admin/view/image/icon.png">
+                Передзвоните мне
+            </button>
+
+        </div>
             <div class="block1 ">
                                 <div class="tell ">
                                     <?php echo $telephone; ?><?php  ?>
@@ -67,22 +74,23 @@
                                     <?php echo $config_dob; ?><?php } ?>
                                  </div>
              </div>
-            <div  class="block2" >
+        <div  class="block2mob" >
 
-                <button class="button"><img src="../../../../../../admin/view/image/icon.png">
-                    Передзвоните мне
-                </button>
+            <button class="button"><img src="../../../../../../admin/view/image/icon.png">
+                Передзвоните мне
+            </button>
 
-            </div>
+        </div>
 
     </div>
     </div>
     <div style="clear:both;"></div>
     </div>
 <div style="clear:both;"></div>
+<div class="container">
      <div class=" menue col-sm-12 " >
          <ul class="nav nav-tabs menue_golovne">
-             <li ><a class="text " href="#">Главная</a></li>
+             <li ><a class="text " href="<?php echo $home; ?>">Главная</a></li>
              <li class=" dropdown ">
                  <a class="dropdown-toggle text dropMenuClick" data-toggle="dropdown"   href="#">Продукция
                          <div class="menu_arrow" ><img src="/admin/view/image/onblack.png" ></div>
@@ -102,15 +110,16 @@
          </ul>
      </div>
 </div>
+
 <div class="logo2 col-xs-12  " id="logo12">
     <?php if ($logo) { ?>
     <a href="<?php echo $home; ?>"><img  src="<?php echo $logo; ?>"   title="<?php echo $name; ?>"
                                         alt="<?php echo $name; }?>" class="img-responsive"/></a>
 </div>
 <div id="divv"> </div>
-<div class="col-xs-12   menujs panel-group" id ="ttt" class="mb">
+<div class="col-xs-12  hidden-sm hidden-md hidden-lg hidden-xl  menujs panel-group" id ="ttt" class="mb">
             <ul class="nav navbar-nav">
-                <li><a class="text " href="#">Главная</a></li>
+                <li><a class="text " href="<?php echo $home; ?>">Главная</a></li>
                 <li class="dropdown">
                     <a class=" text dropdown-toggle dropMenuClickmob" data-toggle="dropdown" href="#">Продукция
                         <div class="menu_arrowmob" ><img src="/admin/view/image/on.png" ></div>
