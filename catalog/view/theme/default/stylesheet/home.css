@@ -1,3 +1,29 @@
+.margin_container{
+    margin-bottom: 10%;
+}
+.akciiblock{
+    margin-top: 25px!important;
+}
+.akciihead {
+    font-size: 37px;
+    font-family: "Museo-Cyrl-700";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 900;
+    margin-left: 0px!important;
+    margin-top: 30px;
+}
+p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+.row{
+    font-size: 15px;
+    font-family: Roboto;
+
+}
+
+
 .voprosy {
     margin-left: 15px;
 }
