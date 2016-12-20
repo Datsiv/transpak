@@ -1,7 +1,10 @@
-
-.kkk{
-   border-color: red;
+.voprosy {
+    margin-left: 15px;
 }
+.vupad_text1{
+    display: none;
+}
+
 .categoru_home{
    font-family: Roboto-Bold!important;
 }
@@ -31,8 +34,11 @@
     -webkit-box-shadow: none;
 
 }
-
+.vypad{
+    cursor: pointer;
+}
 .vupad_text1 {
+
     font-size: 15px;
     font-family: Roboto-Regular;
     color: rgb(110, 110, 110);
