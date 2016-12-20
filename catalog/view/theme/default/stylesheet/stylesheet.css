@@ -1594,3 +1594,21 @@ li span {
 		left: 16%;
 	}
 }
+
+.newsyearsactive{
+	background-color: #ffd900!important;
+}
+
+.newsyears{
+	border-radius: 27px!important;
+	border: none;
+	padding: 9px 35px;
+	margin-right: 17px;
+	background-color: #efefef;
+	font-family: "Roboto-Regular";
+	color: rgb(0, 0, 0);
+	font-size: 15px!important;
+}
+.newsyears:hover{
+	background-color: #ffd900!important;
+}

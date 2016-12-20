@@ -14,49 +14,24 @@
 			<h1><?php echo $heading_title; ?></h1>
 			<?php if ($news_list) { ?>
 			<div class="row">
-				<div class="col-md-3">
-					<div class="btn-group hidden-xs">
-						<button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
-						<button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
+				<div class="col-md-12">
+					<div class="btn-group">
+						<?php foreach ($year as $years) { ?>
+						<?php if ($years['value'] == $yearval) { ?>
+						<button type="button" class="newsyears newsyearsactive btn " data-toggle="tooltip" value="<?php echo $years['href']; ?>" title="<?php echo $years['text']; ?>" onclick="location = this.value;"><?php echo $button_year; ?> <?php echo $years['text']; ?></button>
+						<?php } else { ?>
+						<button type="button" class="newsyears btn " data-toggle="tooltip" value="<?php echo $years['href']; ?>" title="<?php echo $years['text']; ?>" onclick="location = this.value;"><?php echo $button_year; ?>  <?php echo $years['text']; ?> </button>
+						<?php } ?>
+						<?php } ?>
+
 					</div>
-				</div>
-				<div class="col-md-2 text-right">
-					<label class="control-label" for="input-sort"><?php echo $text_sort; ?></label>
-				</div>
-				<div class="col-md-3 text-right">
-					<select id="input-sort" class="form-control" onchange="location = this.value;">
-						<?php foreach ($sorts as $sorts) { ?>
-						<?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-						<option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
-						<?php } else { ?>
-						<option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
-						<?php } ?>
-						<?php } ?>
-					</select>
-				</div>
-				<div class="col-md-2 text-right">
-					<label class="control-label" for="input-limit"><?php echo $text_limit; ?></label>
-				</div>
-				<div class="col-md-2 text-right">
-					<select id="input-limit" class="form-control" onchange="location = this.value;">
-						<?php foreach ($limits as $limits) { ?>
-						<?php if ($limits['value'] == $limit) { ?>
-						<option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
-						<?php } else { ?>
-						<option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
-						<?php } ?>
-						<?php } ?>
-					</select>
 				</div>
 			</div>
 			<br />
 			<div class="row">
 				<?php foreach ($news_list as $news_item) { ?>
-				<div class="product-layout product-list col-xs-12">
+				<div class="product-layout product-grid col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<span class="block"><?php echo $news_item['posted']; ?></span>
-						<?php if($news_item['thumb']) { ?>
-						<div class="image"><a href="<?php echo $news_item['href']; ?>"><img src="<?php echo $news_item['thumb']; ?>" alt="<?php echo $news_item['title']; ?>" title="<?php echo $news_item['title']; ?>" class="img-responsive" /></a></div>
-						<?php }?>
 						<div>
 							<div class="caption">
 								<h4><a href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a></h4>
@@ -73,6 +48,20 @@
 			</div>
 			<?php } else { ?>
 			<p><?php echo $text_empty; ?></p>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="btn-group">
+						<?php foreach ($year as $years) { ?>
+						<?php if ($years['value'] == $yearval) { ?>
+						<button type="button" class="newsyears newsyearsactive btn " data-toggle="tooltip" value="<?php echo $years['href']; ?>" title="<?php echo $years['text']; ?>" onclick="location = this.value;"><?php echo $button_year; ?> <?php echo $years['text']; ?></button>
+						<?php } else { ?>
+						<button type="button" class="newsyears btn " data-toggle="tooltip" value="<?php echo $years['href']; ?>" title="<?php echo $years['text']; ?>" onclick="location = this.value;"><?php echo $button_year; ?>  <?php echo $years['text']; ?> </button>
+						<?php } ?>
+						<?php } ?>
+
+					</div>
+				</div>
+			</div>
 			<div class="buttons">
 				<div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
 			</div>
