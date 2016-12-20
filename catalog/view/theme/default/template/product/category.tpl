@@ -104,7 +104,8 @@
         <div class="product-layout product-list col-xs-12">
           <div class="product-thumb product1" >
               <div class="col-lg-12 no-padding">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image image_back_stile" style="background: url('<?php echo $product['thumb']; ?>')center no-repeat"><a href="<?php echo $product['href']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 image image_back_stile"
+                     style="background: url('../../../image/<?php echo $product['thumb']; ?>')center no-repeat"><a href="<?php echo $product['href']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                     <div class="col-lg-7 col-md-7 col-sm-9 caption" >
                       <h4 class="product-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>

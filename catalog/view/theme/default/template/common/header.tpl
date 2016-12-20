@@ -43,6 +43,39 @@
     <?php echo $analytic; ?>
     <?php } ?>
 </head>
+<div id="contactForm_en" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Заголовок модального окна -->
+            <div class="modal-header" style="border: 0">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <!-- Основное содержимое модального окна -->
+            <div class="modal-body" style="text-align: center;">
+                <div class="modal-title-style">MESSAGE</div>
+                <div>
+                    <form id="contactForm" action="" method="post">
+                        <ul id="errorMasege" style="padding-left: 0">
+                            <span style="display: none; color: red" class="row name">Некоректно заполнено Имя пользователя</span>
+                            <span style="display: none; color: red" class="row telephone ">Некоректно заполнено email</span>
+                            <span style="display: none; color: red" class="row message ">Минимальная длина сообщения десеть знаков</span>
+                        </ul>
+                        <div class="row modal-div-input-stile">
+                            <input class="modal-input-style contactItem" id="name" name="name" type="text" placeholder="NAME">
+                        </div>
+                        <div class="row modal-div-input-stile">
+                            <input class="modal-input-style contactItem" id="email" name="email" type="text" placeholder="EMAIL">
+                        </div>
+                        <div class="row modal-div-input-stile">
+                            <textarea  name="message" placeholder="MESSAGE" rows="5" id="message" class="contactItem modal-textarea-style"></textarea>
+                        </div>
+                        <button id="sendMessage" type="button" class="btn modal-btn-style">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <body class="<?php echo $class; ?>">
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 back">
@@ -62,7 +95,7 @@
         <div  class="block2" >
 
             <button class="button"><img src="../../../../../../admin/view/image/icon.png">
-                Передзвоните мне
+                <span  data-toggle="modal" data-target="#contactForm_en">Передзвоните мне</span>
             </button>
 
         </div>
@@ -75,11 +108,9 @@
                                  </div>
              </div>
         <div  class="block2mob" >
-
             <button class="button"><img src="../../../../../../admin/view/image/icon.png">
-                Передзвоните мне
+                <span  data-toggle="modal" data-target="#contactForm_en">Передзвоните мне</span>
             </button>
-
         </div>
 
     </div>
@@ -190,3 +221,154 @@
   </nav> -->
 </div>
 <?php } ?>
+<script>
+    Skip to content
+    This repository
+    Search
+    Pull requests
+    Issues
+    Gist
+    @Nazar2306
+    Watch 6
+    Star 0
+    Fork 0 DatsivStepan/adastra
+    Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
+    Branch: master Find file Copy pathadastra/catalog/view/javascript/header.js
+    e48882b  20 hours ago
+    Vasyl Hlado Fix contact modal form
+    0 contributors
+    RawBlameHistory
+    131 lines (127 sloc)  3.91 KB
+    $(document).ready(function () {
+        $('#products').on('click', function () {
+            $('#product_1').toggleClass('fa-angle-up');
+            $('#product_1').toggleClass('fa-angle-down');
+            $('#products_id').slideToggle("fast");
+        });
+        $('#products_id_md').on('click', function () {
+            console.log('awdwd');
+            $('#products_md').slideToggle("fast");
+        });
+        /*	$("#contact").click(function() {
+         $("#myModal").modal('show');
+         });
+         */
+        $("#phone_id").click(function() {
+            $('#id_phone').slideToggle("fast");
+        });
+
+
+        function checkForm(id) {
+            if(typeof id != 'undefined'){
+                if($('#'+id).val() == ''){
+                    return 0;
+                }
+            }
+            switch (id) {
+                case 'name':
+                    if (!($('#' + id).val().match(/^[a-zA-Zа-яА-Я]+$/)) || ($('#name').val().length < 3)) {
+                        $('#errorMasege > .' + id).text('Некоректно заполнено Имя пользователя');
+                        $('#' + id).css('border', '1px solid red');
+                        $('#errorMasege > .' + id).show();
+                    } else {
+                        $('#errorMasege > .' + id).text('');
+                        $('#' + id).css('border', '1px solid green');
+                        $('#errorMasege > .' + id).hide();
+                    }
+                    break;
+                case 'email':
+                    if (!($('#' + id).val().match(/^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i))) {
+                        $('#errorMasege > .' + id).text('Некоректно заполнено Email');
+                        $('#' + id).css('border', '1px solid red');
+                        $('#errorMasege > .' + id).show();
+                    } else {
+                        $('#errorMasege > .' + id).text('');
+                        $('#' + id).css('border', '1px solid green');
+                        $('#errorMasege > .' + id).hide();
+                    }
+                    break;
+                case 'message':
+                    if (!($('#' + id).val().length >= 10)) {
+                        $('#errorMasege > .' + id).text('Минимальная длина сообщения десеть знаков');
+                        $('#' + id).css('border', '1px solid red')
+                        $('#errorMasege > .' + id).show();
+                    } else {
+                        $('#errorMasege > .' + id).text('');
+                        $('#' + id).css('border', '1px solid green');
+                        $('#errorMasege > .' + id).hide();
+                    }
+                    break;
+                default:
+                    var errorCount = 0;
+                    if (!($('#name').val().match(/^[a-zA-Zа-яА-Я]+$/))) {
+                        $('#name').css('border', '1px solid red');
+                        errorCount++;
+                        $('#errorMasege > .name').show();
+                    } else {
+                        $('#errorMasege > .name').text('');
+                        $('#name').css('border', '1px solid green');
+                        $('#errorMasege > .name').hide();
+                    }
+                    if (!($('#email').val().match(/^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i))) {
+                        $('#email').css('border', '1px solid red');
+                        errorCount++;
+                        $('#errorMasege > .email').show();
+                    } else {
+                        $('#errorMasege > .email').text('');
+                        $('#email').css('border', '1px solid green');
+                        $('#errorMasege > .email').hide();
+                    }
+                    if (!($('#message').val().length >= 10)) {
+                        $('#message').css('border', '1px solid red');
+                        errorCount++;
+                        $('#errorMasege > .message').show();
+                    } else {
+                        $('#errorMasege > .message').text('');
+                        $('#message').css('border', '1px solid green');
+                        $('#errorMasege > .message').hide();
+                    }
+                    if (errorCount == 0) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                    break;
+            }
+        }
+
+        $('.contactItem').on('blur', function () {
+            console.log($(this).attr('id'));
+            checkForm($(this).attr('id'));
+        });
+
+        $('#sendMessage').on('click', function (even) {
+            even.preventDefault();
+            if (checkForm()) {
+                var res = $('#contactForm').serializeArray();
+                console.log(res);
+                var arr = {};
+                $.each(res, function (result) {
+                    var $index = res[result].name;
+                    arr[$index] = res[result].value;
+                });
+                $('#name').val('');
+                $('#email').val('');
+                $('#message').val('');
+                swal("Сообщение отправлено", "", "success");
+                $('#contactForm_en').removeClass('in');
+                $('.modal-backdrop').removeClass('in');
+                $.ajax({
+                    url: 'index.php?route=common/header/contactForm',
+                    type: 'post',
+                    dataType: 'json',
+                    data: arr,
+                    success: function (data) {
+
+                    }
+                });
+            } else {
+                console.log('Incorrectly completed forms');
+            }
+        });
+    });
+</script>
