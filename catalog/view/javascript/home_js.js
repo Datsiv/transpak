@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $("#hide").click(function(){
-        $("#vypad").hide();
+    $(".vypad").click(function(){
+        $(".vupad_text1").show();
+        $(".hiden").hide();
     });
 });

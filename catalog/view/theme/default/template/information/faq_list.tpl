@@ -8,7 +8,7 @@
 		<?php if($i<1){?>
 		<a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
 		<?php }else{?>
-		<a href="<?php echo $breadcrumb['href']; ?>">Акции</a>
+		<a href="<?php echo $breadcrumb['href']; ?>">Вопросы</a>
 		<?php }?>
 		<?php $i++; } ?>
 	</div>
@@ -24,7 +24,7 @@
 					<div class="col-xs-12 akciiblock">
 							<div class="caption">
 								<a class="akciiperhead" ><?php echo $news_item['title']; ?></a>
-								<p style="margin-left: 15px;"><?php echo $news_item['description']; ?></p>
+								<p class="voprosy"><?php echo $news_item['description']; ?></p>
 							</div>
 						
 					</div>
@@ -47,10 +47,10 @@
 		 <h4><?php echo $heading_titleseo ?></h4>
 		 <?php echo $descriptionseo; ?>
 
-		 <a  class=" text dropdown-toggle " data-toggle="dropdown" id="vypad" href="#"> <p id="hide">Читать далее</p></a>
-		 <ul class="dropdown-menu vupad_text1">
+		 <a   class="hiden" > <p  class="vypad " >Читать далее</p></a>
+		 <div class=" vupad_text1">
 			 Из полиэфирного волокна, в очередной раз подтвердив качество реализуемой продукции. На основании протокола испытаний был получен сертификат соответствия для упаковочной крепежной ленты. Также компанией «ИнтерТрансПак» были разработаны Технические Условия для изготовления упаковочной крепежной ленты Strap 2000 и Lash 2000
-		 </ul>
+		 </div>
 
 
 	 </div></div>
