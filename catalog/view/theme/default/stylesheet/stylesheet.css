@@ -1401,7 +1401,30 @@ li span {
 	line-height: 1.4;
 	margin: 0 0 0 -17px;
 }
-
+.modal-title-style{
+	font-size: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.modal-input-style{
+	text-align: center;
+	height: 35px;
+	width: 300px;
+}
+.modal-textarea-style{
+	text-align: center;
+	width: 300px;
+	height: 150px;
+}
+.modal-btn-style, .modal-btn-style:hover, .modal-btn-style:focus{
+	color: #fff;
+	background-color: #322d2d;
+	border-radius: 20px;
+	width: 300px;
+}
+.modal-div-input-stile{
+	padding-bottom: 10px;
+}
 @media (min-width: 320px) and (max-width: 767px){
 	.span_text_pr {
 		padding: 15px 0;
