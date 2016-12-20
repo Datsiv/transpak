@@ -1,7 +1,7 @@
     .tell {
         margin-top: 20px;
         font-family: "Museo Cyrl";
-        font-size: 19px;
+        font-size: 21px;
         color: black;
         font-weight: 800;
     }
@@ -10,9 +10,9 @@
     }
     .dob{
         font-family: Roboto;
-        font-size: 15px;
+        font-size: 12px;
         margin-top: 5px;
-        margin-left: 53px;
+        margin-left: 60px;
     }
     .button {
 
@@ -148,7 +148,7 @@
         .tell {
             font-family: Roboto;
             margin-top: 20px;
-            font-size: 17px;
+            font-size: 18px;
             color: white;
             font-weight: 500;
 
@@ -156,9 +156,10 @@
         .dob{
             font-style: italic;
             font-family: Roboto;
-            font-size: 15px;
+            font-size: 12px;
             margin-top: 0px;
             float: right;
+            margin-left: 48px;
 
             color: #c7e9ff;
         }
@@ -183,7 +184,7 @@
             margin-top: 10px;
             float: right;
             margin-bottom: 20px;
-            width: 150px;
+            width: 172px;
             height: 40px;
             color: black;
             font-family: Roboto;
@@ -194,7 +195,7 @@
             display: none;
         }
         .block2mob{
-            padding-right: 10px;
+            padding-right: 15px;
             width: 100%;
             float: right ;
         }
@@ -219,11 +220,11 @@
             }
             .nav-tabs .dropdown-menu {
                 border-color: #009cff;
-                z-index: 1;
+                z-index: 101;
             }
             .dropMenuClick {
 
-                z-index: 2;
+                z-index: 102;
                 width: 130px;
             }
             .menu_arrow img{

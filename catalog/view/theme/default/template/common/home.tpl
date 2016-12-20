@@ -1,4 +1,7 @@
-<link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet">
+<link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
+<link href="catalog/view/theme/default/stylesheet/header.css" rel="stylesheet">
+<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/home_js.js" type="text/javascript"></script>
 <?php echo $header; ?>
 <?php if ($categories) { ?>
 <div class="">
@@ -9,8 +12,6 @@
 
     <div class="col-xs-5ths col-sm-5ths col-sm-5ths col-md-5ths col-lg-5ths col-xl-5ths catshow" style="background-image: url(<?php echo $category['image']; ?>); ">
       <div class="catshowhover">
-
-
   </div>
       <span><?php echo $category['name']; ?></span>
   </div>
@@ -104,10 +105,13 @@
      
 								<h4><?php echo $heading_titleseo ?></h4>
 								<?php echo $descriptionseo; ?>
-									
-									<a href="index.php?route=information/information&information_id=9" class="collapsed" target="_blank">Читать далее</a>
-								
-         
+
+									<a  class=" text dropdown-toggle " data-toggle="dropdown" id="hide" href="#"> <p id="vypad">Читать далее</p></a>
+		 <ul class="dropdown-menu vupad_text">
+			 Из полиэфирного волокна, в очередной раз подтвердив качество реализуемой продукции. На основании протокола испытаний был получен сертификат соответствия для упаковочной крепежной ленты. Также компанией «ИнтерТрансПак» были разработаны Технические Условия для изготовления упаковочной крепежной ленты Strap 2000 и Lash 2000
+		 </ul>
+
+
          
          </div></div>
     </div>

@@ -1,3 +1,7 @@
+
+.kkk{
+   border-color: red;
+}
 .categoru_home{
    font-family: Roboto-Bold!important;
 }
@@ -12,6 +16,32 @@
 .vypad_home{
     padding-bottom: 30px;
     padding-top: 30px;
+
+}
+
+.vupad_text {
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    color: rgb(110, 110, 110);
+    line-height: 1.467;
+    text-align: left;
+    position: relative;
+    background-color: white!important;
+    border: none;
+    -webkit-box-shadow: none;
+
+}
+
+.vupad_text1 {
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    color: rgb(110, 110, 110);
+    line-height: 1.467;
+    text-align: left;
+    position: relative !important;
+    background-color: white!important;
+    border: none!important;
+    -webkit-box-shadow: none!important;
 
 }
 @media  (min-width:768px){
