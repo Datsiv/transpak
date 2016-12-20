@@ -89,7 +89,6 @@ class ControllerInformationFaq extends Controller {
 					'posted' => date($this->language->get('date_format_short'), strtotime($result['date_added']))
 				);
 			}
-			var_dump($data['news_list']);
 		}
 
 		$url = '';
