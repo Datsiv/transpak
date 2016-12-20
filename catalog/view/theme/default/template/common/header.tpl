@@ -46,12 +46,12 @@
 <body class="<?php echo $class; ?>">
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 back">
-    <div class="logo  col-sm-5 col-md-7 col-lg-7">
+    <div class="logo  col-sm-5 col-md-6 col-lg-7">
             <?php if ($logo) { ?>
             <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>"
                                             alt="<?php echo $name; ?>" class="img-responsive"/></a>
     </div>
-    <div class=" col-sm-7 col-md-5 col-lg-5 ">
+    <div class=" col-sm-7 col-md-6 col-lg-5 ">
         <div class="col-xs-3 buttonm">
             <div  > <img src='../../../../../../admin/view/image/menu.png'  onclick="fff();" class=" active "id ="men" /> </div>
             <div  > <img src='../../../../../../admin/view/image/menu1.png'  onclick="www();" id ="men1"  /> </div>

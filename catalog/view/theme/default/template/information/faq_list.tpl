@@ -1,3 +1,6 @@
+<link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet">
+<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/home_js.js" type="text/javascript"></script>
 <?php echo $header; ?>
 <div class="container">
 	<div class="breadcrumbmy">
@@ -11,7 +14,7 @@
 	</div>
 	<div class="row">
 		<div id="content"><?php echo $content_top; ?>
-			<div class=" row akciihead">Наши акции!</div>
+			<div class=" row akciihead">Часто задаваемые вопросы</div>
 			<div class="row">
            <?php echo $description; ?>           
             </div>
@@ -21,7 +24,7 @@
 					<div class="col-xs-12 akciiblock">
 							<div class="caption">
 								<a class="akciiperhead" ><?php echo $news_item['title']; ?></a>
-								<p><?php echo $news_item['description']; ?></p>
+								<p style="margin-left: 15px;"><?php echo $news_item['description']; ?></p>
 							</div>
 						
 					</div>
@@ -30,7 +33,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
-				<div class="col-sm-6 text-right"><?php echo $results; ?></div>
+				<div class="col-sm-6 text-right"><?php echo $results."<br />"?></div>
 			</div>
 			<?php } else { ?>
 			<p><?php echo $text_empty; ?></p>
@@ -40,15 +43,17 @@
 			<?php } ?>
 			 <div class="row">
      <div class="col-sm-12 seo">
-     
-								<h4><?php echo $heading_titleseo ?></h4>
-								<?php echo $descriptionseo; ?>
-									
-									<a href="#seohide" class="collapsed" data-toggle="collapse">Читать далее</a>
-								
-         
-         
-         </div></div>
+
+		 <h4><?php echo $heading_titleseo ?></h4>
+		 <?php echo $descriptionseo; ?>
+
+		 <a  class=" text dropdown-toggle " data-toggle="dropdown" id="vypad" href="#"> <p id="hide">Читать далее</p></a>
+		 <ul class="dropdown-menu vupad_text1">
+			 Из полиэфирного волокна, в очередной раз подтвердив качество реализуемой продукции. На основании протокола испытаний был получен сертификат соответствия для упаковочной крепежной ленты. Также компанией «ИнтерТрансПак» были разработаны Технические Условия для изготовления упаковочной крепежной ленты Strap 2000 и Lash 2000
+		 </ul>
+
+
+	 </div></div>
 		</div>
 	</div>
 </div>
