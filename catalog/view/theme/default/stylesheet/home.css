@@ -1,3 +1,16 @@
+.button_news:hover{
+    background-color: yellow;
+}
+.news_text_title{
+    font-family: "Museo Cyrl 700";
+}
+.news_text{
+    margin-bottom: 53px;
+    font-family: Roboto;
+}
+.title_news{
+    font-family: "Museo Cyrl 700";
+}
 .margin_container{
     margin-bottom: 10%;
 }
