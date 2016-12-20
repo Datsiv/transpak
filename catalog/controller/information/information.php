@@ -64,6 +64,7 @@ class ControllerInformationInformation extends Controller {
 
 			$data['button_continue'] = $this->language->get('button_continue');
 
+
 			$data['continue'] = $this->url->link('common/home');
 
 			$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');

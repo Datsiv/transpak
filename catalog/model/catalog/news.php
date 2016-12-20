@@ -19,10 +19,14 @@ class ModelCatalogNews extends Model {
 					'nd.title',
 					'n.date_added'
 				);
+		        if (isset($data['year']) ) {
+			        $sql .= "AND  YEAR(`date_added`) =" . $data['year'];
+		        }
 
 				if (isset($data['sort']) && in_array($data['sort'], $sort_data)) {
 					$sql .= " ORDER BY " . $data['sort'];
-				} else {
+				}
+		        else {
 					$sql .= " ORDER BY nd.title";
 				}
 

@@ -9,6 +9,14 @@ class ControllerInformationNews extends Controller {
 
 		$this->load->model('tool/image');
 
+		if (isset($this->request->get['year'])) {
+			$year = $this->request->get['year'];
+			$data['yearval'] = $this->request->get['year'];
+		} else {
+			$data['yearval'] = null;
+			$year = null;
+		}
+
 		if (isset($this->request->get['sort'])) {
 			$sort = $this->request->get['sort'];
 		} else {
@@ -38,7 +46,7 @@ class ControllerInformationNews extends Controller {
 		$data['heading_title'] = $this->language->get('heading_title');
 
 		$data['text_empty'] = $this->language->get('text_empty');
-
+		$data['button_year'] = $this->language->get('button_year');
 		$data['button_continue'] = $this->language->get('button_continue');
 		$data['continue'] = $this->url->link('common/home');
 
@@ -74,6 +82,7 @@ class ControllerInformationNews extends Controller {
 
 		$filter_data = array(
 			'sort' => $sort,
+			'year' => $year,
 			'order' => $order,
 			'start' => ($page - 1) * $limit,
 			'limit' => $limit
@@ -140,6 +149,29 @@ class ControllerInformationNews extends Controller {
 		if (isset($this->request->get['limit'])) {
 			$url .= '&limit=' . $this->request->get['limit'];
 		}
+		$data['year'] = array();
+
+
+        $curlyear   = date('Y', time());
+		$curlyearl  = $curlyear -1;
+		$curlyearll = $curlyear -2;
+		$data['year'][] = array(
+			'text' => $curlyear,
+			'value' => $curlyear,
+			'href' => $this->url->link('information/news', 'year='.$curlyear . $url)
+		);
+
+		$data['year'][] = array(
+			'text' => $curlyearl,
+			'value' => $curlyearl,
+			'href' => $this->url->link('information/news', 'year='.$curlyearl . $url)
+		);
+
+		$data['year'][] = array(
+			'text' => $curlyearll,
+			'value' => $curlyearll,
+			'href' => $this->url->link('information/news', 'year='.$curlyearll . $url)
+		);
 
 		$data['sorts'] = array();
 
@@ -169,6 +201,7 @@ class ControllerInformationNews extends Controller {
 
 		$url = '';
 
+
 		if (isset($this->request->get['sort'])) {
 			$url .= '&sort=' . $this->request->get['sort'];
 		}
@@ -195,6 +228,10 @@ class ControllerInformationNews extends Controller {
 
 		if (isset($this->request->get['sort'])) {
 			$url .= '&sort=' . $this->request->get['sort'];
+		}
+
+		if (isset($this->request->get['year'])) {
+			$url .= '&year=' . $this->request->get['year'];
 		}
 
 		if (isset($this->request->get['order'])) {
