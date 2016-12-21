@@ -1,13 +1,14 @@
 <?php
 // Heading
-$_['heading_title']  = 'Обратная связь';
+$_['heading_title']  = 'Контакты';
+$_['heading_title2']  = 'Контактная информация';
 
 // Text
 $_['text_location']  = 'Наше местонахождение';
 $_['text_store']     = 'Наши магазины';
-$_['text_contact']   = 'Написать нам';
+$_['text_contact']   = 'Задать вопрос';
 $_['text_address']   = 'Адрес';
-$_['text_telephone'] = 'Телефон';
+$_['text_telephone'] = 'Наши телефоны';
 $_['text_fax']       = 'Факс';
 $_['text_open']      = 'Режим работы';
 $_['text_comment']   = 'Дополнительная информация';
