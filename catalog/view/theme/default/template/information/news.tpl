@@ -34,7 +34,7 @@ echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
 			<div class="col-sm-12">
                 <div class="col-sm-12"><h1 class="h_text_news"><?php echo $heading_title; ?></h1></div>
             </div>
-            <div class="col-sm-12" style="margin-bottom: 30px;">
+            <div class="col-sm-12"  style="margin-bottom: 30px;">
 				 <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs"></div>
 				 <div class="col-lg-8 col-md-8 col-sm-7 hidden-xs no-padding"><span class="block">
 					 <?php echo russian_date($posted); ?>
