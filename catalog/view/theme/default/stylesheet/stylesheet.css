@@ -306,7 +306,7 @@ div.required .control-label:before {
 }
 /* content */
 #content {
-	min-height: 600px;
+    min-height: 415px;
 }
 /* footer */
 footer {
@@ -906,6 +906,10 @@ h2.price {
 
 
 }
+.map {
+	width: 100%;
+	height: 400px;
+}
 .block {
     background: #e6e6e6;
     border-radius: 5px;
@@ -1336,8 +1340,6 @@ a.text_np_20{
 }
 .btn-primary:hover {
 	color: #fff;
-	background-color: #006cc6;
-	border-color: #006cc6;
 }
 .h2_text_title{
 	font-family: "MuseoCyrl-700";
@@ -1361,7 +1363,7 @@ a.text_np_20{
 	font-size: 16px;
 	color: #000;
 	padding-top: 12px;
-	padding-bottom: 70px;
+    padding-bottom: 4%;
 	line-height: 1.5;
 }
 .img_np_20{
@@ -1425,10 +1427,134 @@ li span {
 .modal-div-input-stile{
 	padding-bottom: 10px;
 }
+.foter_email_mob_2{
+	display: block!important;
+	font-size: 15px!important;
+	font-weight: 600!important;
+	color: #000!important;
+	font-family: "Roboto"!important;
+    text-align: left!important;
+    padding-top: 4px!important;
+    margin-left: 0!important;
+}
+.footer_touch_mob_2{
+	display: block!important;
+	font-size: 15px!important;
+	font-weight: 600!important;
+	color: #000!important;
+	font-family: "Roboto"!important;
+    text-align: left!important;
+    padding-top: 4px!important;
+}
+.geografi_text_open{
+	font-size: 15px!important;
+	font-weight: 600!important;
+	color: #000!important;
+	font-family: "Roboto"!important;
+    padding-top: 4px!important;
+}
+.panel_panel_default_20{
+	background-color: #fffacc!important;
+	border: 1px solid #f0ddaa!important;
+	border-radius: 4px;
+}
+.panel_panel_default_21{
+	background-color: #fffacc!important;
+	border: 1px solid #f0ddaa!important;
+	border-radius: 4px;
+    margin-bottom: 68px;
+}
+.text_nashi_telefoni{
+	font-family: "Roboto";
+	color: #0097ff;
+	font-size: 15px;
+	font-weight: initial;
+}
+.graf_rob{
+    padding-top: 45px;
+    padding-bottom: 51px;
+}
+.footer_telef_2{
+	font-family: "MuseoCyrl-700"!important;
+	text-align: left!important;
+	font-size: 25px!important;
+	padding-top: 15px!important;
+	padding-bottom: 7px!important;
+    padding-top: 10px!important;
+}
+.text_zadatu_ptanna{
+    font-family: "MuseoCyrl-700"!important;
+    text-align: left!important;
+    font-size: 30px!important;
+    padding-top: 32px!important;
+    padding-bottom: 28px!important;
+    padding-left: 40px!important;
+    color: #000;
+    border: none!important;
+}
+.foter_dodat_2{
+	text-align: left!important;
+	font-size: 16px!important;
+	font-family: Roboto-MediumItalic!important;
+}
+.h_text_1{
+	font-family: "MuseoCyrl-700"!important;
+	text-align: left!important;
+	font-size: 36px!important;
+	padding-top: 32px!important;
+	padding-bottom: 41px!important;
+	color: #000;
+}
+.form_control_20{
+	padding-bottom: 23px;
+	padding-top: 22px;
+	position: relative;
+	left: 11%;
+    font-size: 13px!important;
+    font-family: "Roboto";
+}
+.form_control_21{
+    font-family: "Roboto";
+}
+.bot_left{
+    float: left;
+    position: relative;
+    left: 6.3%;
+    top: -9px;
+}
+.btn_prim_bot {
+    padding: 14px 46px!important;
+    font-size: 15px;
+    border: none!important;
+    border-radius: 30px!important;
+    box-shadow: none!important;
+    outline: none!important;
+    background-color: #0098ff!important;
+    background-image: none!important;
+}
+.cls_pad_2{
+    padding: 1.5% 4% 0 14%;
+}
+.cls_pad_1{
+    padding: 0% 0% 0 10%;
+}
 @media (min-width: 320px) and (max-width: 767px){
 	.span_text_pr {
 		padding: 15px 0;
 	}
+    .cls_pad_2 {
+        padding: 1.5% 21.4% 0 3%;
+    }
+    .cls_pad_1 {
+        padding: 0 18% 0 0;
+    }
+    .nash_rob{
+        padding-top: 15px;
+    }
+    .graf_rob {
+        padding-top: 15px;
+        padding-bottom: 26px;
+    }
 	.newsinfo {
 		margin-top: 31px;
 		left: 27%;
@@ -1502,11 +1628,31 @@ li span {
 		left: 5%;
 	}
 }
-@media (min-width: 768px) and (max-width: 992px){
+.form_control_20 {
+    padding-bottom: 23px;
+    padding-top: 22px;
+    position: relative;
+    left: 3%;
+    font-size: 13px!important;
+    font-family: "Roboto";
+    padding-right: 46px;
+}
+.h_text_1 {
+    font-family: "MuseoCyrl-700"!important;
+    text-align: left!important;
+    font-size: 25px!important;
+    padding-top: 32px!important;
+    padding-bottom: 41px!important;
+    color: #000;
+}
+@media (min-width: 768px) and (max-width: 991px){
 	.description_text {
 		font-size: 13px;
 		line-height: 1.2;
 	}
+    .cls_pad_2{
+        padding: 1.5% 6.9% 0 16%!important;
+    }
 	.newsinfo {
 		left: 37%;
 		padding: 8px 36px;
@@ -1574,10 +1720,13 @@ li span {
 		padding: 0;
 	}
 }
-@media (min-width: 993px) and (max-width: 1200px){
+@media (min-width: 992px) and (max-width: 1200px){
 	.desktop-text-div-style {
 		right: 29%;
 	}
+    .cls_pad_2{
+        padding: 1.5% 5% 0 15%!important;
+    }
 	.h_text_news {
 		font-size: 28px;
 	}

@@ -1,11 +1,15 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
-  <div class="row"><?php echo $column_left; ?>
+  <div class="hidden-xs breadcrumbmy ">
+    <?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
+    <?php if($i<1){ ?>
+    <a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
+    <?php }else{ ?>
+    <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php }?>
+    <?php $i++; } ?>
+  </div>
+  <div class="col-sm-12"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -14,41 +18,43 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?></h1>
-      <h3><?php echo $text_location; ?></h3>
-      <div class="panel panel-default">
+      <div class="h_text_1"><?php echo $heading_title2; ?></div>
+      <div class="panel panel-default panel_panel_default_20">
         <div class="panel-body">
           <div class="row">
+            <div class="col-sm-12">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><strong class="text_nashi_telefoni"><?php echo $text_telephone; ?></strong><br>
+                <div  class="second-cont no-padding">
+                  <div class="footer-telef footer_telef_2">
+                    <?php echo $findTelef; ?>
+                  </div>
+                  <div class="foter-dodat foter_dodat_2" style="text-align: left;">
+                    <?php echo $findDodat; ?>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nash_rob"><strong class="text_nashi_telefoni">Наш адрес</strong><br>
+                <div class="footer-touch_mob footer_touch_mob_2">
+                  <?php echo $findTouch; ?>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nash_rob"><strong class="text_nashi_telefoni">Наша электронная почта</strong><br>
+                <div class=" foter-email_mob foter_email_mob_2">
+                  E-mail:<?php echo $findEmail; ?>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 graf_rob"><strong class="text_nashi_telefoni">График работы</strong><br />
+                <div class="geografi_text_open">
+                  <?php echo $config_open; ?>
+                </div>
+              </div>
+            </div>
             <?php if ($image) { ?>
             <div class="col-sm-3"><img src="<?php echo $image; ?>" alt="<?php echo $store; ?>" title="<?php echo $store; ?>" class="img-thumbnail" /></div>
             <?php } ?>
-            <div class="col-sm-3"><strong><?php echo $store; ?></strong><br />
-              <address>
-              <?php echo $address; ?>
-              </address>
-              <?php if ($geocode) { ?>
-              <a href="https://maps.google.com/maps?q=<?php echo urlencode($geocode); ?>&hl=<?php echo $geocode_hl; ?>&t=m&z=15" target="_blank" class="btn btn-info"><i class="fa fa-map-marker"></i> <?php echo $button_map; ?></a>
-              <?php } ?>
-            </div>
-            <div class="col-sm-3"><strong><?php echo $text_telephone; ?></strong><br>
-              <?php echo $telephone; ?><br />
-              <br />
-              <?php if ($fax) { ?>
-              <strong><?php echo $text_fax; ?></strong><br>
-              <?php echo $fax; ?>
-              <?php } ?>
-            </div>
-            <div class="col-sm-3">
-              <?php if ($open) { ?>
-              <strong><?php echo $text_open; ?></strong><br />
-              <?php echo $open; ?><br />
-              <br />
-              <?php } ?>
-              <?php if ($comment) { ?>
-              <strong><?php echo $text_comment; ?></strong><br />
-              <?php echo $comment; ?>
-              <?php } ?>
-            </div>
+
           </div>
         </div>
       </div>
@@ -100,45 +106,59 @@
         <?php } ?>
       </div>
       <?php } ?>
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
-        <fieldset>
-          <legend><?php echo $text_contact; ?></legend>
-          <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-name"><?php echo $entry_name; ?></label>
-            <div class="col-sm-10">
-              <input type="text" name="name" value="<?php echo $name; ?>" id="input-name" class="form-control" />
-              <?php if ($error_name) { ?>
-              <div class="text-danger"><?php echo $error_name; ?></div>
-              <?php } ?>
-            </div>
-          </div>
-          <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-email"><?php echo $entry_email; ?></label>
-            <div class="col-sm-10">
-              <input type="text" name="email" value="<?php echo $email; ?>" id="input-email" class="form-control" />
-              <?php if ($error_email) { ?>
-              <div class="text-danger"><?php echo $error_email; ?></div>
-              <?php } ?>
-            </div>
-          </div>
-          <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-enquiry"><?php echo $entry_enquiry; ?></label>
-            <div class="col-sm-10">
-              <textarea name="enquiry" rows="10" id="input-enquiry" class="form-control"><?php echo $enquiry; ?></textarea>
-              <?php if ($error_enquiry) { ?>
-              <div class="text-danger"><?php echo $error_enquiry; ?></div>
-              <?php } ?>
-            </div>
-          </div>
-          <?php echo $captcha; ?>
-        </fieldset>
-        <div class="buttons">
-          <div class="pull-right">
-            <input class="btn btn-primary" type="submit" value="<?php echo $button_submit; ?>" />
-          </div>
-        </div>
-      </form>
-      <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    </div>
+  </div>
 </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0 0 5% 0">
+          <div class="map col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding" id="map"></div>
+      </div>
+<div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel_panel_default_21">
+          <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <fieldset>
+                  <legend class="text_zadatu_ptanna"><?php echo $text_contact; ?></legend>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group required">
+                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cls_pad_1">
+                          <input type="text" name="name" value="<?php echo $name; ?>" id="input-name" class="form-control form_control_20" placeholder="Ваше имя" />
+                          <?php if ($error_name) { ?>
+                          <div class="text-danger"><?php echo $error_name; ?></div>
+                          <?php } ?>
+                        </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cls_pad_2">
+                      <div class="form-group required">
+                          <input type="text" name="email" value="<?php echo $email; ?>" id="input-email" class="form-control form_control_20" placeholder="Ваш e-mail" />
+                          <?php if ($error_email) { ?>
+                          <div class="text-danger"><?php echo $error_email; ?></div>
+                          <?php } ?>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <div class="form-group required">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0% 16% 0 2%;">
+                        <textarea name="enquiry" rows="5" id="input-enquiry" class="form-control form_control_21" placeholder="Ваш вопрос"><?php echo $enquiry; ?></textarea>
+                        <?php if ($error_enquiry) { ?>
+                        <div class="text-danger"><?php echo $error_enquiry; ?></div>
+                        <?php } ?>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+                  <?php echo $captcha; ?>
+                </fieldset>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 2%;">
+                <div class="buttons bot_left">
+                  <div class="pull-right">
+                    <input class="btn btn-primary btn_prim_bot" type="submit" value="Отправить" />
+                  </div>
+                </div>
+            </div>
+            </div>
+          </form>
+      <?php echo $content_bottom; ?>
+</div>
+    <?php echo $column_right; ?>
 <?php echo $footer; ?>

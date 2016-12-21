@@ -3,9 +3,12 @@ class ControllerInformationContact extends Controller {
 	private $error = array();
 
 	public function index() {
+        $this->document->addScript('catalog/view/javascript/contact.js');
+		$this->document->addScript("https://api-maps.yandex.ru/2.1/?lang=tr_TR\" type=\"text/javascript");
 		$this->load->language('information/contact');
 
 		$this->document->setTitle($this->language->get('heading_title'));
+        $this->document->setTitle($this->language->get('heading_title2'));
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			$mail = new Mail();
@@ -40,6 +43,7 @@ class ControllerInformationContact extends Controller {
 		);
 
 		$data['heading_title'] = $this->language->get('heading_title');
+        $data['heading_title2'] = $this->language->get('heading_title2');
 
 		$data['text_location'] = $this->language->get('text_location');
 		$data['text_store'] = $this->language->get('text_store');
@@ -56,6 +60,12 @@ class ControllerInformationContact extends Controller {
 
 		$data['button_map'] = $this->language->get('button_map');
 
+        $data['findTouch'] = $this->config->get('config_address');
+        $data['findEmail'] = $this->config->get('config_email');
+        $data['findTelef'] =  $this->config->get('config_telephone');
+        $data['findDodat'] = $this->config->get('config_dob');
+        $data['config_open'] = $this->config->get('config_open');
+        $this->load->model('catalog/information');
 		if (isset($this->error['name'])) {
 			$data['error_name'] = $this->error['name'];
 		} else {
@@ -191,6 +201,7 @@ class ControllerInformationContact extends Controller {
 		$this->load->language('information/contact');
 
 		$this->document->setTitle($this->language->get('heading_title'));
+        $this->document->setTitle($this->language->get('heading_title2'));
 
 		$data['breadcrumbs'] = array();
 
@@ -205,6 +216,7 @@ class ControllerInformationContact extends Controller {
 		);
 
 		$data['heading_title'] = $this->language->get('heading_title');
+        $data['heading_title2'] = $this->language->get('heading_title');
 
 		$data['text_message'] = $this->language->get('text_success');
 
