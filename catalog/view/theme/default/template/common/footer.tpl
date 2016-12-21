@@ -6,7 +6,7 @@
         <div class="footer-touch_mob">
                 <?php echo $findTouch; ?>
         </div>
-        <div class=" col-sm-8 col-md-9 first-cont">
+        <div class=" col-sm-8 col-md-8 first-cont">
             <div class="footer-touch">
               <img src="http://transpak.dev/image/touch_pos.png">
                 <?php echo $findTouch; ?>
@@ -15,7 +15,7 @@
                 <?php echo $findEmail; ?>
             </div>
         </div>
-        <div  class="col-sm-4 col-md-3 second-cont">
+        <div  class="col-sm-4 col-md-4 second-cont">
                 <div class="footer-telef">
                     
                   <?php echo $findTelef; ?>
