@@ -24,11 +24,12 @@
     color: black;
     margin-left: 20px;
     font-family: Roboto-Regular;
+    font-weight: 600;
 }
 
 .footer-telef{
     text-align: right;
-    font-size: 15px;
+    font-size: 24px;
     font-weight: 900;
     color: black;
     font-family: MuseoCyrl-700;
@@ -36,14 +37,15 @@
 .foter-dodat{   
     text-align: right;
     color: #666666;
-    font-size: 10.5px;
+    font-size: 14px;
     font-family: Roboto-MediumItalic;
-    font-style: oblique;
+    font-weight: 600;
 }
 
 .all-secure{
     text-align: center;
     color: #9c9c9c;
+    font-size: 11px;
 }
 
 .first-cont{
@@ -77,16 +79,17 @@
     }
     
     .foter-email_mob{
-        font-size: 15px;
+        font-size: 17px;
         color: black;
         margin-left: 20px;
         font-family: Roboto-Regular;
         text-align: center;
-        padding-top: 61px;
+        padding-top: 45px;
+        font-weight: 600; 
     }
 
     .footer-telef{
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 900;
         width: 100%;
         color: black;
@@ -96,7 +99,7 @@
         
     }
     .foter-dodat{    
-        color: #666666;
+        color: #000;
         font-size: 14px;
         width: 100%;
         font-family: Roboto-MediumItalic;
@@ -104,11 +107,13 @@
         text-align: center;
     }
     .second-cont{
-        padding-top: 20px;
+        padding-top: 25px;
     }
     
     .all-secure{
-        padding-top: 30px;
-        font-size: 9px;
+        padding-top: 40px;
+        font-size: 11px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
