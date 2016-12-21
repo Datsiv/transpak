@@ -35,9 +35,9 @@ $(document).ready(function () {
                     $('#errorMasege > .' + id).hide();
                 }
                 break;
-            case 'email':
-                if (!($('#' + id).val().match(/^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i))) {
-                    $('#errorMasege > .' + id).text('Некоректно заполнено Email');
+            case 'telefon':
+                if (!($('#' + id).val().match(/^[0-9\-]|[\+0-9]|[0-9\s]|[0-9()]*$/))) {
+                    $('#errorMasege > .' + id).text('Некоректно заполнено telefon');
                     $('#' + id).css('border', '1px solid red');
                     $('#errorMasege > .' + id).show();
                 } else {
@@ -68,14 +68,14 @@ $(document).ready(function () {
                     $('#name').css('border', '1px solid green');
                     $('#errorMasege > .name').hide();
                 }
-                if (!($('#email').val().match(/^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i))) {
-                    $('#email').css('border', '1px solid red');
+                if (!($('#telefon').val().match(/^[0-9\-]|[\+0-9]|[0-9\s]|[0-9()]*$/))) {
+                    $('#telefon').css('border', '1px solid red');
                     errorCount++;
-                    $('#errorMasege > .email').show();
+                    $('#errorMasege > .telefon').show();
                 } else {
-                    $('#errorMasege > .email').text('');
-                    $('#email').css('border', '1px solid green');
-                    $('#errorMasege > .email').hide();
+                    $('#errorMasege > .telefon').text('');
+                    $('#telefon').css('border', '1px solid green');
+                    $('#errorMasege > .telefon').hide();
                 }
                 if (!($('#message').val().length >= 10)) {
                     $('#message').css('border', '1px solid red');
@@ -111,7 +111,7 @@ $(document).ready(function () {
                 arr[$index] = res[result].value;
             });
             $('#name').val('');
-            $('#email').val('');
+            $('#telefon').val('');
             $('#message').val('');
             swal("Сообщение отправлено", "", "success");
             $('#contactForm_en').removeClass('in');
