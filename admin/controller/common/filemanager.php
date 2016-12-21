@@ -34,7 +34,7 @@ class ControllerCommonFileManager extends Controller {
 		}
 
 		// Get files
-		$files = glob($directory . '/' . $filter_name . '*.{jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF}', GLOB_BRACE);
+		$files = glob($directory . '/' . $filter_name . '*.{jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF,pdf}', GLOB_BRACE);
 
 		if (!$files) {
 			$files = array();
@@ -48,7 +48,6 @@ class ControllerCommonFileManager extends Controller {
 
 		// Split the array based on current page number and max number of items per page of 10
 		$images = array_splice($images, ($page - 1) * 16, 16);
-
 		foreach ($images as $image) {
 			$name = str_split(basename($image), 14);
 
@@ -233,6 +232,7 @@ class ControllerCommonFileManager extends Controller {
 				// Allowed file extension types
 				$allowed = array(
 					'jpg',
+					'pdf',
 					'jpeg',
 					'gif',
 					'png'
@@ -245,6 +245,7 @@ class ControllerCommonFileManager extends Controller {
 				// Allowed file mime types
 				$allowed = array(
 					'image/jpeg',
+					'application/pdf',
 					'image/pjpeg',
 					'image/png',
 					'image/x-png',

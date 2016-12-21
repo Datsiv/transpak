@@ -179,7 +179,6 @@ class ControllerCommonHeader extends Controller {
         if ($user_query->num_rows) {
             $admin_email = $user_query->row['email'];
         }
-        var_dump($_POST);
         $mailContent = '
             <table>
                 <tr>

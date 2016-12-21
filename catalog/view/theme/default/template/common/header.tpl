@@ -135,7 +135,7 @@
                  <?php  ?>
              </li>
              <li><a class="text" href="#">Скачать прайс</a></li>
-             <li><a class="text" href="#">Качество</a></li>
+             <li><a class="text" href="index.php?route=information/kachestvo">Качество</a></li>
              <li><a class="text" href="#">Вопросы</a></li>
              <li><a class="text" href="#">Контакты</a></li>
          </ul>
