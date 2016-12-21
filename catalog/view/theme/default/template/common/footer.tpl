@@ -8,8 +8,8 @@
         </div>
         <div class=" col-sm-8 col-md-8 first-cont">
             <div class="footer-touch">
-              <img src="http://transpak.dev/image/touch_pos.png">
-                <?php echo $findTouch; ?>
+              <img class="jkllllllmnmmmmmmmnn" src="http://transpak.dev/image/touch_pos.png">
+              <?php echo $findTouch; ?>
             </div>
             <div class=" foter-email">
                 <?php echo $findEmail; ?>
