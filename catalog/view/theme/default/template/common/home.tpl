@@ -3,6 +3,7 @@
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/home_js.js" type="text/javascript"></script>
 <?php echo $header; ?>
+<?php echo $content_top; ?>
 <?php if ($categories) { ?>
 <div class="">
 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin">
@@ -67,11 +68,11 @@
 				</div>
 			</div>
 </div>
- <div class="row blocmargintov">
+ <div class="row    blocmargintov">
     <div class="korob2 col-sm-12 hidden-md hidden-lg hidden-xl"><h4>Каждый груз в этих коробках имеет право на 
 бережную транспортировку</h4></div>
      <div class="korob1 col-sm-12 col-md-5 col-lg-5 col-xl-5"><img src="image/iachuk.png" alt=""></div>
-     <div class="korob2 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="    padding: 0;">
+     <div class="korob2 kategoru_home col-sm-12 col-md-6 col-lg-6 col-xl-6" style="    padding: 0;">
      <h4 class="hidden-xs">Каждый груз в этих коробках имеет право на бережную транспортировку</h4>
       <?php foreach ($categories as $category) { ?>
 
@@ -99,7 +100,7 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div  class="<?php echo $class; ?>"><?php echo $content_top; ?><?php echo $content_bottom; ?>
+    <div  class="<?php echo $class; ?>"><?php echo $content_bottom; ?>
      <div class="row">
      <div class="col-sm-12 seo">
      
