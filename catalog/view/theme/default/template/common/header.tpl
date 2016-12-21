@@ -138,8 +138,8 @@
              <li><a class="text" href="#">Скачать прайс</a></li>
 
              <li><a class="text" href="index.php?route=information/kachestvo">Качество</a></li>
-             <li><a class="text" href="http://transpak.dev/index.php?route=information/faq">Вопросы</a></li>
-             <li><a class="text" href="http://transpak.dev/index.php?route=information/contact">Контакты</a></li>
+             <li><a class="text" href="index.php?route=information/faq">Вопросы</a></li>
+             <li><a class="text" href="index.php?route=information/contact">Контакты</a></li>
 
          </ul>
      </div>
@@ -165,9 +165,9 @@
                     </ul>
                 </li>
                 <li><a class="text" href="#">Скачать прайс</a></li>
-                <li><a class="text" href="#">Качество</a></li>
-                <li><a class="text" href="#">Вопросы</a></li>
-                <li><a class="text" href="#">Контакты</a></li>
+                <li><a class="text" href="index.php?route=information/kachestvo">Качество</a></li>
+                <li><a class="text" href="index.php?route=information/faq">Вопросы</a></li>
+                <li><a class="text" href="index.php?route=information/contact">Контакты</a></li>
             </ul>
 </div>
     <div style="clear:both;"></div>
