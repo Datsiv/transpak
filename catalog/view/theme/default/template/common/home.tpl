@@ -67,11 +67,11 @@
 				</div>
 			</div>
 </div>
- <div class="row blocmargintov">
+ <div class="row    blocmargintov">
     <div class="korob2 col-sm-12 hidden-md hidden-lg hidden-xl"><h4>Каждый груз в этих коробках имеет право на 
 бережную транспортировку</h4></div>
      <div class="korob1 col-sm-12 col-md-5 col-lg-5 col-xl-5"><img src="image/iachuk.png" alt=""></div>
-     <div class="korob2 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="    padding: 0;">
+     <div class="korob2 kategoru_home col-sm-12 col-md-6 col-lg-6 col-xl-6" style="    padding: 0;">
      <h4 class="hidden-xs">Каждый груз в этих коробках имеет право на бережную транспортировку</h4>
       <?php foreach ($categories as $category) { ?>
 
