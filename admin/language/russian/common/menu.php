@@ -3,6 +3,7 @@
 $_['text_news'] = 'Новости';
 $_['text_faq'] = 'Вопросы';
 $_['text_akcii'] = 'Акции';
+$_['text_kachestvo'] = 'Качество';
 $_['text_analytics']                   = 'Аналитика';
 $_['text_affiliate']                   = 'Партнерская программа';
 $_['text_affiliate_activity']          = 'Активность партнера';

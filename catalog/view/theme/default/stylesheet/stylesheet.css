@@ -1761,3 +1761,15 @@ li span {
 .newsyears:hover{
 	background-color: #ffd900!important;
 }
+.fiveparts {
+    width: 25%;
+    float: left;
+    margin-top: 10px;
+}
+
+.fiveparts {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
