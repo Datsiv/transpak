@@ -58,14 +58,14 @@
                     <form id="contactForm" action="" method="post">
                         <ul id="errorMasege" style="padding-left: 0">
                             <span style="display: none; color: red" class="row name">Некоректно заполнено Имя пользователя</span>
-                            <span style="display: none; color: red" class="row telephone ">Некоректно заполнено email</span>
+                            <span style="display: none; color: red" class="row telephone ">Некоректно заполнено telefon</span>
                             <span style="display: none; color: red" class="row message ">Минимальная длина сообщения десеть знаков</span>
                         </ul>
                         <div class="row modal-div-input-stile">
                             <input class="modal-input-style contactItem" id="name" name="name" type="text" placeholder="ВАШЕ ИМЯ">
                         </div>
                         <div class="row modal-div-input-stile">
-                            <input class="modal-input-style contactItem" id="email" name="email" type="text" placeholder="E-MAIL">
+                            <input class="modal-input-style contactItem" id="telefon" name="telefon" type="text" placeholder="ТЕЛЕФОН">
                         </div>
                         <div class="row modal-div-input-stile">
                             <textarea  name="message" placeholder="СООБЩЕНИЕ" rows="5" id="message" class="contactItem modal-textarea-style"></textarea>
@@ -137,8 +137,8 @@
              </li>
              <li><a class="text" href="#">Скачать прайс</a></li>
              <li><a class="text" href="#">Качество</a></li>
-             <li><a class="text" href="#">Вопросы</a></li>
-             <li><a class="text" href="#">Контакты</a></li>
+             <li><a class="text" href="http://transpak.dev/index.php?route=information/faq">Вопросы</a></li>
+             <li><a class="text" href="http://transpak.dev/index.php?route=information/contact">Контакты</a></li>
          </ul>
      </div>
 </div>
