@@ -13,39 +13,47 @@
 }
 
 .footer-touch{
-    font-size: 13.5px;
+    font-size: 15px;
     font-weight: 900;
     color: black;
     font-family: Roboto-Bold;
 }
 
 .foter-email{
-    font-size: 13px;
+    font-size: 15px;
     color: black;
-    margin-left: 20px;
+    margin-left: 33px;
     font-family: Roboto-Regular;
-    font-weight: 600;
+    padding-top: 6px;
 }
 
 .footer-telef{
     text-align: right;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 900;
     color: black;
-    font-family: MuseoCyrl-700;
+    font-family: MuseoCyrl-700 ;
 }
 .foter-dodat{   
     text-align: right;
     color: #666666;
     font-size: 14px;
-    font-family: Roboto-MediumItalic;
-    font-weight: 600;
+    font-family: Roboto-Medium;
+    padding-top: 7px;
+    font-style: oblique;
 }
 
+.jkllllllmnmmmmmmmnn{
+    vertical-align: middle;
+    padding-right: 12px;
+    margin-top: -11px;
+}
 .all-secure{
     text-align: center;
     color: #9c9c9c;
-    font-size: 11px;
+    font-size: 13px;
+    margin-bottom: 13px;
+    margin-top: 18px;
 }
 
 .first-cont{

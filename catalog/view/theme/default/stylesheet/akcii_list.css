@@ -9,7 +9,13 @@
     }
     
     .breadcrumbmy_normal{
-        margin-left: 32px;
+        margin-left: 2px;
+    }
+    
+    .akciibutton_two{
+        background-color: #ffe42d;
+        font-size: 14px;
+        font-weight: 600;
     }
 .akciihead_mob{
     display: none;
@@ -37,7 +43,7 @@
 
 .row_noraml{
     margin-top: 0px;
-    padding-bottom: 157px;
+    padding-bottom: 133px;
 }
 
 .hghfj{
@@ -92,6 +98,11 @@
     .akciihead_normal{
         display: none;
     }
+    
+    .breadcrumbmy_normal{
+        display: none;
+    }
+    
     .rrrr{
         width: 100%;
         text-align: center;
