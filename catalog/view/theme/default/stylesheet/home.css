@@ -1,3 +1,25 @@
+.class_text_new{
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: black;
+    line-height: 14px;
+}
+.class_text{
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+
+}
+.title_glavn{
+    font-family: MuseoCyrl-700!important;
+
+}
+.title_voprosy{
+    font-family: MuseoCyrl-700!important;
+}
 .kategoru_home a {
     line-height: 2.5;
 }
@@ -18,7 +40,7 @@
     margin-bottom: 10%;
 }
 .akciiblock{
-    margin-top: 25px!important;
+    margin-top: 21px!important;
 }
 .akciihead {
     font-size: 38px;
@@ -37,7 +59,8 @@
 }
 
 
-.voprosy {
+.voprosy{
+    line-height: 1.5;
     margin-left: 15px;
 }
 .vupad_text1{

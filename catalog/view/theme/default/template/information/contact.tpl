@@ -1,3 +1,5 @@
+<link href="catalog/view/theme/default/stylesheet/contact.css" rel="stylesheet">
+
 <?php echo $header; ?>
 <div class="container">
   <div class="hidden-xs breadcrumbmy ">
@@ -23,7 +25,7 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-sm-12">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><strong class="text_nashi_telefoni"><?php echo $text_telephone; ?></strong><br>
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12"><strong class="text_nashi_telefoni"><?php echo $text_telephone; ?></strong><br>
                 <div  class="second-cont no-padding">
                   <div class="footer-telef footer_telef_2">
                     <?php echo $findTelef; ?>
@@ -33,12 +35,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nash_rob"><strong class="text_nashi_telefoni">Наш адрес</strong><br>
+              <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12 nash_rob"><strong class="text_nashi_telefoni">Наш адрес</strong><br>
                 <div class="footer-touch_mob footer_touch_mob_2">
                   <?php echo $findTouch; ?>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nash_rob"><strong class="text_nashi_telefoni">Наша электронная почта</strong><br>
+              <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12 nash_rob"><strong class="text_nashi_telefoni">Наша электронная почта</strong><br>
                 <div class=" foter-email_mob foter_email_mob_2">
                   E-mail:<?php echo $findEmail; ?>
                 </div>
