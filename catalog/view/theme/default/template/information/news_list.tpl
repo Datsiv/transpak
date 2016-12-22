@@ -10,14 +10,14 @@
 		<?php }?>
 		<?php $i++; } ?>
 	</div>
-	<div class="row">
+	<div class="row row-cont-btn-group-change-all">
 		<div id="content">
 			<br>
 			<h1 class="title_news">Новости нашей компании</h1>
 			<br>
 			<?php if ($news_list) { ?>
-			<div class="row">
-				<div class="col-md-12">
+			<div class="row ">
+				<div class="col-md-12 btn-group-cont-row">
 					<div class="btn-group">
 						<?php foreach ($year as $years) { ?>
 						<?php if ($years['value'] == $yearval) { ?>
@@ -31,13 +31,15 @@
 				</div>
 			</div>
 			<br />
-			<div class="row">
+			<div class="row row-cont-inform-table">
 				<?php foreach ($news_list as $news_item) { ?>
 				<div class="product-layout product-grid col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<span class="block"><?php echo $news_item['posted']; ?></span>
 						<div>
 							<div class="caption ">
-								<h4 class="news_text_title"><a href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a></h4>
+								<h4 class="news_text_title">
+                                                                    <a  href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a>
+                                                                </h4>
 								<p class="news_text"><?php echo $news_item['description']; ?></p>
 							</div>
 						</div>

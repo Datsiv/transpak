@@ -33,6 +33,8 @@
 }
 .news_text_title{
     font-family: "Museo Cyrl 700";
+    text-decoration: underline;
+    font-size: 19px;
 }
 .news_text{
     margin-bottom: 53px;
@@ -40,9 +42,20 @@
 }
 .title_news{
     font-family: "Museo Cyrl 700";
+    color:#000;
+    
 }
+
+.btn-group-cont-row{
+    margin-top: 16px;    
+}
+
+.row-cont-inform-table{
+    margin-top: 34px;
+}
+
 .margin_container{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .akciiblock{
     margin-top: 21px!important;
@@ -161,6 +174,9 @@
         margin-right: 142px;
         font-size: 24px;
     }
+    .btn-group-cont-row{
+        margin-top: -5px;
+    }
 }
 @media (max-width: 400px){
     .catshow span {
@@ -198,6 +214,32 @@
 
     .categoru_home{
         text-align: center;
+    }
+    
+    .breadcrumbmy{
+        display: none;
+    }
+    
+    .title_news{
+        font-size: 22px;
+    }
+    
+    .row-cont-btn-group-change-all{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    
+}
+
+
+@media (max-width: 582px){
+    .newsyears{
+        padding: 0px !important;
+        width: 44%;
+        height: 7%;
+    }
+    .btn:nth-child(3){
+        margin-top: 23px;
     }
 }
 @media (min-width: 768px) {
