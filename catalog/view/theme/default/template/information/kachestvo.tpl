@@ -2,9 +2,9 @@
 <div class="container">
 	<div class="breadcrumbmy">
 		<?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
-		<?php if($i<1){?>
+		<?php if($i<1){ ?>
 		<a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
-		<?php }else{?>
+		<?php }else{ ?>
 		<a href="<?php echo $breadcrumb['href']; ?>">Качество</a>
 		<?php }?>
 		<?php $i++; } ?>
