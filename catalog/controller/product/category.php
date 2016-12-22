@@ -9,6 +9,10 @@ class ControllerProductCategory extends Controller {
 
 		$this->load->model('tool/image');
 
+        $this->load->model('setting/setting');
+
+        $data['config_email'] = $this->config->get('config_email');
+
 		if (isset($this->request->get['filter'])) {
 			$filter = $this->request->get['filter'];
 		} else {

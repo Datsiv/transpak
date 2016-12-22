@@ -119,36 +119,43 @@
                             <?php } ?>
                           <?php } ?>
                       <?php } ?>
-                      <?php if ($product['rating']) { ?>
-                      <div class="rating">
-                        <?php for ($i = 1; $i <= 5; $i++) { ?>
-                        <?php if ($product['rating'] < $i) { ?>
-                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <?php } else { ?>
-                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                        <?php } ?>
-                        <?php } ?>
-                      </div>
-                      <?php } ?>
-                      <?php if ($product['price']) { ?>
-                      <p class="product-price">цена
-                        <?php if (!$product['special']) { ?>
-                        <?php echo $product['price']; ?>
-                        <?php } else { ?>
-                        <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-                        <?php } ?>
-                        <?php if ($product['tax']) { ?>
-                        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                        <?php } ?>
-                      </p>
-                      <?php } ?>
-                    </div>
-                    <div class=" col-lg-5 col-md-5 col-sm-3 bottom_zak">
-                      <button type="button"  class=" btn btn-primary zakbtn" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">
-                        <span class="">Заказать</span>
-                      </button>
-                    </div>
-                  </div>
+
+
+
+
+
+
+                <?php if ($product['rating']) { ?>
+                <div class="rating">
+                  <?php for ($i = 1; $i <= 5; $i++) { ?>
+                  <?php if ($product['rating'] < $i) { ?>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <?php } else { ?>
+                  <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <?php } ?>
+                  <?php } ?>
+                </div>
+                <?php } ?>
+                <?php if ($product['price']) { ?>
+                <p class="product-price">цена
+                  <?php if (!$product['special']) { ?>
+                  <?php echo $product['price']; ?>
+                  <?php } else { ?>
+                  <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                  <?php } ?>
+                  <?php if ($product['tax']) { ?>
+                  <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+                  <?php } ?>
+                </p>
+                <?php } ?>
+              </div>
+                <button type="button"  class="btn btn-primary zakbtn" data-toggle="modal" href="#myModal" onclick="zakazData('<?php echo $product['name']; ?>','<?php echo $product['price']; ?>');">
+                  Заказать
+                </button>
+
+
+
+
             </div>
           </div>
         </div>
@@ -210,5 +217,86 @@
           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
       </div>
     <?php // echo $column_right; ?>
+</div>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Х</button>
+        <h3 id="myModalLabel text-center">Оформить заказ</h3>
+      </div>
+      <div class="modal-body">
+        <form action="contact.php" method="post" role="form" id="contact-form">
+          <input type=hidden name=adminEmail value ='<?php echo $config_email; ?>' >
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" class="form-control" name="name" id="name" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="phone">Ваш телефон:</label>
+                <input type="text" class="form-control" name="phone" id="phone" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="text" class="form-control" name="email" id="email" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="address">Адрес доставки:</label>
+                <input type="text" class="form-control" name="address" id="address" />
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="zakaz">Ваш заказ</label>
+                <textarea class="form-control" rows="5" name="zakaz" id="zakaz" ></textarea>
+                <span class="help-block"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">Общая сума заказа: <div style="display: inline;" id="zakaz-price"></div></div>
+          <div class="row">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-success center-block" id="btn-send">ЗАКАЗАТЬ</button>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </form>
+        <h6 class="text-center">Спасибо мы свяжемся с вами в ближайшое время</h6>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alert alert-info text-center" role="alert" id="success-message" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <?php echo $footer; ?>
