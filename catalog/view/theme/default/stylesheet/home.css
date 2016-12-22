@@ -21,7 +21,7 @@
     font-family: MuseoCyrl-700!important;
 }
 .kategoru_home a {
-    line-height: 2.5;
+    line-height: 2.5!important;
 }
 .button_news:hover{
     background-color: yellow;
@@ -171,6 +171,14 @@
 
 }
 @media (max-width: 767px) {
+    .korob2 a:hover {
+        background-color: #ffda00;
+        font-size: 21px;
+        font-family: "Roboto-Regular";
+        color: rgb(0, 0, 0);
+        line-height: 2.667;
+        text-align: left;
+    }
     .korob2 a {
         font-size: 21px;
 
