@@ -81,12 +81,12 @@
 <body class="<?php echo $class; ?>">
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 back">
-    <div class="logo  col-sm-5 col-md-6 col-lg-7">
+    <div class="logo  col-sm-5 col-md-5 col-lg-6">
             <?php if ($logo) { ?>
             <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>"
                                             alt="<?php echo $name; ?>" class="img-responsive"/></a>
     </div>
-    <div class=" col-sm-7 col-md-6 col-lg-5 ">
+    <div class=" col-sm-7 col-md-7 col-lg-6 ">
         <div class="col-xs-3 buttonm">
             <div  > <img src='../../../../../../admin/view/image/menu.png'  onclick="fff();" class=" active "id ="men" /> </div>
             <div  > <img src='../../../../../../admin/view/image/menu1.png'  onclick="www();" id ="men1"  /> </div>
@@ -128,9 +128,9 @@
                  <a class="dropdown-toggle text dropMenuClick" data-toggle="dropdown"   href="#">Продукция
                          <div class="menu_arrow" ><img src="/admin/view/image/onblack.png" ></div>
                  <ul class="dropdown-menu">
-                     <div class="wrap">
+                     <div class="wrap  vupad_header">
                      <?php foreach ($categories as $category ){ ?>
-                     <li><a  href="<?php echo $category['href']; ?>" >
+                     <li><a   href="<?php echo $category['href']; ?>" >
                         <?php echo $category['name'];?></a></li>
       <?php  }?>
              </ul>

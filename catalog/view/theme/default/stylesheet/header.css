@@ -1,18 +1,28 @@
-    .tell {
+.vupad_header li > a:hover {
+    text-decoration: none!important;
+    color: #0053a8 !important;
+    background-color: white !important;
+    background-image: none!important;
+}
+
+.back{
+    margin-top: 10px;
+}
+.tell {
         margin-top: 20px;
-        font-family: "Museo Cyrl";
-        font-size: 21px;
+        font-family: "Museo Cyrl 500";
+        font-size: 28px;
         color: black;
-        font-weight: 800;
+
     }
     .log {
         margin-top: 25px;
     }
     .dob{
         font-family: Roboto;
-        font-size: 12px;
+        font-size: 17px;
         margin-top: 5px;
-        margin-left: 60px;
+        margin-left: 88px;
     }
     .button {
 
@@ -40,11 +50,43 @@
         border-color: white;
     }
     .text{
-        color: #0b0b0b;
+        color: #454545;
     }
     .text:hover{
 
         color: #ffdc00;
+    }
+    @media screen and (max-width: 900px) {
+        .button {
+
+            border: none;
+            background-color: #ffdc00;
+            border-radius: 17px;
+            font-size: 15px;
+            margin-top: 10px;
+            float: right;
+            margin-bottom: 20px;
+            width: 180px;
+            height: 40px;
+            color: black;
+            font-family: Roboto;
+            margin-top: 23px;
+            outline: none;
+
+        }
+        .tell {
+            margin-top: 20px;
+            font-family: "Museo Cyrl 500";
+            font-size: 20px;
+            color: black;
+
+        }
+        .dob{
+            font-family: Roboto;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-left: 61px;
+        }
     }
 
     @media screen and (max-width: 767px) {
@@ -230,7 +272,7 @@
             }
             .menu_arrow img{
                 position: absolute;
-                margin-left: 88px;
+                margin-left: 93px;
                 margin-top: -15px;
                 width: 12px;
                 height: 8px;

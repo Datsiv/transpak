@@ -12,21 +12,21 @@
 		<?php }?>
 		<?php $i++; } ?>
 	</div>
-	<div class="row">
+	<div class="container class_text">
 		<div id="content"><?php echo $content_top; ?>
-			<div class=" row akciihead">Часто задаваемые вопросы</div>
-			<div class="row">
+			<div class=" container akciihead title_glavn">Часто задаваемые вопросы</div>
+			<div class="container class_text">
            <?php echo $description; ?>           
             </div>
 			<?php if ($news_list) { ?>
-			<div class="row">
+			<div class=" class_text_new">
 				<?php foreach ($news_list as $news_item) { ?>
 					<div class="col-xs-12 akciiblock ">
 							<div class="caption">
-								<a class="akciiperhead" ><?php echo $news_item['title']; ?></a>
+								<a class="akciiperhead title_voprosy" ><?php echo $news_item['title']; ?></a>
 								<p class="voprosy"><?php echo $news_item['description']; ?></p>
-							</div>
-						
+					</div>
+
 					</div>
 				
 				<?php } ?>
