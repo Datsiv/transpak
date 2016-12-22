@@ -140,7 +140,7 @@
                   </div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                     <div class="form-group required">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0% 16% 0 2%;">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 marg_col_xs" style="padding: 0% 16% 0 2%;">
                         <textarea name="enquiry" rows="5" id="input-enquiry" class="form-control form_control_21" placeholder="Ваш вопрос"><?php echo $enquiry; ?></textarea>
                         <?php if ($error_enquiry) { ?>
                         <div class="text-danger"><?php echo $error_enquiry; ?></div>

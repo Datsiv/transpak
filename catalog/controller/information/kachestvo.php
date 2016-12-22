@@ -28,7 +28,6 @@ class ControllerInformationKachestvo extends Controller {
 		$news_list = $this->model_catalog_kachestvo->getNewsStory($id);
 
 		$data['news_list'] = array();
-        var_dump($news_list);exit;
 		if ($news_list) {
             $data['description1'] = html_entity_decode($news_list['title'], ENT_QUOTES, 'UTF-8');
             $data['description2'] = html_entity_decode($news_list['description'], ENT_QUOTES, 'UTF-8');
