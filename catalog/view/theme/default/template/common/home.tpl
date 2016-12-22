@@ -98,9 +98,10 @@
     <?php } elseif ($column_left || $column_right) { ?>
     <?php $class = 'col-sm-9'; ?>
     <?php } else { ?>
-    <?php $class = 'col-sm-12'; ?>
+    <?php $class = 'col-sm-12 news_home'; ?>
     <?php } ?>
-    <div  class="<?php echo $class; ?>"><?php echo $content_bottom; ?>
+
+    <div  class="<?php echo $class; ?>"><?php echo $content_bottom; ?> </div>
      <div class="row">
      <div class="col-sm-12 seo">
      
