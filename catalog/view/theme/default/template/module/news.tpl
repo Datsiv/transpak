@@ -1,8 +1,8 @@
 <link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet">
 <?php if($show_title) { ?>
-<h3 class="news_home">Новости дня</h3>
+<h3 class="news_home news_home_www" >Новости дня</h3>
 <?php } ?>
-<div class="row">
+<div class="row news_home_ww">
 										<?php 
 function russian_date($dateposted){
 $date=explode(".", $dateposted);

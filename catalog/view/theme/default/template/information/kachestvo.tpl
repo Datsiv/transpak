@@ -36,8 +36,8 @@
 				?>
 	                    <div class="fiveparts img_kachestvo col-xs-6 col-sm-3 ">
 							<div class="image ">
-								<img src="<?php echo 'image/'.$image[$imagetext]; ?>" class="img-responsive ">
-							</div>
+										<img src="<?php echo 'image/'.$image[$imagetext]; ?>" class="img-responsive ">
+								</div>
 						</div>
 
 				<?php } } ?>

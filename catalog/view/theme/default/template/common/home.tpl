@@ -21,6 +21,25 @@
 </div>
 </div>
 <?php } ?>
+
+<div class="container">
+		<div class="col-xs-12 hidden-lg hidden-md hidden-sm desk_text_4" style="border-radius: 8px;">
+        <span class="glav_text_span_banner">
+          Акции!
+        </span>
+			<p class="glav_text_p_banner">При покупке ленты тканой Lash
+				2000 GW 500 PES от 10 бобин
+				стоимость 200 м ленты составит
+				98,90 у.е. </p>
+			<div style="padding-bottom: 75px;padding-left: 5px;">
+				<a href="index.php?route=information/akcii">
+					<button type="button"  class=" btn btn-primary bot_vse_akcii" ">
+					<span class="">Все акции</span>
+					</button>
+				</a>
+			</div>
+		</div>
+</div>
 <div class="container">
  <div class="row">
   <div class="col-sm-12">
@@ -90,9 +109,10 @@
 		 <?php } ?>
      
      </div>
-     
  </div>
-  <div class="row blocmarginnew"><?php echo $column_left; ?>
+
+<div class="row">
+  <div class="col-sm-12 blocmarginnew" style="padding:0;"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -102,8 +122,8 @@
     <?php } ?>
 
     <div  class="<?php echo $class; ?>"><?php echo $content_bottom; ?> </div>
-     <div class="row">
-     <div class="col-sm-12 seo">
+     <div class="col-sm-12" style="padding:0;">
+     <div class="col-sm-12 seo" style="padding:0;">
      
 								<h4><?php echo $heading_titleseo ?></h4>
 								<?php echo $descriptionseo; ?>
@@ -119,7 +139,9 @@
 				 </ul>
 
          </div></div>
-    </div>
-    <?php echo $column_right; ?></div>
+    	</div>
+	</div>
 </div>
+<div style="clear:both;"></div>
+    <?php echo $column_right; ?>
 <?php echo $footer; ?>
