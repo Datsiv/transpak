@@ -1,6 +1,6 @@
 <link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet">
-\<?php echo $header; ?>
-<div class="container margin_container">
+<?php echo $header; ?>
+<div class="container">
 	<div class="breadcrumbmy">
 		<?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
 		<?php if($i<1){ ?>
