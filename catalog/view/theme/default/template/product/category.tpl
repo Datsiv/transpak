@@ -99,7 +99,7 @@
         </div>
       </div>-->
       <br />
-      <div class="col-sm-12 pad_tovar" style="padding: 3% 6% 3% 6%;">
+      <div class="col-sm-12 pad_tovar" style="padding: 3% 6% 0% 6%;">
         <?php foreach ($products as $product) { ?>
         <div class="product-layout product-list col-xs-12" style="padding: 0">
           <div class="product-thumb product1" >
@@ -217,6 +217,8 @@
           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
       </div>
     <?php // echo $column_right; ?>
+    </div>
+  </div>
 </div>
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
@@ -299,4 +301,5 @@
     </div>
   </div>
 </div>
+      <div style="clear:both;"></div>
 <?php echo $footer; ?>

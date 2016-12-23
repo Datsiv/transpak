@@ -912,7 +912,7 @@ h2.price {
 }
 .block {
     background: #e6e6e6;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 10px;
     position: relative;
     color: #fff;
@@ -963,7 +963,7 @@ h2.price {
 }
 .blocpadinng h4{
         margin-top: 23px;
-    
+
   font-size: 18px;
   font-family: "MuseoCyrl-700";
   color: rgb(0, 156, 255);
@@ -1042,8 +1042,8 @@ h2.price {
      font-family: "Roboto-Regular";
 }
 .breadcrumbmy{
-   // padding: 8px 15px;
     list-style: none;
+    padding-left: 15px;
 }
 .breadcrumbmya{
     color: #009cff!important;
@@ -1227,7 +1227,7 @@ margin-right: 35px;
 }
 .breadcrumb_text{
 	font-family: Roboto;
-	font-size: 16px;
+	font-size: 14px;
 	list-style-type: none;
 	color: #8a8781;
 	padding: 0;
@@ -1236,7 +1236,7 @@ margin-right: 35px;
 a.text_np_20{
 	font-family: Roboto;
 	color: #009cff;
-	font-size: 16px;
+	font-size: 14px;
 	padding: 0;
 }
 .category_text_product{
@@ -1478,7 +1478,7 @@ li span {
 .footer_telef_2{
 	font-family: "MuseoCyrl-700"!important;
 	text-align: left!important;
-	font-size: 25px!important;
+	font-size: 23px!important;
 	padding-top: 15px!important;
 	padding-bottom: 7px!important;
     padding-top: 10px!important;
@@ -1545,16 +1545,19 @@ li span {
 	font-size: 15px;
 	font-family: "Roboto-Regular";
 	text-align: left;
-	padding: 7px 27px;
+    padding: 9px 30px;
 	position: relative;
 	background: #008bff;
 	outline: none!important;
+}
+.blocpadinng_23{
+    color: #009cff;
 }
 .desk_text_div_style_backg_3{
 	background: #fffacc;
 	position: absolute;
 	left: 63%;
-	top: 20%;
+	top: 24%;
 	padding: 14px 0px 0px 20px;
 	right: 7%;
 }
@@ -1582,6 +1585,21 @@ li span {
 	background: #008bff!important;
 	 border: none!important;
 	outline: none!important;
+}
+.text_2:hover{
+    color: rgb(0, 156, 255)!important;
+}
+.news_home{
+    padding: 0;
+}
+.text_foot_2{
+    padding-right: 0!important;
+    margin-top: -7px!important;
+}
+.spa_text{
+    position: relative;
+    left: 30px;
+    margin-left: -20px;
 }
 .clickable{
 	text-align: center;
@@ -1636,11 +1654,19 @@ li span {
 	font-size: 13px;
 	font-family: "MuseoCyrl-700"!important;
 }
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff!important;
+}
 @media (min-width: 320px) and (max-width: 500px){
 	.span_name {
 		font-size: 11px!important;
 		line-height: 2!important;
 	}
+    .newsyears{
+        padding: 9px 15px!important;
+    }
 	.span_name_2 {
 		font-size: 11px!important;
 		line-height: 2!important;
@@ -1666,6 +1692,18 @@ li span {
 	.span_text_pr {
 		padding: 15px 0;
 	}
+    .block {
+        background: #e6e6e6;
+        border-radius: 3px;
+        padding: 10px;
+        position: relative;
+        color: #fff;
+        font-size: 13px;
+        font-family: "Roboto-Regular";
+        line-height: 3.077;
+        text-align: left;
+
+    }
 	.modal_content_2 {
 		background: #fffacc;
 		width: inherit!important;
@@ -1805,7 +1843,7 @@ li span {
 		background: #fffacc;
 		position: absolute;
 		left: 61%;
-		top: 20%;
+		top: 31%;
 		padding: 14px 0px 0px 20px;
 		right: 4%;
 	}
@@ -1868,7 +1906,7 @@ li span {
 		background: #fffacc;
 		position: absolute;
 		left: 61%;
-		top: 41%;
+		top: 48%;
 		padding: 8px 0px 0px 16px;
 		right: 3%;
 		width: 205px;
@@ -1902,7 +1940,7 @@ li span {
 	}
 	.desk_text_div_style_backg {
 		left: 66%;
-		top: 38%;
+		top: 48%;
 		right: -2%;
 	}
 	.text_slader_bydte {
@@ -1927,9 +1965,16 @@ li span {
 	font-family: "Roboto-Regular";
 	color: rgb(0, 0, 0);
 	font-size: 15px!important;
+    outline: none!important;
 }
 .newsyears:hover{
 	background-color: #ffd900!important;
+}
+.a_cla_text{
+    color: #009cff!important;
+}
+.a_cla_text:hover{
+    color: #0066a7!important;
 }
 .fiveparts {
     width: 25%;

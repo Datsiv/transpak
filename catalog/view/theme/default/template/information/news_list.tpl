@@ -3,9 +3,9 @@
 <div class="container margin_container">
 	<div class="breadcrumbmy">
 		<?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
-		<?php if($i<1){?>
+		<?php if($i<1){ ?>
 		<a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
-		<?php }else{?>
+		<?php }else{ ?>
 		<a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
 		<?php }?>
 		<?php $i++; } ?>
@@ -38,7 +38,7 @@
 						<div>
 							<div class="caption ">
 								<h4 class="news_text_title">
-                                                                    <a  href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a>
+                                                                    <a class="a_cla_text" href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a>
                                                                 </h4>
 								<p class="news_text"><?php echo $news_item['description']; ?></p>
 							</div>

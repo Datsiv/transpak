@@ -102,7 +102,7 @@
 
         </div>
             <div class="block1 ">
-                                <div class="tell ">
+                                <div class="tell">
                                     <?php echo $telephone; ?><?php  ?>
                                 </div>
                                 <div class="dob ">

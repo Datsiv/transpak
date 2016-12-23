@@ -8,8 +8,8 @@
         </div>
         <div class=" col-sm-8 col-md-8 first-cont">
             <div class="footer-touch">
-              <img class="jkllllllmnmmmmmmmnn" src="http://transpak.dev/image/touch_pos.png">
-              <?php echo $findTouch; ?>
+              <img class="jkllllllmnmmmmmmmnn text_foot_2" src="http://transpak.dev/image/touch_pos.png">
+              <span class="spa_text"><?php echo $findTouch; ?></span>
             </div>
             <div class=" foter-email">
                 <?php echo $findEmail; ?>
@@ -25,7 +25,7 @@
                 </div>
         </div>
         <div class=" foter-email_mob">
-                <?php echo $findEmail; ?>
+                E-mail:<?php echo $findEmail; ?>
         </div>
         <div class="col-xs-12 all-secure">
             © 2008 - 2016. ИнтерТрансПак. Все права защищены.

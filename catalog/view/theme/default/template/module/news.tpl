@@ -24,11 +24,11 @@ echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
 }
 ?>
 	<?php foreach ($news as $news_item) { ?>
-	<div class="blocpadinng col-lg-4 col-md-4 col-sm-6 col-xs-12">
+	<div class="blocpadinng col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
          <span class="block">
              <?php echo russian_date($news_item['posted']); ?>
              </span>
-				<h4><a href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a></h4>
+				<h4 ><a class="blocpadinng_23" href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a></h4>
 				<p><?php echo $news_item['description']; ?></p>
 
 		
