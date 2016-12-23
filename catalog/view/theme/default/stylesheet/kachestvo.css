@@ -35,9 +35,12 @@
 
 .pdf_img_text_a_href{
     text-decoration: underline;
+    /*padding: 20px 0 0 0;
+    font-family: "Roboto-Regular";
+    color: #0078ff; */
     padding: 20px 0 0 0;
     font-family: "Roboto-Regular";
-    color: #0078ff; 
+    color: #0078ff;
 }
 
 .img_img_pdf_a_href{
