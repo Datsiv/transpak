@@ -21,7 +21,7 @@
                   <?php echo $findTelef; ?>
                 </div>
                 <div class="foter-dodat">
-                  <?php echo $findDodat; ?>
+                    <i><?php echo $findDodat; ?></i>
                 </div>
         </div>
         <div class=" foter-email_mob">

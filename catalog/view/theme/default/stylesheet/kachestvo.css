@@ -28,17 +28,14 @@
 }
 
 .pdf_kachestvo img{
-    width: 55px;
+    width: 38px;
     position: relative;
-    right: 13px;
+    right: 14px;
 }
 
 .pdf_img_text_a_href{
     text-decoration: underline;
-    /*padding: 20px 0 0 0;
-    font-family: "Roboto-Regular";
-    color: #0078ff; */
-    padding: 20px 0 0 0;
+    padding: 13px 0 0 0;
     font-family: "Roboto-Regular";
     color: #0078ff;
 }
@@ -51,7 +48,21 @@
     margin-top: 25px;
     text-decoration: underline;
     padding: 0!important;
+}
 
+.seo{
+    padding: 0px !important;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .pdf_img_text_a_href{
+        padding-left: 34px !important;
+    }
+}
+
+@media (min-width: 1200px){
+    .pdf_img_text_a_href{
+        padding-left: 25px !important;
+    }
 }
 @media screen and (min-width: 768px) {
 
@@ -59,14 +70,13 @@
 @media screen and (min-width: 501px )and (max-width: 700px){
     .fiveparts {
         width: 50%!important;
-
     }
 
     .pdf_kachestvo img{
-        width: 10%;
-        height: 5% ;
-        margin-right: 7px;
-}
+        width: 38px;
+        position: relative;
+        right: 14px;
+    }
 }
 @media screen and (min-width: 320px )and (max-width: 500px) {
     .fiveparts {
@@ -74,23 +84,21 @@
 
     }
 
-    .pdf_kachestvo img {
-        width: 14% !important;;
-        height: 5% !important;
-        margin-right: 7px;
+    .pdf_kachestvo img { 
+        width: 55px;
+        position: relative;
+        right: 13px;
     }
 }
 @media screen and (max-width: 767px) {
-    .pdf_kachestvo img {
-        width: 8% ;
-        height: 5% ;
-        margin-right: 7px;
-    }
     .fiveparts {
         width: 50%!important;
 
     }
 
+    .img_img_pdf_a_href{
+        padding-right: 23px !important;
+    }
     .vypad{
         cursor: pointer;
     }
