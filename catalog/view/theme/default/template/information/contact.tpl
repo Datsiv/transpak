@@ -1,7 +1,7 @@
 <link href="catalog/view/theme/default/stylesheet/contact.css" rel="stylesheet">
 
 <?php echo $header; ?>
-<div class="container">
+<div class="container" style="padding: 0">
   <div class="hidden-xs breadcrumbmy ">
     <?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php if($i<1){ ?>
@@ -11,7 +11,7 @@
     <?php }?>
     <?php $i++; } ?>
   </div>
-  <div class="col-sm-12"><?php echo $column_left; ?>
+  <div class="col-sm-12" style="padding: 0"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -19,7 +19,7 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <div id="content" class="<?php echo $class; ?>" style="padding: 0"><?php echo $content_top; ?>
       <div class="h_text_1"><?php echo $heading_title2; ?></div>
       <div class="panel panel-default panel_panel_default_20">
         <div class="panel-body">

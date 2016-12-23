@@ -1,0 +1,52 @@
+
+CREATE TABLE IF NOT EXISTS `oc_kachestvo` (
+  `news_id` int(11) NOT NULL,
+  `status` int(1) NOT NULL DEFAULT '0',
+  `image1` varchar(255) DEFAULT NULL,
+  `image2` varchar(255) DEFAULT NULL,
+  `image3` varchar(255) DEFAULT NULL,
+  `image4` varchar(255) DEFAULT NULL,
+  `image5` varchar(255) DEFAULT NULL,
+  `image6` varchar(255) DEFAULT NULL,
+  `image7` varchar(255) DEFAULT NULL,
+  `image8` varchar(255) DEFAULT NULL,
+  `image9` varchar(255) DEFAULT NULL,
+  `image10` varchar(255) DEFAULT NULL,
+  `image11` varchar(255) DEFAULT NULL,
+  `image12` varchar(255) DEFAULT NULL,
+  `pdf1` varchar(255) DEFAULT NULL,
+  `pdf2` varchar(255) DEFAULT NULL,
+  `pdf3` varchar(255) DEFAULT NULL,
+  `pdf4` varchar(255) DEFAULT NULL,
+  `pdf5` varchar(255) DEFAULT NULL,
+  `pdf6` varchar(255) DEFAULT NULL,
+  `pdf7` varchar(255) DEFAULT NULL,
+  `pdf8` varchar(255) DEFAULT NULL,
+  `pdf9` varchar(255) DEFAULT NULL,
+  `pdf10` varchar(255) DEFAULT NULL,
+  `pdf11` varchar(255) DEFAULT NULL,
+  `pdf12` varchar(255) DEFAULT NULL,
+  `date_added` date DEFAULT NULL,
+  `viewed` int(5) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `oc_kachestvo_description` (
+  `news_id` int(11) NOT NULL DEFAULT '0',
+  `language_id` int(11) NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `meta_title` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `oc_kachestvo_to_store` (
+  `news_id` int(11) NOT NULL,
+  `store_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+
+ALTER TABLE `oc_kachestvo`
+  ADD UNIQUE KEY `news_id` (`news_id`);
+
