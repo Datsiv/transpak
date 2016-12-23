@@ -809,7 +809,7 @@ h2.price {
 	height: 155px;
 }
 .instruction {
-    margin-top: 75px;
+    margin-top: 65px;
 }
 .kolo {
     padding-top: 20px;
@@ -923,13 +923,7 @@ h2.price {
     text-align: left;
 
    }
-.block::after {
-    content: ''; 
-    position: absolute; 
-    left: 20px; bottom: -18px; 
-    border: 10px solid transparent; 
-    border-top: 10px solid #e6e6e6; 
-   }
+
 .akciibutton{
    
   border-radius: 5px;
@@ -959,6 +953,7 @@ h2.price {
        color: rgb(230, 230, 230);
        line-height: 1.44;
        text-align: left;
+		margin-left: 14px;
 
 }
 .blocpadinng h4{
@@ -1268,6 +1263,7 @@ a.text_np_20{
 	height: 280px;
 	position: relative;
 }
+
 .desktop-img-div-style{
 	position: relative;
 	top: 39%;
@@ -1584,6 +1580,11 @@ li span {
 .mar_left_3{
 	margin-left: 6%;
 }
+.desk_text_4{
+	background: #fffacc;
+	padding: 14px 0px 0px 20px;
+	margin-top: 25px;
+}
 .h2_text_title {
 	font-family: "MuseoCyrl-700";
 	font-size: 25px;
@@ -1671,6 +1672,14 @@ li span {
     background-color: #008bff;
     border-color: #008bff!important;
 }
+.block::after {
+	content: '';
+	position: absolute;
+	left: 20px;
+	bottom: -19px;
+	border: 10px solid transparent;
+	border-top: 10px solid #e6e6e6;
+}
 @media (min-width: 320px) and (max-width: 500px){
 	.span_name {
 		font-size: 11px!important;
@@ -1704,6 +1713,21 @@ li span {
 	.span_text_pr {
 		padding: 15px 0;
 	}
+	.news_home_ww{
+		margin: 0 0px 0 0px;
+		padding-bottom: 50px;
+	}
+	.news_home_www{
+		padding-top: 35px;
+	}
+	.block::after {
+		content: '';
+		position: absolute;
+		left: 20px;
+		bottom: -19px;
+		border: 10px solid transparent;
+		border-top: 10px solid #b2b2b1
+	}
 	.voprosy {
 		line-height: 1.5;
 		margin-left: 0!important;
@@ -1715,7 +1739,7 @@ li span {
 		padding: 0!important;
 	}
     .block {
-        background: #e6e6e6;
+		background: #b2b2b1;
         border-radius: 3px;
         padding: 10px;
         position: relative;
