@@ -53,7 +53,12 @@
 	            ?>
 				<div class="pdf pdf_kachestvo col-xs-12 no-padding col-sm-6 no-padding" >
 					<a target="_blank" href="<?php echo 'image/'.$pdf[$pdfname]; ?>">
-						<img src="../image/pdf.png" alt=""><?php echo  preg_replace("/(.pdf)(.*)/","", end($parts)); ?> (<?php echo round($size, 2); ?> мб)
+                                            <div class="col-lg-1 img_img_pdf_a_href">
+                                                <img src="../image/pdf.png" alt="">
+                                            </div>
+                                            <div class="col-lg-11 pdf_img_text_a_href">
+                                                <?php echo  preg_replace("/(.pdf)(.*)/","", end($parts)); ?> (<?php echo round($size, 2); ?> мб)
+                                            </div>
 					</a>
 				</div>
 
