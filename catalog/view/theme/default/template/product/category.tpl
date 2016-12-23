@@ -155,11 +155,13 @@
 
 
 
-
+                  </div>
             </div>
           </div>
-        </div>
+          </div>
+
         <?php } ?>
+      </div>
       </div><div style="clear:both;"></div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
@@ -168,6 +170,9 @@
         <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
       </div>
       <?php } ?>
+
+
+
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 6%;">
         <div class="col-sm-12 category-text_2">Преимущества защитных уголков</div>
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pad_np_20">
@@ -210,16 +215,17 @@
         </div>
       </div>
       <?php } ?>
+
+
+  <div class="col-lg-12 mar_left_3">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
           <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 no-padding">
                 <?php echo $content_bottom; ?>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
       </div>
-    <?php // echo $column_right; ?>
+      <?php // echo $column_right; ?>
     </div>
-  </div>
-</div>
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content  modal_content_2">
