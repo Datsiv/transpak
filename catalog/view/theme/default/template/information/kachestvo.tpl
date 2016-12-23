@@ -36,8 +36,8 @@
 				?>
 	                    <div class="fiveparts img_kachestvo col-xs-6 col-sm-3 ">
 							<div class="image ">
-										<img src="<?php echo 'image/'.$image[$imagetext]; ?>" class="img-responsive ">
-								</div>
+								<img src="<?php echo 'image/'.$image[$imagetext]; ?>" class="img-responsive ">
+							</div>
 						</div>
 
 				<?php } } ?>
@@ -51,10 +51,11 @@
                         $parts = explode("/", $pdf[$pdfname]);
                        
 	            ?>
-								<div class="pdf pdf_kachestvo col-xs-12 no-padding col-sm-6 no-padding" >
-                                    <a target="_blank" href="<?php echo 'image/'.$pdf[$pdfname]; ?>"><img src="../image/pdf.png" alt=""><?php echo  preg_replace("/(.pdf)(.*)/","", end($parts)); ?> (<?php echo round($size, 2); ?> мб)
-										</a>
-								</div>
+				<div class="pdf pdf_kachestvo col-xs-12 no-padding col-sm-6 no-padding" >
+					<a target="_blank" href="<?php echo 'image/'.$pdf[$pdfname]; ?>">
+						<img src="../image/pdf.png" alt=""><?php echo  preg_replace("/(.pdf)(.*)/","", end($parts)); ?> (<?php echo round($size, 2); ?> мб)
+					</a>
+				</div>
 
 						<?php } ?>
 

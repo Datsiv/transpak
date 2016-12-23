@@ -1581,6 +1581,18 @@ li span {
 	right: 12%;
 	background: #fffacc;
 }
+.mar_left_3{
+	margin-left: 6%;
+}
+.h2_text_title {
+	font-family: "MuseoCyrl-700";
+	font-size: 25px;
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	padding-left: 0%!important;
+}
 .btn-primary:hover {
 	background: #008bff!important;
 	 border: none!important;
@@ -1691,6 +1703,16 @@ li span {
 @media (min-width: 320px) and (max-width: 767px){
 	.span_text_pr {
 		padding: 15px 0;
+	}
+	.voprosy {
+		line-height: 1.5;
+		margin-left: 0!important;
+	}
+	.akciihead {
+		font-size: 28px!important;
+	}
+	.akciiblock {
+		padding: 0!important;
 	}
     .block {
         background: #e6e6e6;
