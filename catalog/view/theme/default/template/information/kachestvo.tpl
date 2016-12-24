@@ -49,7 +49,6 @@
                         $size = filesize(DIR_IMAGE.$pdf[$pdfname]);
                         $size = $size/1000000;
                         $parts = explode("/", $pdf[$pdfname]);
-                       
 	            ?>
 				<div class="pdf pdf_kachestvo col-xs-12 no-padding col-sm-6 no-padding" >
 					<a target="_blank" href="<?php echo 'image/'.$pdf[$pdfname]; ?>">

@@ -1,4 +1,4 @@
-
+@import "../fonts/styles.css";
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -99,23 +99,11 @@ div.required .control-label:before {
 	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
 	background-repeat: repeat-x;
 }
-#top .btn-link, #top-links li, #top-links a {
-	color: #888;
-	text-shadow: 0 1px 0 #FFF;
-	text-decoration: none;
-}
-#top .btn-link:hover, #top-links a:hover {
-	color: #444;
-}
 #top-links .dropdown-menu a {
 	text-shadow: none;
 }
 #top-links .dropdown-menu a:hover {
 	color: #FFF;
-}
-#top .btn-link strong {
-	font-size: 14px;
-        line-height: 14px;
 }
 #top-links {
 	padding-top: 6px;
@@ -413,17 +401,6 @@ footer h5 {
 	background-image: linear-gradient(to bottom, #eeeeee, #dddddd);
 	background-repeat: repeat-x;
 	border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;
-}
-.btn-primary {
-	color: #ffffff;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #229ac8;
-	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
-	background-repeat: repeat-x;
-}
-.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-	background-color: #1f90bb;
-	background-position: 0 -15px;
 }
 .btn-warning {
 	color: #ffffff;
@@ -772,6 +749,52 @@ h2.price {
 }
 .no-padding{
 	padding:0px!important;
+}
+.zakbtn:hover{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
+}
+.zakbtn2:hover{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
+}
+.div_name_5 h4{
+    border-bottom: 1px solid gray;
+}
+.div_name_5{
+	padding: 0;
+}
+.zakbtn2:active{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
+}
+.zakbtn2:focus{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
+}
+.zakbtn2:active:hover{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
+}
+.zakbtn:active{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
+}
+.zakbtn:focus{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
+}
+.zakbtn:active:hover{
+    color: #fff;
+    background-color: #008bff;
+    border-color: #008bff;
 }
 .catshow span{
 	position: absolute;
@@ -1157,16 +1180,18 @@ margin-right: 35px;
 }
 
 .zakbtn{
-	float: right;
-	border-radius: 15px;
-	font-size: 15px;
-	font-family: "Roboto-Regular";
-	text-align: left;
-	padding: 8px 64px;
-	position: relative;
-	top: 169px;
-	background: #008bff;
-	outline: none!important;
+    float: right;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Roboto-Regular";
+    text-align: left;
+    padding: 8px 64px;
+    position: relative;
+    top: 169px;
+    background: #008bff;
+    outline: none!important;
+    background-color: #008bff;
+    border-color: #008bff;
 }
 .zakbtn a:hover {
 	background-color: #006cc6;
@@ -1317,26 +1342,23 @@ a.text_np_20{
 	line-height: 1.026;
 	font-weight: 600;
 	color: #525252;
-	z-index: 5;
-	background-color: #fffacc;
-	float: left;
+    background: #fffacc;
+    padding-right: 15px;
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+    transform: translateY(1px);
 }
 .span_name_2{
 	font-size: 16px;
 	font-family: "Roboto";
-	line-height: 1.026;
 	font-weight: 600;
 	color: #525252;
-	z-index: 5;
 	background-color: #fffacc;
-	float: right;
 }
 .div_name_2{
-	padding: 22px 0 15px 0;
-	border-bottom: 1px solid;
-}
-.btn-primary:hover {
-	color: #fff;
+	padding: 0;
 }
 .h2_text_title{
 	font-family: "MuseoCyrl-700";
@@ -1365,7 +1387,7 @@ a.text_np_20{
 }
 .img_np_20{
 	width: 100%;
-	height: 470px;
+    height: 525px;
 }
 .span_text_pr{
 	font-family: "MuseoCyrl-700";
@@ -1566,11 +1588,7 @@ li span {
 	background: #008bff;
 	outline: none!important;
 }
-.btn-success:hover {
-	color: #fff;
-	background-color: #008bff;
-	border-color: #008bff;
-}
+
 .modal_content_2{
 	width: 370px;
 	position: relative;
@@ -1578,7 +1596,7 @@ li span {
 	background: #fffacc;
 }
 .mar_left_3{
-	margin-left: 6%;
+	padding-left: 6%;
 }
 .desk_text_4{
 	background: #fffacc;
@@ -1593,11 +1611,6 @@ li span {
 	letter-spacing: 1px;
 	line-height: 1.1;
 	padding-left: 0%!important;
-}
-.btn-primary:hover {
-	background: #008bff!important;
-	 border: none!important;
-	outline: none!important;
 }
 .text_2:hover{
     color: rgb(0, 156, 255)!important;
@@ -1667,11 +1680,7 @@ li span {
 	font-size: 13px;
 	font-family: "MuseoCyrl-700"!important;
 }
-.btn-primary.focus, .btn-primary:focus {
-    color: #fff;
-    background-color: #008bff;
-    border-color: #008bff!important;
-}
+
 .block::after {
 	content: '';
 	position: absolute;
@@ -1682,15 +1691,14 @@ li span {
 }
 @media (min-width: 320px) and (max-width: 500px){
 	.span_name {
-		font-size: 11px!important;
-		line-height: 2!important;
+		font-size: 14px!important;
+        padding-right: 0;
 	}
     .newsyears{
         padding: 9px 15px!important;
     }
 	.span_name_2 {
-		font-size: 11px!important;
-		line-height: 2!important;
+		font-size: 12px!important;
 	 }
 	.product-price {
 		font-size: 27px!important;
@@ -1852,10 +1860,10 @@ li span {
 		padding-bottom: 80px;
 	}
 	.span_name {
-		font-size: 19px;
+		font-size: 16px;
 	}
 	.span_name_2 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.pad_tovar{
 		padding-top: 0!important;%;
@@ -1913,8 +1921,7 @@ li span {
 		float: none;
 	}
 	.div_name_2 {
-		padding: 22px 0 11px 0;
-		border-bottom: 1px solid;
+		padding: 0;
 	}
 	.product-title {
 		font-size: 25px;
@@ -1923,7 +1930,7 @@ li span {
 		font-size: 14px;
 	}
 	.span_name_2 {
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.text_zah_slader {
 		font-size: 29px;
@@ -1971,6 +1978,12 @@ li span {
 @media (min-width: 992px) and (max-width: 1200px){
 	.desktop-text-div-style {
 		right: 29%;
+	}
+	.span_name_2 {
+		font-size: 14px;
+	}
+	.span_name {
+		font-size: 14px;
 	}
 	.desk_text_div_style_backg_3 {
 		position: absolute;
