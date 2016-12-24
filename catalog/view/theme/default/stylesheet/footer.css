@@ -29,7 +29,7 @@
 
 .footer-telef{
     text-align: right;
-    font-size: 23px;
+    font-size: 22px !important;
     font-weight: 900;
     color: black;
     font-family: MuseoCyrl-700 ;
@@ -43,7 +43,7 @@
     font-style: oblique;
 }
 
-.jkllllllmnmmmmmmmnn{
+.img_text_foot_touch_pos{
     vertical-align: middle;
     padding-right: 12px;
     margin-top: -11px;

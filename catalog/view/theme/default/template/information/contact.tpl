@@ -1,7 +1,7 @@
 <link href="catalog/view/theme/default/stylesheet/contact.css" rel="stylesheet">
 
 <?php echo $header; ?>
-<div class="container" style="padding: 0">
+<div class="container">
   <div class="hidden-xs breadcrumbmy ">
     <?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php if($i<1){ ?>
@@ -20,7 +20,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>" style="padding: 0"><?php echo $content_top; ?>
-      <div class="h_text_1"><?php echo $heading_title2; ?></div>
+      <div class="h_text_1 h_text_1_for_change"><?php echo $heading_title2; ?></div>
       <div class="panel panel-default panel_panel_default_20">
         <div class="panel-body">
           <div class="row">
@@ -31,7 +31,7 @@
                     <?php echo $findTelef; ?>
                   </div>
                   <div class="foter-dodat foter_dodat_2" style="text-align: left;">
-                    <?php echo $findDodat; ?>
+                    <i><?php echo $findDodat; ?></i>
                   </div>
                 </div>
               </div>

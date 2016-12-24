@@ -8,7 +8,7 @@
         </div>
         <div class=" col-sm-8 col-md-8 first-cont">
             <div class="footer-touch">
-              <img class="jkllllllmnmmmmmmmnn text_foot_2" src="http://transpak.dev/image/touch_pos.png">
+              <img class="img_text_foot_touch_pos text_foot_2" src="http://transpak.dev/image/touch_pos.png">
               <span class="spa_text"><?php echo $findTouch; ?></span>
             </div>
             <div class=" foter-email">
@@ -16,8 +16,7 @@
             </div>
         </div>
         <div  class="col-sm-4 col-md-4 second-cont">
-                <div class="footer-telef">
-                    
+                <div class="footer-telef"> 
                   <?php echo $findTelef; ?>
                 </div>
                 <div class="foter-dodat">
