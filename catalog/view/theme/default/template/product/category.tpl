@@ -108,13 +108,21 @@
                      style="background: url('../../../image/<?php echo $product['thumb']; ?>')center no-repeat"><a href="<?php echo $product['href']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                     <div class="col-lg-7 col-md-7 col-sm-9 caption" >
-                      <h4 class="product-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+                      <h4 class="product-title"><a><?php echo $product['name']; ?></a></h4>
                       <?php if ($product['attr_groups']) { ?>
                           <?php foreach ($product['attr_groups'] as $attr_group) { ?>
                             <?php foreach ($attr_group['attribute'] as $attribute) { ?>
-                        <div class="div_name_2">
-                              <span class="span_name"><?php echo $attribute['name']; ?></span>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div_name_2">
+                          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-8 div_name_5">
+                              <h4>
+                                <span class="span_name"><?php echo $attribute['name']; ?></span>
+                              </h4>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4" style="padding-right: 0;">
+                              <h4>
                               <span class="span_name_2"><?php echo $attribute['text']; ?><br></span>
+                              </h4>
+                          </div>
                         </div>
                             <?php } ?>
                           <?php } ?>
