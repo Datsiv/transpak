@@ -120,7 +120,7 @@
     <div style="clear:both;"></div>
     </div>
 <div style="clear:both;"></div>
-<div class="container ">
+<div class="container no-padding">
      <div class=" menue col-sm-12 " >
          <ul class="nav nav-tabs menue_golovne">
              <li ><a class="text " href="<?php echo $home; ?>">Главная</a></li>
