@@ -42,6 +42,8 @@
 </div>
 <div class="container">
  <div class="row">
+	 <div >
+
   <div class="col-sm-12">
 				<div class="instruction">
 					<div class="row text-left">
@@ -82,16 +84,17 @@
 								</figcaption>
 							</figure>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
 </div>
- <div class="row    blocmargintov">
-    <div class="korob2 col-sm-12 hidden-md hidden-lg hidden-xl"><h4>Каждый груз в этих коробках имеет право на 
+ <div class="container     blocmargintov">
+	 <div class="container no-padding">
+    <div class="korob2 text_home_title col-sm-12  hidden-sm hidden-md hidden-lg hidden-xl"><h4>Каждый груз в этих коробках имеет право на
 бережную транспортировку</h4></div>
      <div class="korob1 col-sm-12 col-md-5 col-lg-5 col-xl-5"><img src="image/iachuk.png" alt=""></div>
-     <div class="korob2 kategoru_home col-sm-12 col-md-6 col-lg-6 col-xl-6" style="    padding: 0;">
+     <div class="korob2 kategoru_home col-sm-12 col-md-6 col-lg-6 col-xl-6 no-padding" >
      <h4 class="hidden-xs">Каждый груз в этих коробках имеет право на бережную транспортировку</h4>
       <?php foreach ($categories as $category) { ?>
 
@@ -107,12 +110,12 @@
 			 </a>
 		 </div>
 		 <?php } ?>
-     
+
      </div>
  </div>
 
 <div class="row">
-  <div class="col-sm-12 blocmarginnew" style="padding:0;"><?php echo $column_left; ?>
+  <div class="container  news_home  blocmarginnew " style="padding:0;"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -122,9 +125,10 @@
     <?php } ?>
 
     <div  class="<?php echo $class; ?>"><?php echo $content_bottom; ?> </div>
-     <div class="col-sm-12" style="padding:0;">
-     <div class="col-sm-12 seo" style="padding:0;">
-     
+
+	  </div>
+     <div class="container seo">
+
 								<h4><?php echo $heading_titleseo ?></h4>
 								<?php echo $descriptionseo; ?>
 

@@ -6,6 +6,24 @@
     .korob2 a:hover {
         font-size: 15px!important;
     }
+    .logotyp_header img{
+        display: inline;
+    }
+}
+.vupad_header li > a:hover {
+    text-decoration: none!important;
+    color: #0053a8 !important;
+
+    margin-top: 25px;
+}
+.dob{
+       font-style: italic;
+    font-family: Roboto;
+    font-size: 17px;
+    margin-top: 5px;
+
+
+
 }
 .vupad_header li > a:hover {
     text-decoration: none!important;
@@ -65,7 +83,7 @@
 
         color: #ffdc00;
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 930px) {
         .button {
 
             border: none;
@@ -84,7 +102,7 @@
 
         }
         .tell {
-            margin-top: 20px;
+            margin-top: 19px;
             font-family: "Museo Cyrl 500";
             font-size: 20px;
             color: black;
@@ -92,13 +110,17 @@
         }
         .dob{
             font-family: Roboto;
-            font-size: 12px;
+            font-size: 11px;
             margin-top: 5px;
             margin-left: 61px;
         }
     }
 
     @media screen and (max-width: 767px) {
+        .logotyp_header_mob img{
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                }
         .menu_arrowmob img{
             position: absolute;
             margin-left: 103px;
