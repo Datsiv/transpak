@@ -1,6 +1,7 @@
+<link href="catalog/view/theme/default/stylesheet/product_category.css" rel="stylesheet">
 <?php echo $header; ?>
 <div class="container-fluid no-padding">
-  <ul class="breadcrumb_contact hidden-xs  col-sm-12 col-md-12 col-lg-12" style="padding-left: 8%;">
+  <ul class="breadcrumb_contact hidden-xs  col-sm-12 col-md-12 col-lg-12" style="padding-left: 9%;">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php if ($breadcrumb ['href']==('')){ ?>
     <li class="breadcrumb_text" ><?php echo $breadcrumb['text']; ?></li>
@@ -99,7 +100,7 @@
         </div>
       </div>-->
       <br />
-      <div class="col-sm-12 pad_tovar" style="padding: 3% 6% 0% 6%;">
+      <div class="col-sm-12 pad_tovar" style="padding: 3% 13% 0% 7%;">
         <?php foreach ($products as $product) { ?>
         <div class="product-layout product-list col-xs-12" style="padding: 0">
           <div class="product-thumb product1" >
@@ -227,7 +228,7 @@
 
   <div class="col-lg-12 mar_left_3">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
-          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 no-padding">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 no-padding_class_mob">
                 <?php echo $content_bottom; ?>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>

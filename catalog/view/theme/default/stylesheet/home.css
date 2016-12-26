@@ -3,6 +3,14 @@
 .news_home{
     background-color: #e5e5e5;
 }
+
+    .title_voprosy{
+        font-size: 16px !important;
+    }
+    
+    .voprosy-change-design{
+        font-size: 13px !important;
+    }
 }
 .class_text_new{
     font-size: 15px;
@@ -179,6 +187,7 @@
     .btn-group-cont-row{
         margin-top: -5px;
     }
+    
 }
 @media (max-width: 400px){
     .catshow span {
@@ -246,5 +255,9 @@
 @media (min-width: 768px) {
     .mob_home_categoru{
         display: none;
+    }
+    
+    .no-padding_class_mob{
+        padding: 0 !important;
     }
 }

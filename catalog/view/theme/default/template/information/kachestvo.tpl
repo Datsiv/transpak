@@ -12,7 +12,7 @@
 		<?php }?>
 		<?php $i++; } ?>
 	</div>
-	<div class="container no-padding">
+	<div class="container no-padding_class_mob">
 		<div id="content"><?php echo $content_top; ?>
                     <div class="container">
 			<div class="row title_kachestvo">
