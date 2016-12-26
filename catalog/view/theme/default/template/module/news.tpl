@@ -2,7 +2,7 @@
 <?php if($show_title) { ?>
 <h3 class="news_home news_home_www" >Новости дня</h3>
 <?php } ?>
-<div class="row news_home_ww">
+<div class=" news_home_ww">
 										<?php 
 function russian_date($dateposted){
 $date=explode(".", $dateposted);
