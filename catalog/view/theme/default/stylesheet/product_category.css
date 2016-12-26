@@ -1,0 +1,36 @@
+@media (min-width: 320px) and (max-width: 767px){
+    .no-padding_class_mob{
+        padding: 2px !important;
+    }
+    
+    .category-text_2 {
+        font-family: "MuseoCyrl-700";
+        color: rgb(0, 0, 0);
+        line-height: 1.44;
+        text-align: left;
+        padding-bottom: 14px;
+        font-size: 20px !important;
+    }
+    
+    .span_text_pr {
+        font-family: "MuseoCyrl-700";
+        font-size: 18px !important;
+        color: #008bff;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        margin: 0 0 0 -17px;
+    }
+    
+    .category-text {
+        font-family: "MuseoCyrl-700";
+        color: rgb(0, 0, 0);
+        line-height: 1.44;
+        text-align: left;
+        padding-bottom: 14px;
+        padding-left: 11% !important;
+        font-size: 21px !important;
+    }
+}
+
+

@@ -1898,6 +1898,16 @@ li span {
         padding-bottom: 17px!important;
         color: #000;
     }
+    
+    .h2_text_title {
+	font-family: "MuseoCyrl-700";
+	font-size: 19px;
+	color: #000;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	padding-left: 0%!important;
+}
 }
 @media (min-width: 768px) and (max-width: 991px){
 	.desk_text_div_style_backg_3{

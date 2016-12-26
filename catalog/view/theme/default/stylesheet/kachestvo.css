@@ -66,37 +66,26 @@
     }
 }
 @media screen and (min-width: 768px) {
-
+    .no-padding_class_mob{
+        padding: 0 !important;
+    }
 }
-@media screen and (min-width: 501px )and (max-width: 700px){
+
+@media screen and (max-width: 767px) {
+    .breadcrumbmy{
+        display: none;
+    }
     .fiveparts {
         width: 50%!important;
-    }
 
+    }
+    
     .pdf_kachestvo img{
         width: 38px;
         position: relative;
         right: 14px;
     }
-}
-@media screen and (min-width: 320px )and (max-width: 500px) {
-    .fiveparts {
-        width: 50% !important;
-
-    }
-
-    .pdf_kachestvo img { 
-        width: 55px;
-        position: relative;
-        right: 13px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .fiveparts {
-        width: 50%!important;
-
-    }
-
+    
     .img_img_pdf_a_href{
         padding-right: 23px !important;
     }
@@ -115,5 +104,34 @@
         border: none!important;
         -webkit-box-shadow: none!important;
 
+    }
+    
+    .title_kachestvo h2{
+        font-size: 22px !important;
+        font-family: "Museo Cyrl 700";
+        color: black!important;
+        margin-bottom: 21px;
+    }
+    
+    .text_kachestvo{
+        font-size: 15px !important;
+        font-family: Roboto;
+        color: #6e6e6e;
+        margin-bottom: 56px;
+    }
+    
+    .title2_kachestvo h4 {
+    font-family: "Museo Cyrl 700";
+    color: black!important;
+    font-size: 18px;
+    margin-bottom: 34px;
+    }
+    
+    .seo h4 {
+        font-size: 19px !important;
+        font-family: "MuseoCyrl-700";
+        color: rgb(0, 0, 0);
+        line-height: 1.44;
+        text-align: left;
     }
 }
