@@ -1,8 +1,27 @@
+
+.news_home h3{
+    padding: 0;
+}
+
+
 @media  (max-width:767px){
-.news_home{
+    .gggg{
+        background-color: red;
+    }
+    .korob1 img{
+        margin-bottom: 31px;
+    }
+
+    .news_home{
     background-color: #e5e5e5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 0 ;
+
 }
+
 }
+
 .class_text_new{
     font-size: 15px;
     font-family: Roboto;
@@ -25,9 +44,7 @@
 .title_voprosy{
     font-family: MuseoCyrl-700!important;
 }
-.kategoru_home a {
-    line-height: 2.5!important;
-}
+
 .button_news:hover{
     background-color: yellow;
 }
@@ -89,6 +106,7 @@
    font-family: Roboto-Bold!important;
 }
 .news_home{
+    padding: inherit;
     color: black!important;
 }
 
@@ -148,7 +166,7 @@
         font-size: 16px;
         position: absolute;
         bottom: 24px;
-        left: 24px;
+        left: 11px;
         font-family: "Roboto-Medium";
         color: rgb(255, 255, 255);
         line-height: 1.15;
@@ -157,9 +175,18 @@
 
 }
 @media (max-width: 767px){
+    .kategoru_home a {
+        font-weight: 600;
+        font-family: Roboto!important;
+        line-height: 2.5!important;
+    }
+    .text_home_title h4{
+        text-align: center;
+
+    }
 
     .catshow{
-        height: 230px;
+        height: 158px;
     }
     .col-xs-5ths {
         width: 50%;
@@ -191,7 +218,24 @@
 
 
 }
+@media screen and (max-width: 500px) {
+    .text_home_title h4{
+        text-align: center;
+        font-size: 15px;
+
+    }
+    .korob2 a {
+        font-size: 11px!important;
+    }
+    .korob2 a:hover {
+        font-size: 11px!important;
+    }
+}
 @media (max-width: 767px) {
+    .seo h4 {
+        font-size: 19px!important;
+
+    }
     .korob2 a:hover {
         background-color: #ffda00;
         font-size: 21px;

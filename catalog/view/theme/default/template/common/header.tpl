@@ -83,7 +83,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 back">
     <div class="logo  col-sm-5 col-md-5 col-lg-6">
             <?php if ($logo) { ?>
-            <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>"
+            <a class="logotyp_header" href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>"  title="<?php echo $name; ?>"
                                             alt="<?php echo $name; ?>" class="img-responsive"/></a>
     </div>
     <div class=" col-sm-7 col-md-7 col-lg-6 ">
@@ -120,8 +120,8 @@
     <div style="clear:both;"></div>
     </div>
 <div style="clear:both;"></div>
-<div class="container no-padding">
-     <div class=" menue col-sm-12 no-padding" >
+<div class="container ">
+     <div class=" menue col-sm-12 " >
          <ul class="nav nav-tabs menue_golovne">
              <li ><a class="text " href="<?php echo $home; ?>">Главная</a></li>
              <li class=" dropdown ">
@@ -148,7 +148,7 @@
 
 <div class="logo2 col-xs-12  " id="logo12">
     <?php if ($logo) { ?>
-    <a href="<?php echo $home; ?>"><img  src="<?php echo $logo; ?>"   title="<?php echo $name; ?>"
+    <a class="logotyp_header_mob" href=" <?php echo $home; ?>"><img  src="<?php echo $logo; ?>"   title="<?php echo $name; ?>"
                                         alt="<?php echo $name; }?>" class="img-responsive"/></a>
 </div>
 <div id="divv"> </div>

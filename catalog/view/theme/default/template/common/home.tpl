@@ -20,9 +20,11 @@
   <?php } ?>
 </div>
 </div>
+
 <?php } ?>
+<div style="clear:both;"></div>
 <div class="container">
- <div class="row">
+ <div class=" container">
   <div class="col-sm-12">
 				<div class="instruction">
 					<div class="row text-left">
@@ -68,8 +70,8 @@
 				</div>
 			</div>
 </div>
- <div class="row    blocmargintov">
-    <div class="korob2 col-sm-12 hidden-md hidden-lg hidden-xl"><h4>Каждый груз в этих коробках имеет право на 
+ <div class="container    blocmargintov">
+    <div class=" korob2  text_home_title col-sm-12 " ><h4 class=" hidden-sm  hidden-md hidden-lg hidden-xl">Каждый груз в этих коробках имеет право на
 бережную транспортировку</h4></div>
      <div class="korob1 col-sm-12 col-md-5 col-lg-5 col-xl-5"><img src="image/iachuk.png" alt=""></div>
      <div class="korob2 kategoru_home col-sm-12 col-md-6 col-lg-6 col-xl-6" style="    padding: 0;">
@@ -92,19 +94,22 @@
      </div>
      
  </div>
-  <div class="row blocmarginnew"><?php echo $column_left; ?>
+
+  <div class="row  news_home blocmarginnew"><?php echo $column_left; ?>
+	  <div class="container no-padding">
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
     <?php $class = 'col-sm-9'; ?>
     <?php } else { ?>
-    <?php $class = 'col-sm-12 news_home'; ?>
+    <?php $class = 'col-sm-12 '; ?>
     <?php } ?>
 
     <div  class="<?php echo $class; ?>"><?php echo $content_bottom; ?> </div>
-     <div class="row">
+</div>
+	  </div>
      <div class="col-sm-12 seo">
-     
+
 								<h4><?php echo $heading_titleseo ?></h4>
 								<?php echo $descriptionseo; ?>
 
@@ -117,9 +122,8 @@
 					 Также компанией «ИнтерТрансПак» были разработаны Технические Условия для изготовления
 					 упаковочной крепежной ленты Strap 2000 и Lash 2000
 				 </ul>
-
-         </div></div>
-    </div>
+	 </div>
+	 </div>
     <?php echo $column_right; ?></div>
-</div>
+
 <?php echo $footer; ?>

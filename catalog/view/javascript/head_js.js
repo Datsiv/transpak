@@ -14,24 +14,25 @@
             doc.getElementById("logo12").style.display = "block";
         }
 $(document).ready(function(){
-        $(document).on('click', '.dropMenuClickmob', function(){
-            if($(this).find('.menu_arrowmob img').attr('src') == '/admin/view/image/on.png'){
-                $(this).find('.menu_arrowmob img').attr('src', '/admin/view/image/up.png');
-                $(this).css('color', '#ffdc00');
-            }else{
-                $(this).find('.menu_arrowmob img').attr('src', '/admin/view/image/on.png')
-                $(this).css('color', 'white');
-            }
-        })
-    $(document).on('click', '.dropMenuClick', function(){
-        if($(this).find('.menu_arrow img').attr('src') == '/admin/view/image/onblack.png'){
-            $(this).find('.menu_arrow img').attr('src', '/admin/view/image/up.png');
-            $(this).css('color', '#ffdc00');
-        }else{
-            $(this).find('.menu_arrow img').attr('src', '/admin/view/image/onblack.png')
-            $(this).css('color', 'black');
-        }
-    })
+
+
+    $(".dropdown").on("hide.bs.dropdown", function(event){
+        $('.dropMenuClick').find('.menu_arrow img').attr('src', '/admin/view/image/onblack.png')
+        $('.dropMenuClick').css('color', 'black');
+
+
+        $('.dropMenuClickmob').css('color', 'white');
+        $('.menu_arrowmob img').attr('src', '/admin/view/image/on.png')
+    });
+
+    $(".dropdown").on("show.bs.dropdown", function(event){
+        $('.dropMenuClick').find('.menu_arrow img').attr('src', '/admin/view/image/up.png')
+        $('.dropMenuClick').css('color', '#ffdc00');
+
+
+        $('.dropMenuClickmob').css('color', 'yellow');
+        $('.menu_arrowmob img').attr('src', '/admin/view/image/up.png')
+    });
 
 })
 
