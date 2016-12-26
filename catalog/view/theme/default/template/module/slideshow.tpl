@@ -1,4 +1,3 @@
-
   <div class="col-lg-12 hidden-xs text_slader_bydte">
     <div class="banner-div-main" >
       <!--<div class="desktop-img-div-style">
