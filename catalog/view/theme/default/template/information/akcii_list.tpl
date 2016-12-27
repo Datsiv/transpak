@@ -14,7 +14,7 @@
 		<div id="content"><?php echo $content_top; ?>
                         <div class="akciihead_mob">Наши акции</div>
 			<div class=" row akciihead row_two akciihead_normal">Наши акции!</div>
-			<div class="row row_two hghfj">
+			<div class="row row_two info-row-two-row-ackii">
            <?php echo $description; ?>           
             </div>
 			<?php if ($news_list) { ?>
