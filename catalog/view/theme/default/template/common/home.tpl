@@ -93,7 +93,7 @@
 	 <div class="container no-padding">
     <div class="korob2 text_home_title col-sm-12  hidden-sm hidden-md hidden-lg hidden-xl"><h4>Каждый груз в этих коробках имеет право на
 бережную транспортировку</h4></div>
-     <div class="korob1 col-sm-12 col-md-5 col-lg-5 col-xl-5"><img src="image/iachuk.png" alt=""></div>
+     <div class="korob1 col-sm-12 col-md-5 col-lg-5 col-xl-5 no-padding"><img src="image/iachuk.png" alt=""></div>
      <div class="korob2 kategoru_home col-sm-12 col-md-6 col-lg-6 col-xl-6 no-padding" >
      <h4 class="hidden-xs">Каждый груз в этих коробках имеет право на бережную транспортировку</h4>
       <?php foreach ($categories as $category) { ?>

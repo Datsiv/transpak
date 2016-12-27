@@ -130,7 +130,7 @@
                  <ul class="dropdown-menu">
                      <div class="wrap  vupad_header">
                      <?php foreach ($categories as $category ){ ?>
-                     <li><a   href="<?php echo $category['href']; ?>" >
+                     <li><a href="<?php echo $category['href']; ?>" >
                         <?php echo $category['name'];?></a></li>
       <?php  }?>
              </ul>
