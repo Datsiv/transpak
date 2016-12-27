@@ -1,4 +1,7 @@
 @import "../fonts/styles.css";
+.logotyp_header img{
+    display: inline;
+}
 @media screen and (max-width: 409px) {
     .korob2 a {
         font-size: 15px!important;
@@ -6,9 +9,7 @@
     .korob2 a:hover {
         font-size: 15px!important;
     }
-    .logotyp_header img{
-        display: inline;
-    }
+
 }
 .vupad_header li > a:hover {
     text-decoration: none!important;

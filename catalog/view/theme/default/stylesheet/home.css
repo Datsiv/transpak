@@ -128,8 +128,11 @@
 .vypad_home{
     padding-bottom: 30px;
     padding-top: 30px;
+    padding-left: 15px;
+
 
 }
+
 
 .vupad_text {
     font-size: 15px;
