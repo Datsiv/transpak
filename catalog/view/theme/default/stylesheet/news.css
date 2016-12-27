@@ -1,0 +1,33 @@
+@media (min-width:768px) {
+    .text_news{
+        margin-top: 28px!important;
+    }
+    .image_news{
+        margin-top: 33px;
+    }
+    .title_news{
+        margin-bottom: 35px;
+    }
+}
+@media (max-width:767px) {
+    .data_news_mob{
+        margin-top: 28px!important;
+    }
+    .tex_news_mob{
+        margin-top: 28px!important;
+    }
+    .image_news{
+        left: 0% !important;
+
+    }
+    .title_news{
+
+    }
+    .foter_news {
+        text-align: center!important;
+    }
+    .foter_news a {
+        left: 0%!important;
+
+    }
+}

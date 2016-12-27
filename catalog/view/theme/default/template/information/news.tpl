@@ -1,3 +1,5 @@
+<link href="catalog/view/theme/default/stylesheet/news.css" rel="stylesheet">
+
 <?php echo $header; ?>
 <div class="container">
 	<div class="hidden-xs breadcrumbmy ">
@@ -31,31 +33,37 @@ echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
 ?>
 	<div class="row news">
 		<div id="content">
-			<div class="col-sm-12">
-                <div class="col-sm-12"><h1 class="h_text_news"><?php echo $heading_title; ?></h1></div>
+			<div class="  ">
+                <div class="col-sm-12 "><h1 class="h_text_news title_news no-padding"><?php echo $heading_title; ?></h1></div>
             </div>
-            <div class="col-sm-12"  style="margin-bottom: 30px;">
+            <div class="  "  style="margin-bottom: 30px;">
 				 <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs"></div>
 				 <div class="col-lg-8 col-md-8 col-sm-7 hidden-xs no-padding"><span class="block">
 					 <?php echo russian_date($posted); ?>
 					 </span>
 				 </div>
             </div>
-             <div class="col-sm-12 no-padding">
-             		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img class="img_whi_news width: 90%;background-size: cover;" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/></a>
+             <div class="col-sm-12 no-padding ">
+
+             		<div class=" image_news col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+						<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img class=" image_news img_whi_news width: 90%;background-size: cover;" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/></a>
 					</div>
-				 <div class="hidden-lg hidden-md hidden-sm col-xs-12" style="padding: 5% 7%;"><span class="block">
-					 <?php echo russian_date($posted); ?>
+
+				 <div class=" container hidden-lg hidden-md hidden-sm col-xs-12 data_news_mob"><span class="block">
+
+                         <?php echo russian_date($posted); ?>
 					 </span>
+
 				 </div>
-					<div class="col-lg-8 col-md-8 col-sm-7 hidden-xs">
-						<div class="description description_text">
+					<div class="col-lg-8 col-md-8 col-sm-7 hidden-xs ">
+						<div class="description description_text text_news">
 							<?php echo $description; ?>
 						</div>
 					</div>
-				 <div class="hidden-lg hidden-md hidden-sm col-xs-12" style="padding: 2% 9%;">
-					 <div class="description description_text">
+				 <div class="hidden-lg hidden-md hidden-sm col-xs-12 tex_news_mob" >
+					 <div class=""
+">
+					 <div class="container description description_text">
 						 <span>Компания «ИнтерТрансПак» провела исп
 						 ытания крепежной кордовой ленты
 						 Strap 2000 и крепежной тканой ленты
@@ -70,10 +78,11 @@ echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
 						 упаковочной крепежной ленты
 						 Strap 2000 и Lash 2000</span>
 					 </div>
+						 </div>
 				 </div>
-				 <div class="col-lg-12">
-					 <a class="btn btn-primary newsinfo" href="<?php echo $news_list; ?>">Вернуться к новостям</a>
-				 </div>
+				 <div class="col-xs-12 col-lg-12 foter_news ">
+                     <a class="btn btn-primary  newsinfo " href="<?php echo $news_list; ?>">Вернуться к новостям</a>
+                     </div>
 			 </div>
 			
 			
