@@ -1,7 +1,7 @@
 <link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
 
 <div class="col-lg-12 hidden-xs text_slader_bydte">
-    <div class="D:OpenServerdomains	ranspak.dev" >
+    <div class="banner-div-main" >
       <!--<div class="desktop-img-div-style">
         <img class="" src="../image/catalog/ygolku.png" style="width: 100%" >
       </div>
@@ -23,7 +23,7 @@
   </div>
   <?php if($is_home == 'home'){ ?>
   <div class="col-lg-12 text_slader_bydte">
-    <div class="D:OpenServerdomains	ranspak.dev">
+    <div class="banner-div-main">
       <div class="hidden-xs desk_text_div_style_backg_3" style="border-radius: 8px;">
         <span class="glav_text_span_banner">
           Акции!
