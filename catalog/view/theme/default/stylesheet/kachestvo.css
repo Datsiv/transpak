@@ -31,7 +31,7 @@
 .pdf_kachestvo img{
     width: 38px;
     position: relative;
-    right: 14px;
+    right: 15px;
 }
 
 .pdf_img_text_a_href{
@@ -44,6 +44,11 @@
 .img_img_pdf_a_href{
     padding: 0;
 }
+
+.fiveparts {
+    padding-left: 0% !important;
+}
+
 .pdf_kachestvo {
     font-size: 15px;
     margin-top: 25px;
@@ -81,11 +86,16 @@
     }
     
     .pdf_kachestvo img{
-        width: 38px;
+        width: 29px;
         position: relative;
-        right: 14px;
+        right: 15px;
     }
-    
+    .pdf_img_text_a_href {
+        text-decoration: underline;
+        padding: 8px 0 0 0;
+        font-family: "Roboto-Regular";
+        color: #0078ff;
+    }
     .img_img_pdf_a_href{
         padding-right: 23px !important;
     }
