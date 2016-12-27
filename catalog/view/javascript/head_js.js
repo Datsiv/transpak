@@ -30,7 +30,7 @@ $(document).ready(function(){
         $('.dropMenuClick').css('color', '#ffdc00');
 
 
-        $('.dropMenuClickmob').css('color', 'yellow');
+        $('.dropMenuClickmob').css('color', '#ffdc00');
         $('.menu_arrowmob img').attr('src', '/admin/view/image/up.png')
     });
 
