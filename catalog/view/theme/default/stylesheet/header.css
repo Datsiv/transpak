@@ -123,7 +123,7 @@
                 }
         .menu_arrowmob img{
             position: absolute;
-            margin-left: 103px;
+            margin-left: 112px;
             margin-top: -14px;
             width: 12px;
             height: 8px;
@@ -151,19 +151,19 @@
             line-height: 20px;
             color: white;
             background-color: #009cff !important;
-            font-style: italic;
-            font-size: 15px;
+            font-family: MuseoCyrl;
+            font-size: 17px;
         }
 
         .navbar-nav>li>a {
-            font-family: Roboto;
+            font-family: "MuseoCyrl-700";
             font-size: 19px;
             padding-top: 10px;
             padding-bottom: 10px;
             line-height: 20px;
             color: white;
             background-color: #009cff !important;
-            font-weight: 700;
+            font-weight: 900;
         }
         .
 
