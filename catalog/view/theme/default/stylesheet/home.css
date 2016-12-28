@@ -1,4 +1,40 @@
 @import "../fonts/styles.css";
+@media (min-width: 801px) and (max-width: 900px){
+    .catshow span {
+        top: auto;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        right: 32px;
+        font-size: 15px;
+        position: absolute;
+        bottom: 24px;
+        left: 11px;
+        font-family: "Roboto-Medium";
+        color: rgb(255, 255, 255);
+        line-height: 1.15;
+        text-align: left;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 800px){
+    .catshow span {
+        top: auto;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        right: 32px;
+        font-size: 30px;
+        position: absolute;
+        bottom: 24px;
+        left: 11px;
+        font-family: "Roboto-Medium";
+        color: rgb(255, 255, 255);
+        line-height: 1.15;
+        text-align: left;
+    }
+
+}
 .kategoru_home h4{
     margin-bottom: 30px;
 }
@@ -168,7 +204,7 @@
     -webkit-box-shadow: none!important;
 
 }
-@media  (min-width:768px){
+@media  (min-width:901px){
 
 
     .catshow{
@@ -220,7 +256,7 @@
     }
     .catshow span {
         margin-right: 142px;
-        font-size: 24px;
+        font-size: 21px;
     }
     .btn-group-cont-row{
         margin-top: -5px;

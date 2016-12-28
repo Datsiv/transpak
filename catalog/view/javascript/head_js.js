@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     $(".dropdown").on("hide.bs.dropdown", function(event){
         $('.dropMenuClick').find('.menu_arrow img').attr('src', '/admin/view/image/onblack.png')
-        $('.dropMenuClick').css('color', 'black');
+        $('.dropMenuClick').css('color', '#454545');
 
 
         $('.dropMenuClickmob').css('color', 'white');
