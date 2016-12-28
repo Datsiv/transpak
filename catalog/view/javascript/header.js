@@ -129,4 +129,19 @@ $(document).ready(function () {
             console.log('Incorrectly completed forms');
         }
     });
+    
+    $('.dropMenuClick').hover(function(){
+        if(!$(this).parent().hasClass('open')){
+            $(this).find('img').attr('src', '/admin/view/image/up.png');
+            $(this).css('color', 'rgb(255, 220, 0)');
+        }
+    },
+    function(){
+        if(!$(this).parent().hasClass('open')){
+            $(this).find('img').attr('src', '/admin/view/image/onblack.png');
+            $(this).css('color', 'rgb(69, 69, 69)');
+        }
+    })
+    
+    
 });
