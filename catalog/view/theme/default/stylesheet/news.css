@@ -1,3 +1,7 @@
+
+.description_text{
+    font-family: "Roboto-Regular" !important;
+}
 @media (min-width:768px) {
     .text_news{
         margin-top: 28px!important;
