@@ -1,11 +1,29 @@
 @import "../fonts/styles.css";
-.footer-telef{
-    font-family: "Museo Cyrl 500"!important;
-}
-
-@media (max-width: 767px){
-    .h_text_1{
-        text-align: center !important;
-        font-size: 23px !important;
+    .footer_telef_2{
+        font-family: "Museo Cyrl 500"!important;
     }
-}
+
+    .h_text_title_htm {
+        font-size: 15px !important;
+        font-family: "Roboto-Regular"!important;
+        color: #666666 !important;
+        line-height: 1.467!important;
+        text-align: left!important;
+    }
+    
+    
+    .h_text_1_for_change{
+        font-family: "MuseoCyrl-700"!important;
+        text-align: left!important;
+        font-size: 35px!important;
+        padding-top: 32px!important;
+        padding-bottom: 41px!important;
+        color: #000;
+    }
+    @media (max-width: 767px){
+        .h_text_1_for_change{
+            text-align: center !important;
+            font-size: 23px !important;
+        }
+       
+    }

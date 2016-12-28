@@ -20,7 +20,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>" style="padding: 0"><?php echo $content_top; ?>
-      <div class="h_text_1 h_text_1_for_change"><?php echo $heading_title2; ?></div>
+      <div class="h_text_1_for_change"><?php echo $heading_title2; ?></div>
       <div class="panel panel-default panel_panel_default_20">
         <div class="panel-body">
           <div class="row">

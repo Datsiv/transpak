@@ -6,6 +6,12 @@
   font-style: normal;
 }
 
+@font-face{
+    font-family: 'Roboto-Bold';
+    src: url('Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+}
+
 @font-face {
   font-family: 'Roboto-Thin';
   src: url('Roboto-Thin.eot?#iefix') format('embedded-opentype'),  url('Roboto-Thin.woff') format('woff'), url('Roboto-Thin.ttf')  format('truetype'), url('Roboto-Thin.svg#Roboto-Thin') format('svg');
@@ -37,6 +43,7 @@
   src: url('Roboto-Medium.eot?#iefix') format('embedded-opentype'),  url('Roboto-Medium.woff') format('woff'), url('Roboto-Medium.ttf')  format('truetype'), url('Roboto-Medium.svg#Roboto-Regular') format('svg');
   font-weight: 500;
 }
+
 @font-face {
   font-family: 'Museo Cyrl 500';
   src: url('Museo_Cyrillic_500.otf') format('truetype');

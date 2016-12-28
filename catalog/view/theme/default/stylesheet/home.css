@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../fonts/styles.css";
 @media (min-width: 801px) and (max-width: 900px){
     .catshow span {
@@ -35,6 +36,9 @@
     }
 
 }
+=======
+
+>>>>>>> change design product category
 .kategoru_home h4{
     margin-bottom: 30px;
 }
@@ -72,14 +76,14 @@
 }
 .class_text_new{
     font-size: 15px;
-    font-family: Roboto;
+    font-family: Roboto-Regular;
     font-weight: 400;
     color: black;
     line-height: 14px;
 }
 .class_text{
     font-size: 15px;
-    font-family: Roboto;
+    font-family: Roboto-Regular;
     font-weight: 400;
     color: #666;
     line-height: 1.5;
@@ -350,5 +354,6 @@
     
     .no-padding_class_mob{
         padding: 0 !important;
+        margin-top: 24px;
     }
 }
