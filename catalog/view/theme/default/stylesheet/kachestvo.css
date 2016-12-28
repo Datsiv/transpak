@@ -1,7 +1,8 @@
 @import "../fonts/styles.css";
+
 .title_kachestvo h2{
     font-size: 33px;
-    font-family: "Museo Cyrl 700";
+    font-family: "MuseoCyrl-700";
     color: black!important;
     margin-bottom: 21px;
 }
@@ -12,7 +13,7 @@
     margin-bottom: 56px;
 }
 .title2_kachestvo h4{
-    font-family: "Museo Cyrl 700";
+    font-family: "MuseoCyrl-700";
     color: black!important;
     font-size: 25px;
     margin-bottom: 34px;
@@ -105,7 +106,7 @@
     .vupad_text1 {
 
         font-size: 15px;
-        font-family: Roboto-Regular;
+        font-family: "Roboto-Regular";
         color: rgb(110, 110, 110);
         line-height: 1.467;
         text-align: left;
@@ -118,7 +119,7 @@
     
     .title_kachestvo h2{
         font-size: 22px !important;
-        font-family: "Museo Cyrl 700";
+        font-family: "MuseoCyrl-700";
         color: black!important;
         margin-bottom: 21px;
     }
@@ -131,7 +132,7 @@
     }
     
     .title2_kachestvo h4 {
-    font-family: "Museo Cyrl 700";
+    font-family: "MuseoCyrl-700";
     color: black!important;
     font-size: 18px;
     margin-bottom: 34px;
