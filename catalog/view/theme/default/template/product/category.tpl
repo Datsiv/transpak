@@ -213,7 +213,7 @@
             <div class="container">
                 <h1 class="container category-text category-text_tow_container_category">Возможно вас заинтересует</h1>
             </div>
-            <div class="">
+            <div class="container-fluid no-padding">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin">
                   <?php foreach ($all_categories as $category) { ?>
                   <a href="<?php echo $category['href']; ?>">
