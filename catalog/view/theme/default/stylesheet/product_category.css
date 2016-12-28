@@ -1,3 +1,24 @@
+.category_text_product {
+    font-family: "MuseoCyrl-700";
+    color: rgb(0, 0, 0);
+    line-height: 1.44;
+    text-align: left;
+    padding-left: 14px !important;
+}
+
+@media(min-width:768px){
+    .no-padding_class_mob_two{
+        padding: 0 !important;
+    }
+    
+    .category-text_tow_container_category{
+        padding-left: 0 !important;
+    }
+}
+
+
+
+
 @media (min-width: 320px) and (max-width: 767px){
     .no-padding_class_mob{
         padding: 2px !important;
@@ -26,9 +47,9 @@
         font-family: "MuseoCyrl-700";
         color: rgb(0, 0, 0);
         line-height: 1.44;
-        text-align: left;
+        text-align: left !important;
+        padding-left: 5% !important;
         padding-bottom: 14px;
-        padding-left: 11% !important;
         font-size: 21px !important;
     }
 }
