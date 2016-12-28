@@ -118,7 +118,8 @@
 }
 
 .categoru_home{
-   font-family: Roboto-Bold!important;
+   font-family: Roboto !important;
+
 }
 .news_home{
     padding: inherit;
@@ -182,7 +183,8 @@
         position: absolute;
         bottom: 24px;
         left: 24px;
-        font-size: 16px;
+        right: 56px;
+        font-size: 19px;
         position: absolute;
         bottom: 24px;
         left: 11px;
