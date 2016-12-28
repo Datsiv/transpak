@@ -1,4 +1,7 @@
 @import "../fonts/styles.css";
+.logotyp_header img{
+    display: inline-block;
+}
 
 @media screen and (max-width: 409px) {
     .korob2 a {
@@ -16,7 +19,7 @@
     margin-top: 25px;
 }
 .dob{
-       font-style: italic;
+    font-style: italic;
     font-family: Roboto;
     font-size: 17px;
     margin-top: 5px;
@@ -38,7 +41,7 @@
         margin-top: 20px;
         font-family: "Museo Cyrl 500";
         font-size: 28px;
-    font-weight: 500;
+        font-weight: 500;
         color: black;
 
     }
