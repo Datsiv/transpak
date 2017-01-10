@@ -3,11 +3,17 @@
 <div class="container-fluid no-padding">
     <div class="container">
         <ul class="container hidden-xs">
-            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+            <?php foreach ($breadcrumbs as $key => $breadcrumb) { ?>
             <?php if ($breadcrumb ['href']==('')){ ?>
-            <li class="breadcrumb_text" ><?php echo $breadcrumb['text']; ?></li>
+                <?php if($key != count($breadcrumbs)-1) { ?>
+                    <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;">
+                       <?php echo $breadcrumb['text']; ?>
+                    </li>
+                <?php } else { ?>
+                    <li class="breadcrumb_text" ><?php echo $breadcrumb['text']; ?></li>
+                <?php } ?>
             <?php }else{ ?>
-            <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;background-size: 8px;">
+            <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;">
                     <a class="text_np_20" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
             </li>
             <?php } ?>
