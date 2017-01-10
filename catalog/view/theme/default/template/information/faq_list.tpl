@@ -16,24 +16,7 @@
         <div id="content"><?php echo $content_top; ?>
             <div class="container no-padding_class_mob"> 
                 <div class="akciihead title_glavn">Часто задаваемые вопросы</div>
-                <div class="hidden-xs container class_text no-padding"><?php echo $description; ?></div>
-                <div  class="hidden-lg hidden-md hidden-sm">
-                    <p>
-                        Компания «ИнтерТрансПак» провела исп
-                        ытания крепежной кордовой ленты
-                        Strap 2000 и крепежной тканой ленты
-                        Lash 2000 из полиэфирного волокна, в
-                        очередной раз подтвердив качество
-                        реализуемой продукции. На основании
-                        протокола испытаний был получен
-                        сертификат соответствия для упаково
-                        чной крепежной ленты. Также компанией
-                        «ИнтерТрансПак» были разработаны
-                        Технические Условия для изготовления
-                        упаковочной крепежной ленты
-                        Strap 2000 и Lash 2000
-                    </p>
-                </div>
+                <div class="container class_text no-padding"><?php echo $description; ?></div>
                 <?php if ($news_list) { ?>
                     <div class=" class_text_new">
                         <?php foreach ($news_list as $news_item) { ?>

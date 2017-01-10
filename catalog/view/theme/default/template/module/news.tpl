@@ -28,7 +28,10 @@ echo $date[0].'&nbsp;'.$m.',&nbsp;'.$date[2];
          <span class="block">
              <?php echo russian_date($news_item['posted']); ?>
              </span>
-				<h4 ><a class="blocpadinng_23" href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a></h4>
+		<div style="margin-top: 17px">
+			<span class="style_text_news_item" ><a class="blocpadinng_23" href="<?php echo $news_item['href']; ?>"><?php echo $news_item['title']; ?></a></span>
+		</div>
+
 				<p><?php echo $news_item['description']; ?></p>
 
 		

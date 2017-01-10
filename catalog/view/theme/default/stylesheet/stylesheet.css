@@ -750,10 +750,15 @@ h2.price {
 .no-padding{
 	padding:0px!important;
 }
-.zakbtn:hover{
+.zakbtn{
     color: #fff;
     background-color: #008bff;
     border-color: #008bff;
+}
+.zakbtn:hover{
+    color: #fff;
+    background-color: #006cc6;
+    border-color: #006cc6;
 }
 .zakbtn2:hover{
     color: #fff;
@@ -1178,6 +1183,7 @@ margin-right: 35px;
     border-radius: 15px;
     font-size: 15px;
     font-family: "Roboto-Regular";
+	font-weight: 700;
     text-align: left;
     padding: 8px 64px;
     position: relative;
@@ -1241,7 +1247,7 @@ margin-right: 35px;
 }
 .breadcrumb_text{
 	font-family: Roboto;
-	font-size: 14px;
+	font-size: 13px;
 	list-style-type: none;
 	color: #8a8781;
 	padding: 0;
@@ -1250,8 +1256,12 @@ margin-right: 35px;
 a.text_np_20{
 	font-family: Roboto;
 	color: #009cff;
-	font-size: 14px;
+	font-size: 13px;
 	padding: 0;
+	text-decoration: underline;
+}
+a.text_np_20:hover{
+	text-decoration: none;
 }
 .category_text_product{
 	font-family: "MuseoCyrl-700";
@@ -1259,6 +1269,12 @@ a.text_np_20{
 	line-height: 1.44;
 	text-align: left;
 	padding-left: 7%;
+}
+.style_text_news_item{
+	font-family: "MuseoCyrl-700";
+	font-size: 18px;
+	text-decoration: underline;
+	color: #009cff;
 }
 .owl_wrapper_outer_2{
 	border: 0;

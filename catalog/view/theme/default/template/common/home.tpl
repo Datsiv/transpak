@@ -61,7 +61,7 @@
 								<figcaption>
 								<h4>Сертификаты качества</h4>
 									<span>Мы торгуем качесвтенной продукцией и имеем все необходимые сертификаты качества</span>
-									<span class="afigure"><a href="">Посмотреть</a></span>
+									<span class="afigure"><a href="index.php?route=information/kachestvo">Посмотреть</a></span>
 								</figcaption>
 							</figure>
 						</div>

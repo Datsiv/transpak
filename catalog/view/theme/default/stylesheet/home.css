@@ -100,9 +100,10 @@
 }
 
 .news_text_title{
-    font-family: "Museo Cyrl 700";
+    font-family: "MuseoCyrl-700";
+    font-size: 18px;
     text-decoration: underline;
-    font-size: 19px;
+    color: #009cff;
 }
 .news_text{
     margin-bottom: 53px;
