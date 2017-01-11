@@ -48,12 +48,9 @@
 <div id="contactForm_en" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <!-- Заголовок модального окна -->
-            <div class="modal-header" style="border: 0;background: #fffacc;border-bottom: 1px solid #f0ddaa;">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
             <!-- Основное содержимое модального окна -->
             <div class="modal-body" style="text-align: center;background: #fffacc;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <div class="modal-title-style">Обратная связь</div>
                 <div>
                     <form id="contactForm" action="" method="post">

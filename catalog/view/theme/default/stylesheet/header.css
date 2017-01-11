@@ -312,7 +312,7 @@
                 height: 8px;
             }
             .menue{
-                font-size: 16px;
+                font-size: 15px;
                 font-family: Roboto;
                 color: black;
                 font-weight: 700;
@@ -329,24 +329,24 @@
                 background-color: white !important;
             }
             .wrap  {
-                padding-top: 30px;
-                padding-right: 30px;
-                padding-left: 30px;
+                padding-top: 51px;
+                padding-right: 45px;
+                padding-left: 45px;
                 list-style-position: inside;
                 -moz-column-count: 2;
                 -webkit-column-count: 2;
                 column-count: 2;
-                height: 200px;
-                width: 720px;
+                height: 259px;
+                width: 747px;
                 text-decoration: underline;
                 font-size: 17px;
-                font-family: Roboto;
                 color: black;
                 margin-bottom: 2px;
-                font-family: MuseoCyrl-700;
+                font-family: 'Museo Cyrl 500';
+                font-weight: 100 !important;
             }
             .wrap li {
-                margin-bottom: 10px
+                margin-bottom: 15px
             }
 
             #divv{
