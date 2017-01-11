@@ -1397,6 +1397,7 @@ a.text_np_20:hover{
 }
 .img_np_20{
 	width: 100%;
+	height: 465px;
 }
 .span_text_pr{
 	font-family: "MuseoCyrl-700";
@@ -2084,4 +2085,15 @@ li span {
     min-height: 1px;
     padding-right: 10px;
     padding-left: 10px;
+}
+#slideshow0 .owl-pagination{
+	position: absolute;
+	width: 100%;
+	bottom: 5%;
+}
+#slideshow0 .owl-controls .owl-buttons .owl-prev {
+	bottom: 45%;
+}
+#slideshow0 .owl-controls .owl-buttons .owl-next {
+	bottom: 45%;
 }
