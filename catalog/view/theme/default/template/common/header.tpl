@@ -96,8 +96,8 @@
     <div class="col-xs-9 col-sm-12 mobright">
         <div  class="block2" >
 
-            <button class="button"><img src="../../../../../../admin/view/image/icon.png">
-                <span  data-toggle="modal" data-target="#contactForm_en">Передзвоните мне</span>
+            <button class="button" data-toggle="modal" data-target="#contactForm_en"><img src="../../../../../../admin/view/image/icon.png">
+                <span>Передзвоните мне</span>
             </button>
 
         </div>
