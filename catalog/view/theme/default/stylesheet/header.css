@@ -1,59 +1,102 @@
 @import "../fonts/styles.css";
-.logotyp_header img{
+
+.logotyp_header img {
     display: inline-block;
 }
 
 @media screen and (max-width: 409px) {
     .korob2 a {
-        font-size: 15px!important;
+        font-size: 15px !important;
     }
+
     .korob2 a:hover {
-        font-size: 15px!important;
+        font-size: 15px !important;
     }
 
 }
+
 .vupad_header li > a:hover {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: #0053a8 !important;
 
     margin-top: 25px;
 }
-.dob{
+
+.dob {
     font-style: italic;
     font-family: Roboto;
     font-size: 17px;
     margin-top: 5px;
 
-
-
 }
+
 .vupad_header li > a:hover {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: #0053a8 !important;
     background-color: white !important;
-    background-image: none!important;
+    background-image: none !important;
 }
 
-.back{
+.back {
     margin-top: 10px;
 }
-.tell {
-        margin-top: 20px;
-        font-family: "Museo Cyrl 500";
-        font-size: 28px;
-        font-weight: 500;
-        color: black;
 
-    }
-    .log {
-        margin-top: 25px;
-    }
-    .dob{
-        font-family: Roboto;
-        font-size: 17px;
-        margin-top: 5px;
-        margin-left: 88px;
-    }
+.tell {
+    margin-top: 20px;
+    font-family: "Museo Cyrl 500";
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.log {
+    margin-top: 25px;
+}
+
+.dob {
+    font-family: Roboto;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 88px;
+}
+
+.button {
+
+    border: none;
+    background-color: #ffdc00;
+    border-radius: 17px;
+    font-size: 15px;
+    margin-top: 10px;
+    float: right;
+    margin-bottom: 20px;
+    width: 190px;
+    height: 40px;
+    color: black;
+    font-family: Roboto;
+    margin-top: 23px;
+    outline: none;
+
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: white;
+}
+
+.text {
+    color: #454545;
+}
+
+.text:hover {
+
+    color: #ffdc00;
+}
+
+@media screen and (max-width: 930px) {
     .button {
 
         border: none;
@@ -63,7 +106,7 @@
         margin-top: 10px;
         float: right;
         margin-bottom: 20px;
-        width: 190px;
+        width: 180px;
         height: 40px;
         color: black;
         font-family: Roboto;
@@ -72,317 +115,317 @@
 
     }
 
-    .logo{
+    .tell {
+        margin-top: 19px;
+        font-family: "Museo Cyrl 500";
+        font-size: 19px;
+        color: black;
+
+    }
+
+    .dob {
+        font-family: Roboto;
+        font-size: 11px;
+        margin-top: 5px;
+        margin-left: 61px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logotyp_header_mob img {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .menu_arrowmob img {
+        position: absolute;
+        margin-left: 112px;
+        margin-top: -14px;
+        width: 12px;
+        height: 8px;
+    }
+
+    .clicked {
+        color: red;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menuemobvup {
+        text-decoration: underline;
+        margin-left: -9px;
+    }
+
+    .book {
+        -moz-column-count: 3; /* Для Firefox */
+        -webkit-column-count: 3; /* Для Safari и Chrome */
+        column-count: 3;
+        margin: 0px auto;
+        width: 90%;
+    }
+
+    .navbar-nav .open .dropdown-menu > li > a {
+        line-height: 20px;
+        color: white;
+        background-color: #009cff !important;
+        font-family: MuseoCyrl;
+        font-size: 17px;
+    }
+
+    .navbar-nav > li > a {
+        font-family: "MuseoCyrl-700";
+        font-size: 19px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        color: white;
+        background-color: #009cff !important;
+        font-weight: 900;
+    }
+
+    .
+    .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+        background-color: transparent !important;;
+        border-color: transparent !important;
+    }
+
+    #divv {
+        height: 2px;
+    }
+
+    .dropdown-menu.mbtex {
+        background-color: black !important;
+        width: 100px;
+    !important;
+    }
+
+    .mbtex {
+        background-color: #009cff;
+
+    }
+
+    .mb {
+        width: 100px;
+    }
+
+    .menumobi {
+        font-family: Museo Cyrl;
+        color: white;
+        font-size: 15px;
+        width: 150px;
+        background-color: #009cff;
+    }
+
+    .menumobi li a {
+        font-family: Museo Cyrl;
+        color: white;
+        font-size: 15px;
+        width: 150px;
+        background-color: #009cff;
+    }
+
+    .menumobi li a:hover {
+        background-color: #009cff;
+        border: none;
+    }
+
+    #men1 {
+        display: none;
+        position: absolute;
+    }
+
+    .img-responsive {
+        margin: auto;
+    }
+
+    .menujs {
+        background-color: #009cff;
+        display: none;
+    }
+
+    .tell {
+        font-family: Roboto;
+        margin-top: 20px;
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    .dob {
+        font-style: italic;
+        font-family: Roboto;
+        font-size: 12px;
+        margin-top: 0px;
+        float: right;
+        margin-left: 48px;
+
+        color: #c7e9ff;
+    }
+
+    .logo {
+        display: none;
+
+    }
+
+    .menue {
+        display: none;
+    }
+
+    .back {
+        padding: 0px;
+        background-color: #009cff;
+    }
+
+    .button {
+        box-shadow: -2px 1px 7px #005fc4;
+        border: none;
+        background-color: #ffdc00;
+        border-radius: 6px;
+        font-size: 14px;
         margin-top: 10px;
+        float: right;
+        margin-bottom: 20px;
+        width: 172px;
+        height: 40px;
+        color: black;
+        font-family: Roboto;
+
     }
 
-    .nav-tabs>li>a:hover {
-        border-color: white;
-    }
-    .text{
-        color: #454545;
-    }
-    .text:hover{
-
-        color: #ffdc00;
-    }
-    @media screen and (max-width: 930px) {
-        .button {
-
-            border: none;
-            background-color: #ffdc00;
-            border-radius: 17px;
-            font-size: 15px;
-            margin-top: 10px;
-            float: right;
-            margin-bottom: 20px;
-            width: 180px;
-            height: 40px;
-            color: black;
-            font-family: Roboto;
-            margin-top: 23px;
-            outline: none;
-
-        }
-        .tell {
-            margin-top: 19px;
-            font-family: "Museo Cyrl 500";
-            font-size: 19px;
-            color: black;
-
-        }
-        .dob{
-            font-family: Roboto;
-            font-size: 11px;
-            margin-top: 5px;
-            margin-left: 61px;
-        }
+    .block2 {
+        display: none;
     }
 
-    @media screen and (max-width: 767px) {
-        .logotyp_header_mob img{
-                    padding-bottom: 20px;
-                    padding-top: 20px;
-                }
-        .menu_arrowmob img{
-            position: absolute;
-            margin-left: 112px;
-            margin-top: -14px;
-            width: 12px;
-            height: 8px;
-        }
-
-        .clicked {
-            color: red;
-        }
-        .logo{
-            display: none;
-        }
-        .menuemobvup{
-            text-decoration: underline;
-            margin-left: -9px;
-        }
-
-        .book {
-            -moz-column-count: 3; /* Для Firefox */
-            -webkit-column-count: 3; /* Для Safari и Chrome */
-            column-count: 3;
-            margin: 0px auto;
-            width: 90%;
-        }
-        .navbar-nav .open .dropdown-menu>li>a {
-            line-height: 20px;
-            color: white;
-            background-color: #009cff !important;
-            font-family: MuseoCyrl;
-            font-size: 17px;
-        }
-
-        .navbar-nav>li>a {
-            font-family: "MuseoCyrl-700";
-            font-size: 19px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            line-height: 20px;
-            color: white;
-            background-color: #009cff !important;
-            font-weight: 900;
-        }
-        .
-
-        .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-            background-color: transparent !important;;
-            border-color: transparent !important;
-         }
-
-        #divv{
-            height: 2px;
-        }
-
-        .dropdown-menu.mbtex{
-            background-color: black !important;
-            width: 100px; !important;
-        }
-
-        .mbtex{
-            background-color: #009cff;
-
-        }
-        .mb{
-            width: 100px;
-        }
-        .menumobi  {
-            font-family: Museo Cyrl;
-            color: white;
-            font-size: 15px;
-            width: 150px;
-            background-color: #009cff;
-        }
-        .menumobi li a {
-            font-family: Museo Cyrl;
-            color: white;
-            font-size: 15px;
-            width: 150px;
-            background-color: #009cff;
-        }
-        .menumobi li a:hover{
-            background-color: #009cff;
-            border: none;
-        }
-
-        #men1{
-            display: none;
-            position: absolute;
-         }
-        .img-responsive{
-            margin: auto;
-        }
-        .menujs{
-            background-color: #009cff;
-            display: none;
-        }
-
-        .tell {
-            font-family: Roboto;
-            margin-top: 20px;
-            font-size: 18px;
-            color: white;
-            font-weight: 500;
-
-        }
-        .dob{
-            font-style: italic;
-            font-family: Roboto;
-            font-size: 12px;
-            margin-top: 0px;
-            float: right;
-            margin-left: 48px;
-
-            color: #c7e9ff;
-        }
-        .logo {
-            display: none;
-
-        }
-
-        .menue {
-            display: none;
-        }
-        .back{
-            padding: 0px;
-            background-color: #009cff;
-        }
-        .button {
-            box-shadow: -2px 1px  7px  #005fc4;
-            border: none;
-            background-color: #ffdc00;
-            border-radius: 6px;
-            font-size: 14px;
-            margin-top: 10px;
-            float: right;
-            margin-bottom: 20px;
-            width: 172px;
-            height: 40px;
-            color: black;
-            font-family: Roboto;
-
-
-        }
-        .block2{
-            display: none;
-        }
-        .block2mob{
-            padding-right: 15px;
-            width: 100%;
-            float: right ;
-        }
-        .block1{
-            padding-right: 10px;
-            float: right !important;
-
-        }
-        .mobright{
-            padding: 0px;
-            float: right;
-        }
+    .block2mob {
+        padding-right: 15px;
+        width: 100%;
+        float: right;
     }
-        @media screen and (min-width: 768px){
-            .block2mob{
-                display: none;
-            }
 
-            .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
-                border-color: #009cff;
-                border-bottom-color: white;
-            }
-            .nav-tabs .dropdown-menu {
-                border-color: #009cff;
-                z-index: 101;
-            }
-            .dropMenuClick {
+    .block1 {
+        padding-right: 10px;
+        float: right !important;
 
-                z-index: 102;
-                width: 130px;
-            }
-            .menu_arrow img{
-                position: absolute;
-                margin-left: 93px;
-                margin-top: -15px;
-                width: 12px;
-                height: 8px;
-            }
-            .menue{
-                font-size: 15px;
-                font-family: Roboto;
-                color: black;
-                font-weight: 700;
-                background-color: white;
+    }
 
-            }
-            .menue_golovne {
-                border-bottom: none;
-                background-color: white;
+    .mobright {
+        padding: 0px;
+        float: right;
+    }
+}
 
-            }
-            .nav>li>a {
-                text-decoration: none;
-                background-color: white !important;
-            }
-            .wrap  {
-                padding-top: 51px;
-                padding-right: 45px;
-                padding-left: 45px;
-                list-style-position: inside;
-                -moz-column-count: 2;
-                -webkit-column-count: 2;
-                column-count: 2;
-                height: 259px;
-                width: 747px;
-                text-decoration: underline;
-                font-size: 17px;
-                color: black;
-                margin-bottom: 2px;
-                font-family: 'Museo Cyrl 500';
-                font-weight: 100 !important;
-            }
-            .wrap li {
-                margin-bottom: 15px
-            }
+@media screen and (min-width: 768px) {
+    .block2mob {
+        display: none;
+    }
 
-            #divv{
-                display: none;
-            }
-            .menujs{
-                display: none;
-            }
-            .menumob{
+    .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+        border-color: #009cff;
+        border-bottom-color: white;
+    }
 
-                display: none;
-            }
-            .buttonm{
-                display: none;
-            }
-            .logo2 {
-                display: none;
-                margin:  auto ;
-            }
-            }
-            .buttonm{
-                padding: 0px;
-                background-color: #009cff;
-                margin-top: 20px;
-                float: left;
+    .nav-tabs .dropdown-menu {
+        border-color: #009cff;
+        z-index: 101;
+    }
 
+    .dropMenuClick {
 
-            }
+        z-index: 102;
+        width: 130px;
+    }
 
+    .menu_arrow img {
+        position: absolute;
+        margin-left: 93px;
+        margin-top: -15px;
+        width: 12px;
+        height: 8px;
+    }
 
-        .block2{
-            float: right ;
+    .menue {
+        font-size: 15px;
+        font-family: Roboto;
+        color: black;
+        font-weight: 700;
+        background-color: white;
 
-        }
-        .block1{
-            float: right;
-            padding-right:21px;
-        }
+    }
+
+    .menue_golovne {
+        border-bottom: none;
+        background-color: white;
+
+    }
+
+    .nav > li > a {
+        text-decoration: none;
+        background-color: white !important;
+    }
+
+    .wrap {
+        padding-top: 51px;
+        padding-right: 45px;
+        padding-left: 45px;
+        list-style-position: inside;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        height: 259px;
+        width: 747px;
+        text-decoration: underline;
+        font-size: 17px;
+        color: black;
+        margin-bottom: 2px;
+        font-family: 'Museo Cyrl 500';
+        font-weight: 100 !important;
+    }
+
+    .wrap li {
+        margin-bottom: 15px
+    }
+
+    #divv {
+        display: none;
+    }
+
+    .menujs {
+        display: none;
+    }
+
+    .menumob {
+
+        display: none;
+    }
+
+    .buttonm {
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+        margin: auto;
+    }
+}
+
+.buttonm {
+    padding: 0px;
+    background-color: #009cff;
+    margin-top: 20px;
+    float: left;
+
+}
+
+.block2 {
+    float: right;
+
+}
+
+.block1 {
+    float: right;
+    padding-right: 21px;
+}
 
