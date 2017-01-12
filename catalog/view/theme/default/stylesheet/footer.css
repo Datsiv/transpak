@@ -1,129 +1,129 @@
-@import "../fonts/styles.css";
-.my_footer{
-    background-color: white;
-    border-top: 2px solid #a5acbc;
-}
+        @import "../fonts/styles.css";
+        .my_footer{
+            background-color: white;
+            border-top: 2px solid #a5acbc;
+        }
 
-.center-cont{
-    margin-left: 0px;
-}
+        .center-cont{
+            margin-left: 0px;
+        }
 
-.text-center{
-    text-align: center;
-    color: #0044cc;
-}
+        .text-center{
+            text-align: center;
+            color: #0044cc;
+        }
 
-.footer-touch{
-    font-size: 14px;
-    font-weight: 900;
-    color: black;
-    font-family: Roboto-Bold;
-}
+        .footer-touch{
+            font-size: 14px;
+            font-weight: 900;
+            color: black;
+            font-family: Roboto-Bold;
+        }
 
-.foter-email{
-    font-size: 15px;
-    color: black;
-    margin-left: 33px;
-    font-family: Roboto-Regular;
-    padding-top: 6px;
-}
+        .foter-email{
+            font-size: 15px;
+            color: black;
+            margin-left: 33px;
+            font-family: Roboto-Regular;
+            padding-top: 6px;
+        }
 
-.footer-telef{
-    text-align: right;
-    font-size: 22px !important;
-    font-weight: 900;
-    color: black;
-    font-family: MuseoCyrl-900 ;
-}
-.foter-dodat{   
-    text-align: right;
-    color: #666666;
-    font-size: 14px;
-    font-family: Roboto-Medium;
-    padding-top: 7px;
-    font-style: oblique;
-}
+        .footer-telef{
+            text-align: right;
+            font-size: 22px !important;
+            font-weight: 900;
+            color: black;
+            font-family: MuseoCyrl-900 ;
+        }
+        .foter-dodat{
+            text-align: right;
+            color: #666666;
+            font-size: 14px;
+            font-family: Roboto-Medium;
+            padding-top: 7px;
+            font-style: oblique;
+        }
 
-.img_text_foot_touch_pos{
-    vertical-align: middle;
-    padding-right: 12px;
-    margin-top: -11px;
-}
-.all-secure{
-    font-family: Roboto-Regular;
-    text-align: center;
-    color: #9c9c9c;
-    font-size: 13px;
-    margin-bottom: 13px;
-    margin-top: 18px;
-}
+        .img_text_foot_touch_pos{
+            vertical-align: middle;
+            padding-right: 12px;
+            margin-top: -11px;
+        }
+        .all-secure{
+            font-family: Roboto-Regular;
+            text-align: center;
+            color: #9c9c9c;
+            font-size: 13px;
+            margin-bottom: 13px;
+            margin-top: 18px;
+        }
 
-.first-cont{
-    margin-left: -10px;
-}
+        .first-cont{
+            margin-left: -10px;
+        }
 
-.col-first{
-    padding-left: 45px;
-}
-@media screen and (min-width:768px) {
-    .foter-email_mob{
-        display: none;
-    }
-    .footer-touch_mob{
-        display: none;
-    }
-}
-@media screen and (min-width:320px) and (max-width:767px){
-    .foter-email{
-        display: none;
-    }
-    .footer-touch{
-        display: none;
-    }
-    .footer-touch_mob{
-        font-size: 16px;
-        font-weight: 900;
-        color: black;
-        font-family: Roboto-Bold;
-        text-align: center;
-    }
-    
-    .foter-email_mob{
-        font-size: 17px;
-        color: black;
-        margin-left: 20px;
-        font-family: Roboto;
-        text-align: center;
-        padding-top: 45px;
-        font-weight: normal;
-    }
+        .col-first{
+            padding-left: 45px;
+        }
+        @media screen and (min-width:768px) {
+            .foter-email_mob{
+                display: none;
+            }
+            .footer-touch_mob{
+                display: none;
+            }
+        }
+        @media screen and (min-width:320px) and (max-width:767px){
+            .foter-email{
+                display: none;
+            }
+            .footer-touch{
+                display: none;
+            }
+            .footer-touch_mob{
+                font-size: 16px;
+                font-weight: 900;
+                color: black;
+                font-family: Roboto-Bold;
+                text-align: center;
+            }
 
-    .footer-telef{
-        font-size: 24px;
-        font-weight: 900;
-        width: 100%;
-        color: black;
-        font-family: MuseoCyrl-900;
-        padding-left: 0px !important;
-        text-align: center;
-        
-    }
-    .foter-dodat{    
-        color: #000;
-        font-size: 14px;
-        width: 100%;
-        font-family: Roboto-Medium;
-        font-style: oblique;
-        text-align: center;
-    }
-    .second-cont{
-        padding-top: 25px;
-    }
-    
-    .all-secure{
-        padding-top: 40px;
-        font-size: 11px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
+            .foter-email_mob{
+                font-size: 17px;
+                color: black;
+                margin-left: 20px;
+                font-family: Roboto;
+                text-align: center;
+                padding-top: 45px;
+                font-weight: normal;
+            }
+
+            .footer-telef{
+                font-size: 24px;
+                font-weight: 900;
+                width: 100%;
+                color: black;
+                font-family: MuseoCyrl-900;
+                padding-left: 0px !important;
+                text-align: center;
+
+            }
+            .foter-dodat{
+                color: #000;
+                font-size: 14px;
+                width: 100%;
+                font-family: Roboto-Medium;
+                font-style: oblique;
+                text-align: center;
+            }
+            .second-cont{
+                padding-top: 25px;
+            }
+
+            .all-secure{
+                padding-top: 40px;
+                font-size: 11px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }

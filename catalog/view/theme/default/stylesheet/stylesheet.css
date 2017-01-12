@@ -1397,7 +1397,10 @@ a.text_np_20:hover{
 }
 .img_np_20{
 	width: 100%;
+	height: 465px;
+
 }
+
 .span_text_pr{
 	font-family: "MuseoCyrl-700";
 	font-size: 23px;
@@ -1407,22 +1410,28 @@ a.text_np_20:hover{
 	line-height: 1.1;
 	margin: 0 0 0 -17px;
 }
+
 ul.acol {
 
 }
+
 li.span_text_pr {
 	color: #ffcc00;
 }
+
 li span {
 	color: #008bff;
 }
+
 .pad_np_20{
 	padding: 22px 0 38px 0;
 }
+
 .img_whi_news{
 	width: 92%;
 	background-size:cover;
 }
+
 .description_text{
 	font-family: "Roboto";
 	font-size: 16px;
@@ -2084,4 +2093,15 @@ li span {
     min-height: 1px;
     padding-right: 10px;
     padding-left: 10px;
+}
+#slideshow0 .owl-pagination{
+	position: absolute;
+	width: 100%;
+	bottom: 5%;
+}
+#slideshow0 .owl-controls .owl-buttons .owl-prev {
+	bottom: 45%;
+}
+#slideshow0 .owl-controls .owl-buttons .owl-next {
+	bottom: 45%;
 }
