@@ -49,8 +49,8 @@ class ControllerInformationFaq extends Controller {
 		}
 
 		$data['breadcrumbs'][] = array(
-			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('information/news', $url)
+			'text' => 'Вопросы',
+			'href' => ''
 		);
 
 		$filter_data = array(
