@@ -107,7 +107,7 @@
         </div>
       </div>-->
         <br />
-        <div class="container pad_tovar">
+        <div class="container pad_tovar" style="margin-top: 50px">
           <?php foreach ($products as $product) { ?>
                 <div class="product-layout product-list col-xs-12" style="padding: 0">
                     <div class="product-thumb product1" >
@@ -181,10 +181,12 @@
       </div><div style="clear:both;"></div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
-      <p><?php echo $text_empty; ?></p>
-      <div class="buttons">
-        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
-      </div>
+    <div class="container">
+        <p class="style_text_empty"><?php echo $text_empty; ?></p>
+        <div class="buttons">
+            <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary btn-primary_style "><?php echo $button_continue; ?></a></div>
+        </div>
+    </div>
       <?php } ?>
 
 

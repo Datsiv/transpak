@@ -94,7 +94,7 @@
         <div  class="block2" >
 
             <button class="button" data-toggle="modal" data-target="#contactForm_en"><img src="../../../../../../admin/view/image/icon.png">
-                <span>Передзвоните мне</span>
+                <span>Перезвоните мне</span>
             </button>
 
         </div>
