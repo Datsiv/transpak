@@ -3,7 +3,18 @@
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/home_js.js" type="text/javascript"></script>
 <?php echo $header; ?>
-<?php echo $content_top; ?>
+<div class="hidden-xs">
+	<?php if(isset($content_top['modules'][0])){ ?>
+	<?php echo($content_top['modules'][0]); ?>
+	<?php } ?>
+</div>
+
+<div class="hidden-sm hidden-md hidden-lg">
+	<?php if(isset($content_top['modules'][1])){ ?>
+	<?php echo($content_top['modules'][1]); ?>
+	<?php } ?>
+</div>
+
 <?php if ($categories) { ?>
 <div class="">
 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin">

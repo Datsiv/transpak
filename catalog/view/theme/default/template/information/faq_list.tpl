@@ -3,14 +3,24 @@
 <script src="catalog/view/javascript/home_js.js" type="text/javascript"></script>
 <?php echo $header; ?>
 <div class="container margin_container">
-    <div class="breadcrumbmy">
-            <?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
-            <?php if($i<1){?>
-            <a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
-            <?php }else{?>
-            <a href="<?php echo $breadcrumb['href']; ?>">Вопросы</a>
-            <?php }?>
-            <?php $i++; } ?>
+    <div class="container">
+        <ul class="container hidden-xs">
+            <?php foreach ($breadcrumbs as $key => $breadcrumb) { ?>
+            <?php if ($breadcrumb ['href']==('')){ ?>
+            <?php if($key != count($breadcrumbs)-1) { ?>
+            <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;">
+                <?php echo $breadcrumb['text']; ?>
+            </li>
+            <?php } else { ?>
+            <li class="breadcrumb_text" ><?php echo $breadcrumb['text']; ?></li>
+            <?php } ?>
+            <?php }else{ ?>
+            <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;">
+                <a class="text_np_20" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+            </li>
+            <?php } ?>
+            <?php } ?>
+        </ul>
     </div>
     <div class="container class_text no-padding">
         <div id="content"><?php echo $content_top; ?>

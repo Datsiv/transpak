@@ -22,7 +22,7 @@ class ControllerInformationKachestvo extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('information/kachestvo')
+			'href' => ''
 		);
         $id='1';
 		$news_list = $this->model_catalog_kachestvo->getNewsStory($id);

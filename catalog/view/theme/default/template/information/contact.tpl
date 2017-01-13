@@ -2,14 +2,24 @@
 
 <?php echo $header; ?>
 <div class="container">
-  <div class="hidden-xs breadcrumbmy ">
-    <?php $i=0; foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php if($i<1){ ?>
-    <a href="<?php echo $breadcrumb['href']; ?>" class="breadcrumbmya"><?php echo $breadcrumb['text']; ?></a><span>/</span>
-    <?php }else{ ?>
-    <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php }?>
-    <?php $i++; } ?>
+  <div class="container">
+    <ul class="container hidden-xs">
+      <?php foreach ($breadcrumbs as $key => $breadcrumb) { ?>
+      <?php if ($breadcrumb ['href']==('')){ ?>
+      <?php if($key != count($breadcrumbs)-1) { ?>
+      <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;">
+        <?php echo $breadcrumb['text']; ?>
+      </li>
+      <?php } else { ?>
+      <li class="breadcrumb_text" ><?php echo $breadcrumb['text']; ?></li>
+      <?php } ?>
+      <?php }else{ ?>
+      <li class="breadcrumb_text" style="padding-right: 16px;background: url('../../../catalog/view/theme/default/image/strilka.png') right center no-repeat;">
+        <a class="text_np_20" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+      </li>
+      <?php } ?>
+      <?php } ?>
+    </ul>
   </div>
   <div class="col-sm-12" style="padding: 0"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>

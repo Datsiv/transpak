@@ -1,3 +1,4 @@
+<div id="shelf">
 <link href="catalog/view/theme/default/stylesheet/home.css" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
 
 <div class="col-lg-12 hidden-xs text_slader_bydte">
@@ -55,6 +56,7 @@
     <?php } ?>
   </div>
   <?php } ?>
+</div>
 </div>
 <script type="text/javascript">
 $('#slideshow<?php echo $module; ?>').owlCarousel({
