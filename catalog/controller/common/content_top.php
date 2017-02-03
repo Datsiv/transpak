@@ -62,6 +62,8 @@ class ControllerCommonContentTop extends Controller {
 		}
 		if($route == 'common/home'){
 			return $data;
+		}else if($route == 'product/category') {
+			return $data;
 		}else {
 
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/content_top.tpl')) {

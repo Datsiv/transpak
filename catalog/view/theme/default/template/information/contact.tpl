@@ -73,8 +73,7 @@
       <?php if ($locations) { ?>
       <h3><?php echo $text_store; ?></h3>
       <div class="panel-group" id="accordion">
-        <?php foreach ($locations as $location) { ?>
-        <div class="panel panel-default">
+        <?php foreach ($locations as $location) { ?>        <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title"><a href="#collapse-location<?php echo $location['location_id']; ?>" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><?php echo $location['name']; ?> <i class="fa fa-caret-down"></i></a></h4>
           </div>
@@ -122,8 +121,32 @@
   </div>
 </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0 0 5% 0">
-          <div class="map col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding" id="map"></div>
-      </div>
+        <div id="map" class="map map_box ymaps fr clf" style="margin-bottom: 55px"></div>
+        <script type="text/javascript">
+          ymaps.ready(init);
+          var myMap;
+          function init () {
+            myMap = new ymaps.Map("map", {
+              center: [55.626609, 37.441071],
+              behaviors: ['default', 'scrollZoom'],
+              zoom: 16
+            });
+            myMap.controls
+
+            myPlacemark0 = new ymaps.Placemark([55.626609, 37.441071], {
+              balloonContent: ''
+            }, {
+              iconImageHref: 'img/ico/map_ico.png',
+              iconImageSize: [54, 69],
+              iconImageOffset: [-32, -64],
+              balloonContentSize: [54, 69],
+              balloonShadow: false,
+              balloonAutoPan: false
+            });
+            myMap.geoObjects
+                    .add(myPlacemark0);
+          }
+        </script>
 <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel_panel_default_21">
           <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" class="form-horizontal">

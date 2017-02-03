@@ -64,7 +64,7 @@ $('#slideshow<?php echo $module; ?>').owlCarousel({
 	autoPlay: 3000,
 	singleItem: true,
 	navigation: true,
-  navigationText: ['<img class="hidden-xs" src="/catalog/view/theme/default/image/owlCarusel_strilka_vlivo.png" />', '<img class="hidden-xs" src="/catalog/view/theme/default/image/owlCarusel_strilka_vpravo.png" />'],
+  navigationText: ['<img  src="/catalog/view/theme/default/image/owlCarusel_strilka_vlivo.png" />', '<img src="/catalog/view/theme/default/image/owlCarusel_strilka_vpravo.png" />'],
 	pagination: true
 });
 --></script>

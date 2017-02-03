@@ -30,7 +30,22 @@
     <?php } ?>
     <div id="content" class="<?php echo $class; ?> no-padding">
         <h1 class="container hidden-xs category-text category_text_product"><?php echo $heading_title; ?></h1>
-            <?php echo $content_top; ?>
+        <div class="hidden-xs">
+            <?php if(isset($content_top['modules'][0])){ ?>
+            <?php echo($content_top['modules'][0]); ?>
+            <?php } ?>
+        </div>
+
+        <div class="hidden-sm hidden-md hidden-lg">
+            <?php if(isset($content_top['modules'][1])){ ?>
+            <?php echo($content_top['modules'][1]); ?>
+            <?php } ?>
+        </div>
+        <div class="hidden-xs hidden-md hidden-lg">
+            <?php if(isset($content_top['modules'][2])){ ?>
+            <?php echo($content_top['modules'][2]); ?>
+            <?php } ?>
+        </div>
         <?php if ($thumb || $description) { ?>
       <!--<div class="row">
         <?php if ($thumb) { ?>

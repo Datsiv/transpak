@@ -48,11 +48,13 @@
 }
 .owl-controls .owl-buttons .owl-prev {
 	left: 10px;
-	bottom: 130px;
+	top: 50%;
+	margin-bottom: 20px;
 }
 .owl-controls .owl-buttons .owl-next {
 	right: 10px;
-	bottom: 130px;
+	top: 50%;
+	margin-bottom: 20px;
 }
 .owl-controls {
 	-webkit-user-select: none;
@@ -108,6 +110,7 @@
 
 }
 .owl-controls .owl-page {
+	top: 90%;
 	display: inline-block;
 	margin: 0px 6px;
 }
