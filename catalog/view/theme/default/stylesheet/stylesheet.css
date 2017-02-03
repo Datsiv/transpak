@@ -1398,10 +1398,18 @@ a.text_np_20:hover{
 }
 .img_np_20{
 	width: 100%;
-	height: 465px;
-
+	height: 507px;
 }
 
+.owl-carousel .owl-theme{
+	height: 507px;
+}
+.owl-wrapper-outer{
+	height: 468px;
+}
+.owl-controls{
+	display: block !important;
+}
 .span_text_pr{
 	font-family: "MuseoCyrl-700";
 	font-size: 23px;
@@ -1935,6 +1943,34 @@ li span {
 }
 
 @media (min-width:320px) and (max-width:767px){
+	.owl-controls .owl-buttons .owl-prev {
+		left: 10px;
+		top: 36%;
+		margin-bottom: 20px;
+	}
+	.owl-controls .owl-buttons .owl-next {
+		right: 10px;
+		top: 36%;
+		margin-bottom: 20px;
+	}
+	.owl-pagination{
+		position: absolute;
+		top: 90%;
+		display: inline-block;
+		margin: 0px 6px;
+		left: 50%;
+	}
+	.img_np_20{
+		width: 100%;
+		height: 632px
+	}
+
+	.owl-carousel .owl-theme{
+		height: 632px
+	}
+	.owl-wrapper-outer{
+		height: 561px
+	}
     .h_text_1 {
         font-family: "MuseoCyrl-700"!important;
         text-align: center!important;
@@ -1955,6 +1991,17 @@ li span {
 }
 }
 @media (min-width: 768px) and (max-width: 991px){
+	.img_np_20{
+		width: 100%;
+		height: 380px
+	}
+
+	.owl-carousel .owl-theme{
+		height: 380px
+	}
+	.owl-wrapper-outer{
+		height: 341px
+	}
 	.desk_text_div_style_backg_3{
 		background: #fffacc;
 		position: absolute;
@@ -2038,6 +2085,17 @@ li span {
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
+	.img_np_20{
+		width: 100%;
+		height: 407px;
+	}
+
+	.owl-carousel .owl-theme{
+		height: 407px;
+	}
+	.owl-wrapper-outer{
+		height: 367px;
+	}
 	.desktop-text-div-style {
 		right: 29%;
 	}
@@ -2112,5 +2170,5 @@ li span {
 #slideshow0 .owl-pagination{
 	position: absolute;
 	width: 100%;
-	bottom: 5%;
+	bottom: 10%;
 }

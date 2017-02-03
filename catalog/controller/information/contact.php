@@ -4,7 +4,7 @@ class ControllerInformationContact extends Controller {
 
 	public function index() {
         $this->document->addScript('catalog/view/javascript/contact.js');
-		$this->document->addScript("https://api-maps.yandex.ru/2.1/?lang=tr_TR\" type=\"text/javascript");
+		$this->document->addScript("https://api-maps.yandex.ru/2.1/?lang=ru_RU");
 		$this->load->language('information/contact');
 
 		$this->document->setTitle($this->language->get('heading_title'));
