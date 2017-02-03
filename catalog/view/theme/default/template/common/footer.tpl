@@ -12,7 +12,7 @@
               <span class="spa_text"><?php echo $findTouch; ?></span>
             </div>
             <div class=" foter-email">
-                <?php echo $findEmail; ?>
+                <a class="foter-email" href="mailto:<?php echo $findEmail; ?>"><?php echo $findEmail; ?></a>
             </div>
         </div>
         <div  class="col-sm-4 col-md-4 second-cont">
@@ -23,8 +23,11 @@
                     <i><?php echo $findDodat; ?></i>
                 </div>
         </div>
+        <div class=" foter-email">
+
+        </div>
         <div class=" foter-email_mob">
-                E-mail:<?php echo $findEmail; ?>
+            <a class="foter-email_mob" href="mailto:<?php echo $findEmail; ?>">E-mail:<?php echo $findEmail; ?></a>
         </div>
         <div class="col-xs-12 all-secure">
             © 2008 - 2016. ИнтерТрансПак. Все права защищены.

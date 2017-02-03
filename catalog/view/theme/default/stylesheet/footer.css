@@ -27,6 +27,14 @@
             font-family: Roboto-Regular;
             padding-top: 6px;
         }
+        .foter-email:hover{
+            font-size: 15px;
+            color: #15c;
+            margin-left: 33px;
+            font-family: Roboto-Regular;
+            padding-top: 6px;
+            text-decoration: underline;
+        }
 
         .footer-telef{
             text-align: right;
@@ -96,6 +104,16 @@
                 text-align: center;
                 padding-top: 45px;
                 font-weight: normal;
+            }
+            .foter-email_mob:hover{
+                font-size: 17px;
+                color: #15c;
+                margin-left: 20px;
+                font-family: Roboto;
+                text-align: center;
+                padding-top: 45px;
+                font-weight: normal;
+                text-decoration: underline;
             }
 
             .footer-telef{
