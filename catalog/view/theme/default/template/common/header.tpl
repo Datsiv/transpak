@@ -133,8 +133,12 @@
              </ul>
                  <?php  ?>
              </li>
-             <li><a class="text" href="#">Скачать прайс</a></li>
-
+             <li>
+                 <a  class="text"  href="#" onclick="document.getElementById('pricelist').submit();"><span class="text hidden-xs hidden-sm hidden-md">Скачать прайс</span></a>
+                 <form id="pricelist" action="/index.php?route=tool/export_import/download" method="post" enctype="multipart/form-data" style="display:none">
+                     <input type="hidden" name="export_type" value="p" checked="checked" />
+                 </form>
+             <li>
              <li><a class="text" href="index.php?route=information/kachestvo">Качество</a></li>
              <li><a class="text" href="index.php?route=information/faq">Вопросы</a></li>
              <li><a class="text" href="index.php?route=information/contact">Контакты</a></li>

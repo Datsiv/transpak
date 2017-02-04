@@ -48,12 +48,12 @@
 }
 .owl-controls .owl-buttons .owl-prev {
 	left: 10px;
-	top: 50%;
+	top: 50% !important;
 	margin-bottom: 20px;
 }
 .owl-controls .owl-buttons .owl-next {
 	right: 10px;
-	top: 50%;
+	top: 50% !important;
 	margin-bottom: 20px;
 }
 .owl-controls {

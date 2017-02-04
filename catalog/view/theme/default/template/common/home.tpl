@@ -82,7 +82,12 @@
 								<figcaption>
 								<h4>Приятные цены</h4>
 									<span>Мы формируем цены так, чтобы вам было интересно к нам обращаться</span>
-									<span class="afigure"><a href="">Скачать прайс</a></span>
+									<div style="margin-top: 10px">
+										<a  class="text"  href="#" onclick="document.getElementById('pricelist').submit();"><span class="afigure hidden-xs hidden-sm hidden-md">Скачать прайс</span></a>
+										<form id="pricelist" action="/index.php?route=tool/export_import/download" method="post" enctype="multipart/form-data" style="display:none">
+											<input type="hidden" name="export_type" value="p" checked="checked" />
+										</form>
+									</div>
 								</figcaption>
 							</figure>
 						</div>
