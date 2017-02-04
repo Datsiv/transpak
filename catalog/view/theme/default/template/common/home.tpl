@@ -81,6 +81,7 @@
 							<div class="kolo"><img src="image/cenu.png" alt=""></div>
 								<figcaption>
 								<h4>Приятные цены</h4>
+
 									<span>Мы формируем цены так, чтобы вам было интересно к нам обращаться</span>
 									<div style="margin-top: 10px">
 										<a  class="text"  href="#" onclick="document.getElementById('pricelist').submit();"><span class="afigure hidden-xs hidden-sm hidden-md">Скачать прайс</span></a>
@@ -88,6 +89,7 @@
 											<input type="hidden" name="export_type" value="p" checked="checked" />
 										</form>
 									</div>
+									
 								</figcaption>
 							</figure>
 						</div>
