@@ -1941,7 +1941,6 @@ li span {
     padding-bottom: 41px!important;
     color: #000;
 }
-
 @media (min-width:320px) and (max-width:767px){
 	.owl-controls .owl-buttons .owl-prev {
 		left: 10px;
