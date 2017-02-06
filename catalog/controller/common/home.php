@@ -27,7 +27,8 @@ class ControllerCommonHome extends Controller {
 // end category
         $this->load->model('catalog/information');
         $information_info = $this->model_catalog_information->getInformation(9);
-        $data['descriptionseo'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+        $data['descriptionseo'] =  utf8_substr(strip_tags(html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8')), 0, 238).'..'  ;
+        $data['descriptionseo1'] =  utf8_substr(strip_tags(html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8')),0)  ;
         $data['heading_titleseo'] = $information_info['title'];
 
         if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/home.tpl')) {

@@ -89,7 +89,6 @@
 											<input type="hidden" name="export_type" value="p" checked="checked" />
 										</form>
 									</div>
-									
 								</figcaption>
 							</figure>
 						</div>
@@ -147,17 +146,17 @@
 	  </div>
      <div class="container seo">
 
-								<h4><?php echo $heading_titleseo ?></h4>
-								<?php echo $descriptionseo; ?>
+		 <h4><?php echo $heading_titleseo ?></h4>
+		 <div class="read"><?php echo $descriptionseo; ?></div>
 
 
+		 <a  class=" text dropdown-toggle text_2" data-toggle="dropdown" id="vypad" href="#"> <p id="hiden">Читать далее</p></a>
+		 <ul class="dropdown-menu vupad_text1">
+			 <?php echo $descriptionseo1; ?>
+		 </ul>
 
-		 		<a  class=" text dropdown-toggle text_2" data-toggle="dropdown" id="vypad" href="#"> <p id="hiden">Читать далее</p></a>
-		 		 <ul class="dropdown-menu vupad_text1">
-					hugyjuhkjl
-				 </ul>
-
-         </div></div>
+         </div>
+</div>
     	</div>
 	</div>
 </div>
