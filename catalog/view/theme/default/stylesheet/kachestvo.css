@@ -68,6 +68,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
+    .desk_text_div_style_backg_3{
+        width: 35% !important;
+    }
     .pdf_img_text_a_href{
         padding-left: 0px !important;
     }

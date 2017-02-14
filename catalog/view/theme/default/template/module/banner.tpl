@@ -1,3 +1,13 @@
+<div class="col-lg-12 hidden-xs text_slader_bydte">
+    <div class="banner-div-main" >
+   <div class="hidden-xs desk_text_div_style_backg">
+        <span class="glav_text_span_banner">
+          Главное преимущество
+        </span>
+            <p class="glav_text_p_banner">Защитные уголки сокращают затраты на упаковку и логистику!</p>
+        </div>
+    </div>
+</div>
 <div id="slideshow<?php echo $module; ?>" class="owl-carousel" style="opacity: 1;">
     <?php foreach ($banners as $banner) { ?>
     <div class="item">
