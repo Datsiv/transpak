@@ -3,15 +3,21 @@
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="catalog/view/javascript/home_js.js" type="text/javascript"></script>
 <?php echo $header; ?>
-<div class="hidden-xs">
+
+<div class="hidden-xs  hidden-lg">
 	<?php if(isset($content_top['modules'][0])){ ?>
 	<?php echo($content_top['modules'][0]); ?>
 	<?php } ?>
 </div>
-
-<div class="hidden-sm hidden-md hidden-lg">
+<div class="hidden-xs hidden-sm hidden-md">
 	<?php if(isset($content_top['modules'][1])){ ?>
 	<?php echo($content_top['modules'][1]); ?>
+	<?php } ?>
+</div>
+
+<div class="hidden-sm hidden-md hidden-lg">
+	<?php if(isset($content_top['modules'][2])){ ?>
+	<?php echo($content_top['modules'][2]); ?>
 	<?php } ?>
 </div>
 
