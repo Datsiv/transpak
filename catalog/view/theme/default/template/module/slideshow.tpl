@@ -13,7 +13,7 @@
         2000 GW 500 PES от 10 бобин
         стоимость 200 м ленты составит
         98,90 у.е. </p>
-      <div style="padding-bottom: 75px;padding-left: 5px;">
+      <div>
         <a href="index.php?route=information/akcii">
           <button type="button"  class=" btn btn-primary bot_vse_akcii" ">
           <span class="">Все акции</span>
