@@ -41,11 +41,6 @@
             <?php echo($content_top['modules'][1]); ?>
             <?php } ?>
         </div>
-        <div class="hidden-xs hidden-md hidden-lg">
-            <?php if(isset($content_top['modules'][2])){ ?>
-            <?php echo($content_top['modules'][2]); ?>
-            <?php } ?>
-        </div>
         <?php if ($thumb || $description) { ?>
       <!--<div class="row">
         <?php if ($thumb) { ?>
