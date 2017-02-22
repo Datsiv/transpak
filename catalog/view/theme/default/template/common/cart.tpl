@@ -1,6 +1,19 @@
-<div id="cart" class="btn-group btn-block">
-  <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span></button>
-  <ul class="dropdown-menu pull-right">
+<div id="cart" class="car_poz_20">
+  <span type="text" data-loading-text="<?php echo $text_loading; ?>" class="col-lg-12 col-md-12 col-sm-12 hidden-xs no-padding bottu_rig_12_3 cart-text">
+            <a class="color_blue" href="<?php echo $cart; ?>">
+                <img class="fa fa-shopping-cart cl_fa_font" src="image/iconka.png">
+                <span class="styl_font_22_fam" id="cart-total"><?php echo $text_items; ?></span>
+              <img class="fa fa-shopping-cart cl_fa_font" src="image/botton-copy.png">
+            </a>
+  </span>
+  <span type="text" data-loading-text="<?php echo $text_loading; ?>" class="hidden-lg hidden-md hidden-sm col-xs-12 no-padding bottu_rig_12_3 cart-text car_poz_21">
+            <a class="color_white" href="<?php echo $cart; ?>">
+                <img class="fa fa-shopping-cart cl_fa_font" src="image/iconka_mob.png">
+                <span class="styl_font_22_fam" id="cart-total"><?php echo $text_items; ?></span>
+            </a>
+  </span>
+</div>
+  <!--<ul class="dropdown-menu pull-right">
     <?php if ($products || $vouchers) { ?>
     <li>
       <table class="table table-striped">
@@ -54,5 +67,4 @@
       <p class="text-center"><?php echo $text_empty; ?></p>
     </li>
     <?php } ?>
-  </ul>
-</div>
+  </ul>-->

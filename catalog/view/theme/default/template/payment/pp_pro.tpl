@@ -71,7 +71,8 @@
   </div>
 </div>
 <script type="text/javascript"><!--
-$('#button-confirm').bind('click', function() {
+  $('#button-confirm').bind('click', function(event) {
+    event.stopImmediatePropagation()
 	$.ajax({
 		url: 'index.php?route=payment/pp_pro/send',
 		type: 'post',
