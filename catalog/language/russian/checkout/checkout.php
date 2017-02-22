@@ -3,7 +3,7 @@
 $_['heading_title']                  = 'Оформление заказа';
 
 // Text
-$_['text_cart']                      = 'Корзина покупок';
+$_['text_cart']                      = 'Корзина';
 $_['text_checkout_option']           = 'Шаг 1: Способ оформления заказа';
 $_['text_checkout_account']          = 'Шаг 2: Профиль &amp; Платежная информация';
 $_['text_checkout_payment_address']  = 'Шаг 2: Платежная информация';
@@ -26,9 +26,9 @@ $_['text_your_password']             = 'Пароль';
 $_['text_agree']                     = 'Я прочитал <a href="%s" class="agree"><b>%s</b></a> и согласен с условиями';
 $_['text_address_new']               = 'Я хочу использовать новый адрес';
 $_['text_address_existing']          = 'Я хочу использовать существующий адрес';
-$_['text_shipping_method']           = 'Выберите удобный способ доставки для данного заказа';
-$_['text_payment_method']            = 'Выберите способ оплаты для данного заказа';
-$_['text_comments']                  = 'Вы можете добавить комментарий к своему заказу';
+$_['text_shipping_method']           = 'Доставка';
+$_['text_payment_method']            = 'Оплата';
+$_['text_comments']                  = 'Комментарий к заказу:';
 $_['text_recurring']                 = 'Периодические платежи';
 $_['text_payment_recurring']           = 'Платежный профиль';
 $_['text_trial_description']         = 'Стоимость: %s; Периодичность: %d %s; Кол-во платежей: %d;  Далее,  ';
@@ -49,12 +49,12 @@ $_['column_total']                   = 'Итого';
 
 // Entry
 $_['entry_email_address']            = 'E-Mail Адрес';
-$_['entry_email']                    = 'E-Mail';
+$_['entry_email']                    = 'Ваша электронная почта:';
 $_['entry_password']                 = 'Пароль';
 $_['entry_confirm']                  = 'Подтверждение пароля';
-$_['entry_firstname']                = 'Имя';
+$_['entry_firstname']                = 'Ваше имя';
 $_['entry_lastname']                 = 'Фамилия';
-$_['entry_telephone']                = 'Телефон';
+$_['entry_telephone']                = 'Ваш номер телефона:';
 $_['entry_fax']                      = 'Факс';
 $_['entry_address']                  = 'Выберите адрес';
 $_['entry_company']                  = 'Компания';

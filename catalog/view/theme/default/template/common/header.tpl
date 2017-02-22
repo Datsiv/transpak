@@ -9,7 +9,7 @@
 <!--<![endif]-->
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="500, initial-scale=0.5">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo $title; ?></title>
     <base href="<?php echo $base; ?>"/>
@@ -26,6 +26,7 @@
     <link href="catalog/view/theme/default/fonts/styles.css" rel="stylesheet" type="text/css"/>
     <link href="catalog/view/theme/default/stylesheet/header.css" rel="stylesheet">
     <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+    <link href="catalog/view/theme/default/stylesheet/main.min.css" rel="stylesheet">
     <?php foreach ($styles as $style) { ?>
     <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>"
           media="<?php echo $style['media']; ?>"/>
@@ -84,19 +85,19 @@
                                             alt="<?php echo $name; ?>" class="img-responsive"/></a>
     </div>
     <div class=" col-sm-7 col-md-7 col-lg-6 ">
-        <div class="col-xs-3 buttonm">
+        <div class="col-xs-4 buttonm">
             <div  > <img src='../../../../../../admin/view/image/menu.png'  onclick="fff();" class=" active "id ="men" /> </div>
-            <div  > <img src='../../../../../../admin/view/image/menu1.png'  onclick="www();" id ="men1"  /> </div>
-
+            <div > <img src='../../../../../../admin/view/image/menu1.png'  onclick="www();" id ="men1" class="marg_ot"  /> </div>
+            <span class="hidden-lg hidden-md hidden-sm col-xs-12 no-padding"><?= $cart?></span>
         </div>
 
-    <div class="col-xs-9 col-sm-12 mobright">
+    <div class="col-xs-8 col-sm-12 mobright">
         <div  class="block2" >
 
             <button class="button" data-toggle="modal" data-target="#contactForm_en"><img src="../../../../../../admin/view/image/icon.png">
                 <span>Перезвоните мне</span>
             </button>
-
+            <span><?= $cart?></span>
         </div>
             <div class="block1 ">
                                 <div class="tell">
@@ -118,7 +119,7 @@
     </div>
 <div style="clear:both;"></div>
 <div class="container no-padding">
-     <div class=" menue col-sm-12 " >
+     <div class=" menue col-sm-12" >
          <ul class="nav nav-tabs menue_golovne">
              <li ><a class="text " href="<?php echo $home; ?>">Главная</a></li>
              <li class=" dropdown ">
@@ -147,7 +148,7 @@
      </div>
 </div>
 
-<div class="logo2 col-xs-12  " id="logo12">
+<div class="logo2 col-xs-12 hidden-lg hidden-md hidden-sm " id="logo12">
     <?php if ($logo) { ?>
     <a class="logotyp_header_mob" href="<?php echo $home; ?>"><img  src="<?php echo $logo; ?>"   title="<?php echo $name; ?>"
                                         alt="<?php echo $name; }?>" class="img-responsive"/></a>

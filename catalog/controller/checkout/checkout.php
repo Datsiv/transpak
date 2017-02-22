@@ -3,7 +3,7 @@ class ControllerCheckoutCheckout extends Controller {
 	public function index() {
 		// Validate cart has products and has stock.
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
-			$this->response->redirect($this->url->link('checkout/cart'));
+			$this->response->redirect($this->url->link('common/home'));
 		}
 
 		// Validate minimum quantity requirements.
@@ -45,12 +45,7 @@ class ControllerCheckoutCheckout extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('text_cart'),
-			'href' => $this->url->link('checkout/cart')
-		);
-
-		$data['breadcrumbs'][] = array(
-			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('checkout/checkout', '', 'SSL')
+			'href' => ''
 		);
 
 		$data['heading_title'] = $this->language->get('heading_title');
@@ -85,13 +80,21 @@ class ControllerCheckoutCheckout extends Controller {
 		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
+        $data['d_quickcheckout'] = $this->load->controller('module/d_quickcheckout');
 		$data['header'] = $this->load->controller('common/header');
 
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/checkout.tpl')) {
-			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/checkout/checkout.tpl', $data));
-		} else {
-			$this->response->setOutput($this->load->view('default/template/checkout/checkout.tpl', $data));
-		}
+        if($this->config->get('d_quickcheckout_status')){
+            $template = 'd_quickcheckout';
+        }else{
+            $template = 'checkout';
+        }
+
+        if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/'.$template.'.tpl')) {
+            $this->template = $this->config->get('config_template') . '/template/checkout/'.$template.'.tpl';
+        } else {
+            $this->template = 'default/template/checkout/'.$template.'.tpl';
+        }
+        $this->response->setOutput($this->load->view($this->template, $data));
 	}
 
 	public function country() {

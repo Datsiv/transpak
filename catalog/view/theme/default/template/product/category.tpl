@@ -175,7 +175,7 @@
                         </p>
                         <?php } ?>
                       </div>
-                        <button type="button"  class="btn btn-primary zakbtn" data-toggle="modal" href="#myModal" onclick="zakazData('<?php echo $product['name']; ?>','<?php echo $product['price']; ?>');">
+                        <button for="<?php echo $product['product_id']; ?>" id="button-cart" onclick="cart.add('<?php echo $product['product_id']; ?>');" type="button"  class="btn btn-primary zakbtn">
                           Заказать
                         </button>
 

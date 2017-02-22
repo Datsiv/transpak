@@ -2377,41 +2377,38 @@ li span {
     padding-bottom: 41px !important;
     color: #000;
 }
+@media (min-width:320px) and (max-width:767px){
+	.owl-controls .owl-buttons .owl-prev {
+		left: 10px;
+		top: 36%;
+		margin-bottom: 20px;
+	}
+	.marg_ot{
+		margin-bottom: 0px;
+	}
+	.owl-controls .owl-buttons .owl-next {
+		right: 10px;
+		top: 36%;
+		margin-bottom: 20px;
+	}
+	.owl-pagination{
+		position: absolute;
+		top: 90%;
+		display: inline-block;
+		margin: 0px 6px;
+		left: 50%;
+	}
+	.img_np_20{
+		width: 100%;
+		height: 632px
+	}
 
-@media (min-width: 320px) and (max-width: 767px) {
-    .owl-controls .owl-buttons .owl-prev {
-        left: 10px;
-        top: 36%;
-        margin-bottom: 20px;
-    }
-
-    .owl-controls .owl-buttons .owl-next {
-        right: 10px;
-        top: 36%;
-        margin-bottom: 20px;
-    }
-
-    .owl-pagination {
-        position: absolute;
-        top: 90%;
-        display: inline-block;
-        margin: 0px 6px;
-        left: 50%;
-    }
-
-    .img_np_20 {
-        width: 100%;
-        height: 632px
-    }
-
-    .owl-carousel .owl-theme {
-        height: 632px
-    }
-
-    .owl-wrapper-outer {
-        height: 561px
-    }
-
+	.owl-carousel .owl-theme{
+		height: 632px
+	}
+	.owl-wrapper-outer{
+		height: 561px
+	}
     .h_text_1 {
         font-family: "MuseoCyrl-700" !important;
         text-align: center !important;
@@ -2605,4 +2602,31 @@ li span {
     padding-right: 10px;
     padding-left: 10px;
 }
-
+#slideshow0 .owl-pagination{
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+}
+.car_poz_20{
+	position: relative;
+	top: 31px;
+	z-index: 111;
+}
+.car_poz_21{
+	position: absolute;
+	top: 1px!important;
+	z-index: 1;
+	right: 7px;
+}
+.color_blue{
+	color: #0098ff;
+}
+.color_blue:hover{
+	color: #0098ff;
+}
+.color_white{
+	color: white;
+}
+.color_white:hover{
+	color: white;
+}
